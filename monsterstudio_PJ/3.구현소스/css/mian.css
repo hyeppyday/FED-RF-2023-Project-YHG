@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* 초기화 */
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* 공사중 표시 */
+body{
+    border: 2px dotted #34ae88;
+}
+
+
+#main-menu .gnb{
+    display: flex;
+}
+
+
