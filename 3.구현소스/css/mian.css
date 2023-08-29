@@ -1,21 +1,26 @@
 @charset "utf-8";
 
-/* 초기화 */
-ul,
-ol,
-li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+@import url(./reset.css);
+
 /* 공사중 표시 */
-body{
-    border: 2px dotted #34ae88;
+body *{
+    border: 1px dashed #34ae88;
 }
 
-
+.main-logo{
+    float: left;
+    width: 10vw;
+}
+.main-logo img{
+    width: 100%
+}
 #main-menu .gnb{
     display: flex;
+    
+}
+
+#main-menu .gnb li{
+    padding-left: 5vw;
 }
 
 
