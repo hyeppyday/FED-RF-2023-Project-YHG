@@ -7,12 +7,14 @@
     border: 1px dashed #34ae88;
 } */
 
+
+
 #top{
     position: fixed;
    width: 100%;
    height: 120px;
    top: 0;
-
+   z-index: 1;
    background-color: #00000073;
 
 }
@@ -25,8 +27,8 @@
     float: left;
     width: 10vw;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 10px;
     
 }
 .main-logo img{
@@ -47,15 +49,39 @@
     
 }
 
-.gnb li{
-    padding-left: 3vw;
+.gnb>li{
+    padding: 0 2vw;
     
 }
 
 .gnb li a{
     font-size: 1.2vw;
     color: #fff;
+    
 }
+/* 서브메뉴 */
+.sub-menu{
+    margin-top: 10px;
+    /* 숨기기 높이값 0 */
+    height: 0;
+    /* 넘치는 요소 숨기기 */
+    overflow: hidden;
+
+    /* 투명하게 */
+    opacity: 0;
+    /* 트랜지션 */
+    transition: 0.4s ease-in-out;
+
+    
+}
+.gnb>.li-sub:hover .sub-menu{
+    opacity: 1;
+    height: 40px;
+}
+.sub-menu ol{
+    text-align: center;
+}
+
 /* 컨텐츠 박스 이미지 공통 */
 .cont-bg img{
     width: 100vw;
