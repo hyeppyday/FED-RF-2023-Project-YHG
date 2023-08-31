@@ -3,12 +3,18 @@
 @import url(./reset.css);
 
 /* 공사중 표시 */
-body *{
+/* body *{
     border: 1px dashed #34ae88;
-}
+} */
 
 #top{
-   width: 100vw;
+    position: fixed;
+   width: 100%;
+   height: 120px;
+   top: 0;
+
+   background-color: #00000073;
+
 }
 
 .main-bg img{
@@ -56,4 +62,22 @@ body *{
 }
 /* 컨텐츠 정보 박스 공통 */
 
+#banner{
+    transition: 2s;
+    transform: translateY(-30%) scale(1.5);
+    opacity: 0;
+    animation: first-ani 2s ease-in-out 1s forwards;
+}
+@keyframes first-ani {
+    to{
+        transform: translateY(0%) scale(1);
+        opacity: 1;
 
+    }
+}
+.bg-top{
+    height: 200px;
+}
+.main-bg img{
+    width: 100%;
+}
