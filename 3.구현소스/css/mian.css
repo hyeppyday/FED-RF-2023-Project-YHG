@@ -7,20 +7,53 @@ body *{
     border: 1px dashed #34ae88;
 }
 
+#top{
+   width: 100vw;
+}
+
+.main-bg img{
+    width: 100vw;
+    
+}
 .main-logo{
     float: left;
     width: 10vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
 }
 .main-logo img{
     width: 100%
+    
 }
-#main-menu .gnb{
+/* gnb메뉴 */
+.gnb{
+    position: absolute;
+    top: 0;
+    right: 1vw;
     display: flex;
+    justify-content: right;
+    margin-right: 5vw;
+    padding-top: 2vw;
+    font-size: 1.2vw;
+    
     
 }
 
-#main-menu .gnb li{
-    padding-left: 5vw;
+.gnb li{
+    padding-left: 3vw;
+    
 }
+
+.gnb li a{
+    font-size: 1.2vw;
+    color: #fff;
+}
+/* 컨텐츠 박스 이미지 공통 */
+.cont-bg img{
+    width: 100vw;
+}
+/* 컨텐츠 정보 박스 공통 */
 
 
