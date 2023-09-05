@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 @import url(./reset.css);
+@import url(./common.css);
 
 @import url("https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+Display&family=Titan+One&family=Varela+Round&display=swap");
 
@@ -155,6 +156,66 @@ font-family: 'Varela Round', sans-serif; */
 }
 
 /* 컨텐츠 박스 이미지 공통 */
+.cont-bg img{
+    width: 100%;
+}
+
+.cont-bg{
+    /* .cont-mvbtn의 부모 */
+    position: relative;
+}
+/* 콘텐츠 영상 버튼 공통 */
+.cont-mvbtn{
+    position: absolute;
+    top: 45vw;
+    left: 50%;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 1vw;
+    letter-spacing: 0.67px;
+}
+.cont-mvbtn:hover{
+    background-color: #34343470;
+    transition: .3s ease-out;
+}
 
 
 /* 컨텐츠 정보 박스 공통 */
+.bx-info{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(47 46 46);
+    display: flex;
+}
+.name-bx{
+    width: 50%; 
+}
+.name-bx div{
+    width: 100px;
+    margin: 4vw 0 0 16vw;
+
+}
+.cont-name{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size: 4vw;
+    color: #fff;
+    
+    
+}
+.ex-bx{
+    margin-top: 50px;
+    width: 50%;
+    line-height: 2;
+    font-size: 0.9vw;
+    color: #fff;
+}
+.ex-bx>span{
+    display: block;
+}
+.ex-bx>div{
+    border-bottom: 1px solid #fff;
+    width: 50px;
+    margin-top: 10px;
+}
