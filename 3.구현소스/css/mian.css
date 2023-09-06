@@ -88,7 +88,8 @@ font-family: 'Varela Round', sans-serif; */
 }
 /* 서브메뉴 */
 .sub-menu {
-    margin-top: 10px;
+    position: absolute;
+    margin-top: 10%;
     /* 숨기기 높이값 0 */
     height: 0;
     /* 넘치는 요소 숨기기 */
@@ -98,17 +99,29 @@ font-family: 'Varela Round', sans-serif; */
     opacity: 0;
     /* 트랜지션 */
     transition: 0.4s ease-in-out;
+    padding: 10px;
+    left: -10px;
+    line-height: 1.5;
+    border-radius: 0px;
+}
+.li-sub{
+    /* .sub-menu의 부모역할 */
+    position: relative;
 }
 
 /* 서브메뉴 오버시 나타나기 */
 .gnb > .li-sub:hover .sub-menu {
     opacity: 1;
-    height: 93px;
+    height: 50px;
+    background-color: #ffffff9f;
+    text-align: center;
+    
 }
 .sub-menu ol {
     text-align: center;
     
 }
+
 .sub-menu > ol > li > a {
     color: #000;
     font-size: 1vw;
@@ -158,11 +171,16 @@ font-family: 'Varela Round', sans-serif; */
 /* 컨텐츠 박스 이미지 공통 */
 .cont-bg img{
     width: 100%;
+    aspect-ratio: 16/8;
+    background-position: center;
+    background-size: cover; 
 }
 
 .cont-bg{
     /* .cont-mvbtn의 부모 */
     position: relative;
+    width: 100%;
+
 }
 /* 콘텐츠 영상 버튼 공통 */
 .cont-mvbtn{
@@ -170,33 +188,46 @@ font-family: 'Varela Round', sans-serif; */
     top: 45vw;
     left: 50%;
     transform: translateX(-50%);
-    color: #fff;
-    border: 2px solid #fff;
+    color: #000000;
+    border: 1px solid #000000;
     padding: 7px;
     border-radius: 10px;
-    font-size: 1vw;
+    font-size: .8vw;
     letter-spacing: 0.67px;
     
 }
 .cont-mvbtn:hover{
+    color: #fff;
+    border: 1px solid #fff;
     background-color: #34343470;
-    transition: .3s ease-out;
+    transition: .2s ease-out;
 }
 
 
 /* 컨텐츠 정보 박스 공통 */
 .bx-info{
     width: 100%;
-    height: 250px;
+    height: 300px;
     background-color: rgb(47 46 46);
     display: flex;
+    
 }
 .name-bx{
     width: 50%; 
+    position: relative;
 }
-.name-bx div{
+.name-bx .sname{
+    position: absolute;
     width: 100px;
-    margin: 4vw 0 0 16vw;
+    top: 20%;
+    left: 32%;
+
+}
+.name-bx .lname{
+    position: absolute;
+    width: 500px;
+    top: 25%;
+    left: 25%;
 
 }
 .cont-name{
