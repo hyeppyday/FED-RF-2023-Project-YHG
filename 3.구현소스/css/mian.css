@@ -169,12 +169,14 @@ font-family: 'Varela Round', sans-serif; */
     position: absolute;
     top: 45vw;
     left: 50%;
+    transform: translateX(-50%);
     color: #fff;
     border: 2px solid #fff;
     padding: 7px;
     border-radius: 10px;
     font-size: 1vw;
     letter-spacing: 0.67px;
+    
 }
 .cont-mvbtn:hover{
     background-color: #34343470;
@@ -217,5 +219,9 @@ font-family: 'Varela Round', sans-serif; */
 .ex-bx>div{
     border-bottom: 1px solid #fff;
     width: 50px;
-    margin-top: 10px;
+    margin: 10px 0;
+}
+.ex-bx a{
+    color: #fff;
+    
 }
