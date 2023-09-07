@@ -3,10 +3,13 @@
 @import url(./reset.css);
 @import url(./common.css);
 
-@import url("https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+Display&family=Titan+One&family=Varela+Round&display=swap");
+
+  @import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic&family=Noto+Sans+Display&family=Titan+One&family=Varela+Round&display=swap');
+
 
 /* 
 font-family: 'Jua', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
 font-family: 'Noto Sans Display', sans-serif;
 font-family: 'Titan One', cursive;
 font-family: 'Varela Round', sans-serif; */
@@ -181,4 +184,28 @@ font-family: 'Varela Round', sans-serif; */
     height: 100vh;
     background-color: rgb(255, 255, 255);
 }
-
+.news-tit{
+    text-align: center;
+    margin: 140px 0px 68px;
+    font-family: 'Noto Sans Display', sans-serif;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+.news-bx{
+    width: 40%;
+    height: 40%;
+    margin: 0 auto;
+}
+.news-list{
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+.news-name{
+    display: block;
+    font-weight: bold;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+}
+.news-txt{
+    font-size: 10px;
+}
