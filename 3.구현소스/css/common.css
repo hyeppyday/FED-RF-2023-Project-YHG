@@ -1,1 +1,94 @@
 @charset "utf-8";
+
+@import url(./mian.css);
+@import url(./reset.css);
+
+/* gnb메뉴 */
+.gnb {
+    position: absolute;
+    top: 0;
+    right: 1vw;
+    display: flex;
+    justify-content: right;
+    padding: 2vw 0;
+    margin: 0 5vw;
+}
+
+.gnb > li {
+    margin: 0 2vw;
+}
+/* 밑줄 가상요소 */
+.gnb > li > a::after {
+    content: "";
+    display: block;
+    /* 변경요소 */
+    width: 0%;
+    margin-left: 100%;
+    margin-top: 4px;
+    height: 1px;
+    background-color: #ffffff;
+    /* 트랜지션 */
+    transition: 0.3s;
+}
+/* 상위메뉴 li에 오버시 밑줄 */
+.gnb > li:hover > a::after {
+    width: 100%;
+    margin-left: 0%;
+
+    /* 트랜지션 : 오버시엔 왼쪽마진값은 무애니! */
+    transition: width 0.3s;
+}
+/* 메뉴 설정 */
+.gnb > li > a {
+    font-size: 1vw;
+    color: #fff;
+    font-family: "Noto Sans Display", sans-serif;
+}
+/* 메뉴 오버시 */
+.gnb > li > a:hover {
+    text-shadow: 1px 1px 1px #14141498;
+}
+/* 서브메뉴 */
+.sub-menu {
+    position: absolute;
+    margin-top: 10%;
+    /* 숨기기 높이값 0 */
+    height: 0;
+    /* 넘치는 요소 숨기기 */
+    overflow: hidden;
+
+    /* 투명하게 */
+    opacity: 0;
+    /* 트랜지션 */
+    transition: 0.4s ease-in-out;
+    padding: 10px;
+    left: -10px;
+    line-height: 1.5;
+    border-radius: 0px;
+}
+.li-sub{
+    /* .sub-menu의 부모역할 */
+    position: relative;
+}
+
+/* 서브메뉴 오버시 나타나기 */
+.gnb > .li-sub:hover .sub-menu {
+    opacity: 1;
+    height: 50px;
+    background-color: #ffffff9f;
+    text-align: center;
+    
+}
+.sub-menu ol {
+    text-align: center;
+    
+}
+
+.sub-menu > ol > li > a {
+    color: #000;
+    font-size: 1vw;
+    font-family: "Noto Sans Display", sans-serif;
+}
+.sub-menu > ol > li > a:hover {
+    font-weight: bold;
+}
