@@ -19,31 +19,10 @@ font-family: 'Varela Round', sans-serif; */
     border: 1px dashed #34ae88;
 } */
 
-/* 상단영역 */
-#top {
-    position: fixed;
-    width: 100%;
-    height: 65px;
-    top: 0;
-    z-index: 1;
-    background-color: #00000073;
+#cont{
+    position: relative;
+    overflow: hidden;
 }
-
-.main-bg img {
-    width: 100vw;
-}
-/* 로고 */
-.main-logo {
-    float: left;
-    width: 6vw;
-    position: absolute;
-    top: 10px;
-    left: 20px;
-}
-.main-logo img {
-    width: 100%;
-}
-
 
 /* 메인 이미지 영역 */
 .main-bg {
@@ -95,12 +74,14 @@ font-family: 'Varela Round', sans-serif; */
     /* .cont-mvbtn의 부모 */
     position: relative;
     width: 100%;
+    height: 400px;
+    overflow: hidden;
 
 }
 /* 콘텐츠 영상 버튼 공통 */
 .cont-mvbtn{
     position: absolute;
-    top: 45vw;
+    bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
     color: #000000;
@@ -122,7 +103,8 @@ font-family: 'Varela Round', sans-serif; */
 /* 컨텐츠 정보 박스 공통 */
 .bx-info{
     width: 100%;
-    height: 300px;
+    /* height: 300px; */
+    padding-bottom: 50px;
     background-color: rgb(47 46 46);
     display: flex;
     

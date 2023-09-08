@@ -3,19 +3,43 @@
 @import url(./mian.css);
 @import url(./reset.css);
 
+/* 상단영역 */
+#top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+
+    z-index: 1;
+    background-color: #00000073;
+}
+
+.main-bg img {
+    width: 100vw;
+}
+/* 로고 */
+.main-logo {
+    width: 6vw;
+}
+.main-logo img {
+    width: 100%;
+}
+/* gnb랩핑 박스 */
+.main-menu{
+    margin-left: auto;
+}
+
 /* gnb메뉴 */
 .gnb {
-    position: absolute;
-    top: 0;
-    right: 1vw;
     display: flex;
     justify-content: right;
-    padding: 2vw 0;
     margin: 0 5vw;
 }
 
 .gnb > li {
+    position: relative;
     margin: 0 2vw;
+    padding: 2vw 0;
 }
 /* 밑줄 가상요소 */
 .gnb > li > a::after {
@@ -50,8 +74,8 @@
 }
 /* 서브메뉴 */
 .sub-menu {
-    position: absolute;
-    margin-top: 10%;
+    position: absolute;   
+    bottom: 5%;
     /* 숨기기 높이값 0 */
     height: 0;
     /* 넘치는 요소 숨기기 */
