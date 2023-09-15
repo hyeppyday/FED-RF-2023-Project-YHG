@@ -79,7 +79,7 @@
 /* 서브메뉴 */
 .sub-menu {
     position: absolute;   
-    bottom: 5%;
+    top: 100%;
     /* 숨기기 높이값 0 */
     height: 0;
     /* 넘치는 요소 숨기기 */

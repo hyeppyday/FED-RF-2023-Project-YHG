@@ -12,7 +12,7 @@
 main{
     text-align: center;
     width: 100%;
-    height: 1500px;
+    height: 1300px;
 }
 .sub1-img img{
     margin: 150px 0 30px;
@@ -54,11 +54,35 @@ main{
 }
 .img-bx img{
     width: 250px;
-
+    margin: 0 30px;
+    
 }
 .img-bx{
     display: flex;
+    justify-content: center;
 }
+.img-bx img:hover{
+    filter: brightness(0.7);
+}
+.img-bx a{
+    position: relative;
+}
+.img-bx a:hover .mtxt{
+    display: block;
+}
+.img-bx a:hover .img-bx>a>div{
+    display: block;
+}
+.mtxt{
+    position: absolute;
+    top: 48%;
+    left: 36%;
+    color: #ffffff;
+    display: none;
+    font-family: 'Varela Round', sans-serif;
+    letter-spacing: 1.5px;
+}
+
 
 
 </style>
@@ -67,13 +91,13 @@ main{
     <header id="top">
         <!-- 메인로고 -->
         <div class="main-logo">
-            <a href="#"><img src="./img/en_02.png" alt="메인로고" /></a>
+            <a href="./index.html"><img src="./img/en_02.png" alt="메인로고" /></a>
         </div>
         <!-- 상단메뉴 -->
         <div class="main-menu">
             <nav class="gnb">
                 <li>
-                    <a href="#">COMPANY</a>
+                    <a href="./company.html">COMPANY</a>
                 </li>
                 <li class="li-sub">
                     <a href="#">BUSINESS</a>
@@ -95,7 +119,7 @@ main{
                     <a href="#">RECRUIT</a>
                 </li>
                 <li>
-                    <a href="#">CONTACT</a>
+                    <a href="./contact.html">CONTACT</a>
                 </li>
             </nav>
         </div>
@@ -107,9 +131,9 @@ main{
             브레드이발소, 체리툰, 코코시로 등의 애니메이션을 제작 중입니다. </div>
         <div class="en-bx"><div class="int-en">Bread Barbershop is an animation producer that produces contents of various genres, and is producing animations such as Bread Barber Shop, Cherry Toon, and Coco Shiro.</div></div>
         <div class="img-bx">
-            <a href="https://www.youtube.com/channel/UCKBt6VowYGmBpXFf3rVhaQA"><img src="./img/bread_012.png" alt=""></a>
-            <a href="https://www.youtube.com/channel/UCz2KbgTUwirkfmHDT44009w"><img src="./img/e319cf_4b50b3c81ea74194b3bc7bb4395ff02f~mv2 (1).png" alt=""></a>
-            <a href="https://www.instagram.com/cocosiro81/"><img src="./img/e319cf_6738221d300d4d08870cdb95440d30d1~mv2.png" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCKBt6VowYGmBpXFf3rVhaQA"><img src="./img/circle.png" alt=""><h2 class="mtxt">More Info.</h2></a>
+            <a href="https://www.youtube.com/channel/UCz2KbgTUwirkfmHDT44009w"><img src="./img/e319cf_4b50b3c81ea74194b3bc7bb4395ff02f~mv2 (1).png" alt=""><h2 class="mtxt">More Info.</h2></a>
+            <a href="https://www.instagram.com/cocosiro81/"><img src="./img/e319cf_6738221d300d4d08870cdb95440d30d1~mv2.png" alt=""><h2 class="mtxt">More Info.</h2></a>
         </div>
     </main>
     <footer id="info">
