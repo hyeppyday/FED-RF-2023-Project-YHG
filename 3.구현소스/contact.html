@@ -50,7 +50,44 @@
 button{
     display: block;
     margin: 50px auto;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    font-size: 12px;
+    padding: 10px;
+    font-family: 'Noto Sans Display', sans-serif;
+    cursor: pointer;
+    position: relative;
     
+}
+
+button:hover{
+    background-color: rgba(0, 0, 0, 0.457);
+    color: #000;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+button::after{
+    content: '';
+    position: absolute;
+    border: 1px solid #000;
+    width: 96%;
+    height: 95%;
+    left: 0;
+    top: 0;
+
+}
+button:hover::after{
+    content: '';
+    position: absolute;
+    border: 1px solid #000;
+    width: 79px;
+    height: 44px;
+    left: -10%;
+    top: -13%;
+    transition: 0.3s ease-in-out;
+
+
 }
 #map{
     width: 800px;
@@ -117,7 +154,7 @@ button{
                 <span>서울특별시 영등포구 문래북로 56, 7층</span>
                 <span>E-mail</span>
                 <a href="mailto:monsterstudio@breadbarbershop.com"><span>monsterstudio@breadbarbershop.com</span></a>
-                <a href="mailto:monsterstudio@breadbarbershop.com"></a><button>문의하기</button>
+                <a href="mailto:monsterstudio@breadbarbershop.com"><button>문의하기</button></a>
             </div>
         </div>
         <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.4629705814273!2d126.88960812196659!3d37.52058240793964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9ef312db3a3b%3A0x4642b5e79c14087!2z7ISc7Jq47Yq567OE7IucIOyYgeuTse2PrOq1rCDrrLjrnpjrtoHroZwgNTYgN-y4tQ!5e0!3m2!1sko!2skr!4v1694766783262!5m2!1sko!2skr" allowfullscreen="false" loading="lazy" ></iframe></div>
