@@ -1,0 +1,145 @@
+/************************ 메인 제목 ************************/
+.cname {
+  margin: 150px;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  font-weight: bold;
+  position: relative;
+  opacity: 0;
+  transform: translateY(-30%);
+  animation: sub-ani 1s ease-in-out 0.2s forwards;
+}
+.cname > span {
+  display: block;
+}
+.cname .n1 {
+  font-size: 8vw;
+  letter-spacing: 10px;
+}
+.cname .n2 {
+  font-size: 3vw;
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%);
+  letter-spacing: 1vw;
+}
+
+@keyframes sub-ani {
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+/* 유튜브 영상 박스 */
+.mv-bx {
+  text-align: center;
+  margin-bottom: 115px;
+}
+/******************** 캐릭터 소개박스 ********************/
+.crt {
+  display: flex;
+  justify-content: center;
+}
+/* 캐릭터 이미지 박스 */
+.crt img {
+  width: 250px;
+}
+#crt-bx > div > span {
+  font-size: 15px;
+  font-family: "Noto Sans Display", sans-serif;
+  background-color: #00000075;
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 30px;
+}
+#crt-bx > .sub {
+  text-align: center;
+  margin-bottom: 75px;
+}
+/* 캐릭터 설명박스 */
+.info {
+  width: 510px;
+  height: 100px;
+  margin: 50px;
+}
+.info > h1 {
+  font-size: 26px;
+  font-family: "Jua", sans-serif;
+  letter-spacing: 1px;
+}
+.crt-txt {
+  font-size: 14px;
+  font-family: "Noto Sans Display", sans-serif;
+  letter-spacing: 0.5px;
+}
+/* 캐릭터 이미지 오버시 설명텍스트 보이기 */
+
+
+/********************* 그리드 박스 *********************/
+.grid {
+  display: grid;
+  /* 박스 중앙 최대크기 지정 */
+  max-width: 800px;
+  margin: 0 auto;
+  /* outline: 2px dashed lightcoral; */
+  grid-column-gap: min(3vw, 30px);
+  grid-row-gap: min(3vw, 30px);
+  /* 가로방향 12그리드 셋팅 */
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 300px;
+  margin: 100px auto;
+}
+.grid img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+  /* 박스이미지 하단 공백 제거 셋팅 */
+  vertical-align: middle;
+}
+
+/* 개별 그리드 박스 이미지 크기 설정 */
+.grid a:nth-child(1) {
+	grid-column-start: 1;
+	grid-column-end: 9;
+}
+.grid a:nth-child(2) {
+	grid-column-start: 9;
+	grid-column-end: 13;
+}
+.grid a:nth-child(3) {
+	grid-column-start: 1;
+	grid-column-end: 5;
+}
+.grid a:nth-child(4) {
+	grid-column-start: 5;
+	grid-column-end: 13;
+}
+.grid a:nth-child(5) {
+	grid-column-start: 1;
+	grid-column-end: 7;
+}
+.grid a:nth-child(6) {
+	grid-column-start: 7;
+	grid-column-end: 13;
+}
+.grid a:nth-child(7) {
+	grid-column-start: 1;
+	grid-column-end: 6;
+}
+.grid a:nth-child(8) {
+	grid-column-start: 6;
+	grid-column-end: 13;
+}
+
+.grid a{
+    overflow: hidden; /* 자손이 현재 요소보다 클때 안보이게 처리 */
+
+  }
+
+.grid a:hover img, .grid a:focus img{ /* a태그에 마우스를 올렸을 때 */
+  transform: scale(1.1);
+  filter: brightness(0.6);
+}

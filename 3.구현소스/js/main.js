@@ -9,3 +9,4 @@ rellax.forEach(ele=>{
     }); /////// rellax /////////////
 
 })
+
