@@ -4,15 +4,18 @@
 @import url(./common.css);
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic&family=Noto+Sans+Display&family=Titan+One&family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Kanit&family=Nanum+Gothic&family=Noto+Sans+Display&family=Titan+One&family=Varela+Round&display=swap');
+
 
 
 /* 
 font-family: 'Jua', sans-serif;
+font-family: 'Kanit', sans-serif;
 font-family: 'Nanum Gothic', sans-serif;
 font-family: 'Noto Sans Display', sans-serif;
 font-family: 'Titan One', cursive;
-font-family: 'Varela Round', sans-serif; */
+font-family: 'Varela Round', sans-serif;*/
 
 /* 공사중 표시 */
 /* body *{
@@ -20,60 +23,101 @@ font-family: 'Varela Round', sans-serif; */
 } */
 
 #cont{
+    margin-top: 36%;
     position: relative;
     overflow: hidden;
 }
 
 /* 메인 이미지 영역 */
 .main-bg {
-    transition: 2s;
-    transform: translateY(-30%) scale(1.5);
+    position: absolute;
+    top: 12%;
+    left: 0;
+    object-fit: contain;
+    object-position: bottom;
+    height: 100vh;
+    transform:scale(2);
     opacity: 0;
-    animation: first-ani 1.5s ease-in-out 0.2s forwards;
+    animation: first-ani 1.2s ease-in-out 0.2s forwards;
 }
 @keyframes first-ani {
     to {
-        transform: translateY(0%) scale(1);
+        transform: scale(1);
         opacity: 1;
     }
 }
 .main-bg img {
     width: 100%;
-    
+    height: 90%;
 }
 /* 메인 이미지 글씨 영역 */
 .bg-top {
-    position: relative;
     height: 230px;
+    position: relative;
+    transform: translateY(-100%);
+    background-color: #ffffff;
+    z-index: 9;
+    animation: second-ani 0.8s ease-out 0.8s forwards;
+
 }
-.bg-top .mname {
+@keyframes second-ani {
+    to {
+        transform: translateY(0);
+    }
+}
+.slide-name{
+    height: 63px;
+    overflow: hidden;
+    display: block;
+    
+}
+.name-part{
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-78%);
     font-family: "Varela Round", sans-serif;
     font-size: 4rem;
     width: auto;
     text-align: center;
-}
-.bg-top .name1 {
-    top:166px;;
-}
-.bg-top .name2 {
-    top: 230px;
-    z-index: 1;
+    z-index: 99;
+    font-weight: bold;
 }
 
+.name1 {
+    margin-top: 100%;
+    animation: name-ani 1.8s ease-in-out 0.7s forwards;
+    
+}
+.name2 {
+    margin-top: 100%;
+    z-index: 1;
+    animation: name-ani 1.8s ease-in-out 1.5s forwards;
+}
+@keyframes name-ani {
+    to{
+        margin-top: 0;
+    }
+
+}
 /* 컨텐츠 박스 이미지 공통 */
 .cont-bg img{   
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    /* object-position: center; */
     /* object-position: top;
     object-position: bottom; */
-  
 }
-
+/* 개별이미지 위치 설정 */
+.img1{
+    object-position: bottom;
+}
+.img2{
+    object-position: 60% 60%;
+}
+.img3{
+    object-position: 45% 45%;
+}
 /* 움직이는 박스 */
 .special-box {
     position: absolute;
@@ -116,12 +160,11 @@ font-family: 'Varela Round', sans-serif; */
 /* 컨텐츠 정보 박스 공통 */
 .bx-info{
     width: 100%;
-    /* height: 300px; */
+    height: 300px;
     padding-bottom: 50px;
     background-color: rgb(47 46 46);
     display: flex;
-    margin: 380px 0 0;
-    
+    z-index: 9;
 }
 .name-bx{
     width: 50%; 
@@ -155,7 +198,7 @@ font-family: 'Varela Round', sans-serif; */
     
 }
 .ex-bx{
-    margin-top: 50px;
+    margin-top: 60px;
     width: 50%;
     line-height: 2;
     font-size: 0.9vw;
@@ -183,7 +226,7 @@ font-family: 'Varela Round', sans-serif; */
 }
 .news-tit{
     text-align: center;
-    margin: 140px 0px 68px;
+    margin: 350px 0px 68px;
     font-family: 'Noto Sans Display', sans-serif;
     letter-spacing: 2px;
     font-size: 25px;
