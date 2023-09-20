@@ -9,17 +9,10 @@
     width: 100%;
     top: 0;
     display: flex;
-
     z-index: 999;
-    background-color: #00000073;
-    opacity: 0;
-    animation: first-ani 0.8s ease-in-out 0.2s forwards;
+    background-color: #00000073; 
 }
-@keyframes first-ani {
-    to {
-        opacity: 1;
-    }
-}
+
 .main-bg img {
     width: 100vw;
 }

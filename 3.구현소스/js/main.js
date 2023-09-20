@@ -79,3 +79,32 @@ function moveEl(elPos, ele, setH) {
         `;
     } //////////////////////// if ///////////////////////////
 }
+
+
+/////// 뷰프로젝트 클릭시 영상 보이기
+// 대상: 이벤트 - .cont-mvbtn , 변경 - .vpj
+// 변경내용 : 버튼 클릭시 .vpj에 클래스 on 넣기
+//           닫기 버튼 클릭시 .vpj에 클래스 on 빼기
+
+// 1. 대상선정 //
+const mvbtn = dFn.qs('.cont-mvbtn');
+const vpj = dFn.qs('.vpj');
+const cbtn = dFn.qs('.cbtn');
+console.log('대상:',mvbtn,vpj,cbtn);
+
+// 2. 이벤트설정 및 함수구현
+// 2-1. 맵버튼 클릭시
+dFn.addEvt(mvbtn,'click',()=>{
+  /* 구글맵보이기 */
+  vpj.classList.add('on');
+  /* 가림막보이기 */
+  document.body.classList.add('on');
+}); //////// click이벤트함수 ////////
+
+// 2-2. 닫기버튼 클릭시
+dFn.addEvt(cbtn,'click',()=>{
+  /* 구글맵숨기기 */
+  vpj.classList.remove('on');
+  /* 가림막숨기기 */
+  document.body.classList.remove('on');
+}); //////// click이벤트함수 ////////
