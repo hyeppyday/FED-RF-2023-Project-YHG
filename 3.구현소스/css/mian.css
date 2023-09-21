@@ -65,7 +65,7 @@ body.on::after {
 }
 /* 메인 이미지 글씨 영역 */
 .bg-top {
-    height: 230px;
+    height: 253px;
     position: relative;
     transform: translateY(-100%);
     background-color: #ffffff;
