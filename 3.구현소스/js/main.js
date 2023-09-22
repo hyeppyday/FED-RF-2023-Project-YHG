@@ -99,7 +99,10 @@ dFn.addEvt(mvbtn,'click',()=>{
   vpj.classList.add('on');
   /* 가림막보이기 */
   document.body.classList.add('on');
+
+  
 }); //////// click이벤트함수 ////////
+
 
 // 2-2. 닫기버튼 클릭시
 dFn.addEvt(cbtn,'click',()=>{
@@ -108,3 +111,6 @@ dFn.addEvt(cbtn,'click',()=>{
   /* 가림막숨기기 */
   document.body.classList.remove('on');
 }); //////// click이벤트함수 ////////
+
+
+
