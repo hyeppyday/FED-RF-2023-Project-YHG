@@ -37,6 +37,9 @@ body.on::after {
     z-index: 9999;
     /* 보여줄 요소는 이것보다 높게 */
 }
+body{
+    overflow-x: hidden;
+}
 #cont{
     margin-top: 35%;
     position: relative;
@@ -327,7 +330,7 @@ body.on::after {
     outline: none;
 }
 /* 영상 크기 조절 박스 */
-.vpj iframe{
+.vpj iframe,.mv-box{
     width: 100%;
     height: 100%;
 }

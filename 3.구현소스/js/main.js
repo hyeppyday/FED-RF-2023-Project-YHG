@@ -87,21 +87,35 @@ function moveEl(elPos, ele, setH) {
 //           닫기 버튼 클릭시 .vpj에 클래스 on 빼기
 
 // 1. 대상선정 //
-const mvbtn = dFn.qs('.cont-mvbtn');
+const mvbtn = dFn.qsa('.cont-mvbtn');
 const vpj = dFn.qs('.vpj');
 const cbtn = dFn.qs('.cbtn');
+
+const mvId = ["iMbN7jBu720","mI9oyFMUlfg","DSEfRVqjbFA","DpVAb7Bi5UQ"];
+// 아이프레임 박스
+const mvBox = dFn.qs('.mv-box');
 console.log('대상:',mvbtn,vpj,cbtn);
 
 // 2. 이벤트설정 및 함수구현
 // 2-1. 뷰프로젝트 버튼 클릭시
-dFn.addEvt(mvbtn,'click',()=>{
-  /* 영상보이기 */
-  vpj.classList.add('on');
-  /* 가림막보이기 */
-  document.body.classList.add('on');
-
+mvbtn.forEach((ele,idx)=>{
+  dFn.addEvt(ele,'click',()=>{
+    /* 영상보이기 */
+    vpj.classList.add('on');
+    /* 가림막보이기 */
+    document.body.classList.add('on');
   
-}); //////// click이벤트함수 ////////
+  
+    // 아이프레임 넣기
+    mvBox.innerHTML = `
+    <iframe src="https://www.youtube.com/embed/${mvId[idx]}?autoplay=1" frameborder="0" allow="autoplay"></iframe>
+    `;
+  
+    // alert(idx);
+    
+  }); //////// click이벤트함수 ////////
+
+})
 
 
 // 2-2. 닫기버튼 클릭시
@@ -110,7 +124,25 @@ dFn.addEvt(cbtn,'click',()=>{
   vpj.classList.remove('on');
   /* 가림막숨기기 */
   document.body.classList.remove('on');
+  mvBox.innerHTML = '';
 }); //////// click이벤트함수 ////////
 
+
+
+const newsArea = dFn.qs('#news');
+const tmEle = dFn.qsa('.trembling');
+const winWt = window.innerWidth;
+const winHt = window.innerHeight;
+
+console.log(newsArea,tmEle,winWt,winHt);
+
+dFn.addEvt(newsArea,'mousemove',(e)=>{
+  let xval = e.clientX/winWt;
+  let yval = e.clientY/winHt;
+  console.log(xval.toFixed(2)*100,yval.toFixed(2)*100);
+  tmEle.forEach(ele=>{
+    ele.style.transform = `translate(${xval*10}%,${yval*10}%)`;
+  })
+})
 
 
