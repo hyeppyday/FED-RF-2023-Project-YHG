@@ -8,9 +8,9 @@ import dFn from "./dom.js";
 // 부드러운 스크롤 호출
 startSS();
 
-// 0. 새로고침 시 맨 위로 이동
+// // 0. 새로고침 시 맨 위로 이동
 setTimeout(() => {
-    // 윈도우 스크롤 맨위로
+//     // 윈도우 스크롤 맨위로
     window.scrollTo(0, 0);
     // 부드러운 스크롤 위치값 반영
     setPos(0);
@@ -91,7 +91,7 @@ const mvbtn = dFn.qsa('.cont-mvbtn');
 const vpj = dFn.qs('.vpj');
 const cbtn = dFn.qs('.cbtn');
 
-const mvId = ["iMbN7jBu720","mI9oyFMUlfg","DSEfRVqjbFA","DpVAb7Bi5UQ"];
+const mvId = ["iMbN7jBu720","D9Bsg3I9aP8","Kl308wpl2K8"];
 // 아이프레임 박스
 const mvBox = dFn.qs('.mv-box');
 console.log('대상:',mvbtn,vpj,cbtn);
@@ -105,7 +105,7 @@ mvbtn.forEach((ele,idx)=>{
     /* 가림막보이기 */
     document.body.classList.add('on');
   
-  
+
     // 아이프레임 넣기
     mvBox.innerHTML = `
     <iframe src="https://www.youtube.com/embed/${mvId[idx]}?autoplay=1" frameborder="0" allow="autoplay"></iframe>
@@ -128,20 +128,22 @@ dFn.addEvt(cbtn,'click',()=>{
 }); //////// click이벤트함수 ////////
 
 
-
+// 뉴스 목록 이미지 커서 애니메이션 움직이기
 const newsArea = dFn.qs('#news');
 const tmEle = dFn.qsa('.trembling');
 const winWt = window.innerWidth;
 const winHt = window.innerHeight;
 
 console.log(newsArea,tmEle,winWt,winHt);
-
+// 마우스 움직임에 따라 윈도우 크기값에서 커서 움직임을 나눔
+// 나눈 비율에 맞춰 배수를 이용해 움직일 만큼의 크기 설정
+// toFixed는 소숫점 지워서 나타내주는 거
 dFn.addEvt(newsArea,'mousemove',(e)=>{
   let xval = e.clientX/winWt;
   let yval = e.clientY/winHt;
   console.log(xval.toFixed(2)*100,yval.toFixed(2)*100);
   tmEle.forEach(ele=>{
-    ele.style.transform = `translate(${xval*10}%,${yval*10}%)`;
+    ele.style.transform = `translate(${xval*50}%,${yval*50}%)`;
   })
 })
 
