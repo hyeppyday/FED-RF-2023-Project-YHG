@@ -50,7 +50,7 @@ function scrollFn() {
 // 윈도우 높이값
 const winH = window.innerHeight;
 // 패럴렉스 범위
-const setH1 = 200
+const setH1 = 280
 
 // 3-2. 패럴렉스 이동함수 /////////////////////////
 function moveEl(elPos, ele, setH) {
