@@ -5,7 +5,9 @@
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Jua&family=Kanit&family=Nanum+Gothic&family=Noto+Sans+Display&family=Titan+One&family=Varela+Round&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Jua&family=Kanit&family=Nanum+Gothic&family=Noto+Sans+Display&family=Titan+One&family=Ubuntu:wght@700&family=Varela+Round&display=swap');
+
 
 
 
@@ -15,6 +17,7 @@ font-family: 'Kanit', sans-serif;
 font-family: 'Nanum Gothic', sans-serif;
 font-family: 'Noto Sans Display', sans-serif;
 font-family: 'Titan One', cursive;
+font-family: 'Ubuntu', sans-serif;
 font-family: 'Varela Round', sans-serif;*/
 
 /* 공사중 표시 */
@@ -36,7 +39,7 @@ body.on::after {
 }
 
 #cont{
-    margin-top: 36%;
+    margin-top: 35%;
     position: relative;
     overflow: hidden;
 }
@@ -44,11 +47,10 @@ body.on::after {
 /* 메인 이미지 영역 */
 .main-bg {
     position: absolute;
-    top: 12%;
+    top: 24%;
     left: 0;
     object-fit: contain;
     object-position: bottom;
-    height: 100vh;
     transform:scale(2);
     opacity: 0;
     animation: first-ani 1.2s ease-in-out 0.2s forwards;
@@ -65,7 +67,7 @@ body.on::after {
 }
 /* 메인 이미지 글씨 영역 */
 .bg-top {
-    height: 253px;
+    height: 280px;
     position: relative;
     transform: translateY(-100%);
     background-color: #ffffff;
@@ -79,7 +81,7 @@ body.on::after {
     }
 }
 .slide-name{
-    height: 63px;
+    height: 92px;
     overflow: hidden;
     display: block;
     
@@ -87,9 +89,9 @@ body.on::after {
 .name-part{
     position: absolute;
     left: 50%;
-    transform: translate(-50%,-78%);
-    font-family: "Varela Round", sans-serif;
-    font-size: 4rem;
+    transform: translate(-50%,-81%);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 6rem;
     width: auto;
     text-align: center;
     z-index: 99;
