@@ -93,9 +93,9 @@ const cbtn = dFn.qs('.cbtn');
 console.log('대상:',mvbtn,vpj,cbtn);
 
 // 2. 이벤트설정 및 함수구현
-// 2-1. 맵버튼 클릭시
+// 2-1. 뷰프로젝트 버튼 클릭시
 dFn.addEvt(mvbtn,'click',()=>{
-  /* 구글맵보이기 */
+  /* 영상보이기 */
   vpj.classList.add('on');
   /* 가림막보이기 */
   document.body.classList.add('on');
@@ -103,7 +103,7 @@ dFn.addEvt(mvbtn,'click',()=>{
 
 // 2-2. 닫기버튼 클릭시
 dFn.addEvt(cbtn,'click',()=>{
-  /* 구글맵숨기기 */
+  /* 영상숨기기 */
   vpj.classList.remove('on');
   /* 가림막숨기기 */
   document.body.classList.remove('on');

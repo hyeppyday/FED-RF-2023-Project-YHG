@@ -37,7 +37,6 @@ body.on::after {
     z-index: 9999;
     /* 보여줄 요소는 이것보다 높게 */
 }
-
 #cont{
     margin-top: 35%;
     position: relative;
@@ -291,10 +290,11 @@ body.on::after {
 /* 뷰프로젝트 영상박스 */
 .vpj{
     position: fixed;
+    opacity: 0;
     top: -50%;
     /* 처음에 top값으로 윗쪽에 숨김! */
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     /* 정중앙이동 */
     width: 800px;
     height: 450px;
@@ -302,11 +302,14 @@ body.on::after {
 
     z-index: 99999;
     /* 트랜지션: 속시이지 */
-    transition: top .8s ease-in-out
+    transition: opacity 1.5s ease-in-out;
 }
 /* 구글맵에 클래스"on"적용시 등장하기 */
 .vpj.on{
     top: 50%;
+    opacity: 1;
+    
+    
 }
 /* 닫기버튼 */
 .cbtn{
