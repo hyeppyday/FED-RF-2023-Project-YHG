@@ -1,0 +1,139 @@
+[
+    {
+        "idx":'1',
+        "name":'광안대교정면뷰, 바다5초, 빔프로젝터, 감성숙소, 포토존,인스타,애견동반,야경맛집,드론쇼',
+        "category":'해변 바로 앞',
+        "score":'4.87',
+        "price":'110,000',
+        "scat":[]
+        
+    },
+    {
+        "idx":'2',
+        "name":'숨스테이 #대천해수욕장#오션뷰#루프탑바베큐#프라이빗숙소',
+        "category":'해변 바로 앞',
+        "score":'4.71',
+        "price":'214,000',
+        "scat":['바다','바베큐장']
+    },
+    {
+        "idx":'3',
+        "name":'',
+        "category":'해변 바로 앞',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'4',
+        "name":'',
+        "category":'해변 바로 앞',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'5',
+        "name":'',
+        "category":'해변 바로 앞',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'6',
+        "name":'',
+        "category":'해변 바로 앞',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'7',
+        "name":'',
+        "category":'해변 바로 앞',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'8',
+        "name":'',
+        "category":'해변 바로 앞',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'9',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'10',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+]
