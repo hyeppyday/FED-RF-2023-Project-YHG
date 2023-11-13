@@ -42,30 +42,110 @@
     },
     {
         "idx":'6',
-        "name":'',
+        "name":'E°SO 이소하우스 60평 독채',
         "category":'해변 바로 앞',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "score":'4.94',
+        "price":'550,000',
+        "scat":['바베큐장,발코니,욕조']
     },
     {
         "idx":'7',
-        "name":'',
-        "category":'해변 바로 앞',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "name":'생활서가 서울은평한옥',
+        "category":'한옥',
+        "score":'4.76',
+        "price":'340,000',
+        "scat":['복층,발코니']
     },
     {
         "idx":'8',
-        "name":'',
-        "category":'해변 바로 앞',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "name":'작은정원 독채한옥, Local Old Alley, 한양도성 낙산공원, 스페이스모다',
+        "category":'한옥',
+        "score":'4.99',
+        "price":'173,914',
+        "scat":['마당']
     },
     {
         "idx":'9',
+        "name":'스테이 호시, 감성 자쿠지와 핀란드식 사우나를 담다',
+        "category":'한옥',
+        "score":'5.0',
+        "price":'360,000',
+        "scat":['욕조']
+    },
+    {
+        "idx":'10',
+        "name":'이호소락',
+        "category":'한옥',
+        "score":'4.90',
+        "price":'330,000',
+        "scat":['욕조,마당']
+    },
+    {
+        "idx":'11',
+        "name":'아그니"LP"/추억의 레코드판/블링블링 단독 A하우스',
+        "category":'한옥',
+        "score":'4.91',
+        "price":'150,000',
+        "scat":['바베큐장,마당']
+    },
+    {
+        "idx":'12',
+        "name":'마당과 테라스가 있는 행궁동 한옥 서연재',
+        "category":'한옥',
+        "score":'4.75',
+        "price":'184,000',
+        "scat":['복층,발코니,마당']
+    },
+    {
+        "idx":'13',
+        "name":'사계절 온수풀 이용이 가능한 도심속 작은 독채휴양지 사르르온다',
+        "category":'멋진 수영장',
+        "score":'5.0',
+        "price":'404,000',
+        "scat":['바베큐장,마당,욕조']
+    },
+    {
+        "idx":'14',
+        "name":'Minoas Sea Villa Heated Pool',
+        "category":'멋진 수영장',
+        "score":'4.98',
+        "price":'619,650',
+        "scat":['복층,발코니']
+    },
+    {
+        "idx":'15',
+        "name":'Suite (30m2) dans manoir XVIIIe',
+        "category":'멋진 수영장',
+        "score":'5.0',
+        "price":'253,493',
+        "scat":['마당']
+    },
+    {
+        "idx":'16',
+        "name":`전주 한옥 독채 풀빌라 우붓 'UBUD'`,
+        "category":'멋진 수영장',
+        "score":'4.93',
+        "price":'390,000',
+        "scat":['한옥']
+    },
+    {
+        "idx":'17',
+        "name":'독채 신축 카스타나펜션2',
+        "category":'멋진 수영장',
+        "score":'5.0',
+        "price":'174,000',
+        "scat":['복층,바베큐장']
+    },
+    {
+        "idx":'18',
+        "name":'분황연가',
+        "category":'멋진 수영장',
+        "score":'4.93',
+        "price":'270,600',
+        "scat":['한옥,복층,바베큐장']
+    },
+    {
+        "idx":'19',
         "name":'',
         "category":'',
         "score":'',
@@ -73,7 +153,111 @@
         "scat":[]
     },
     {
-        "idx":'10',
+        "idx":'20',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'21',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'22',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'23',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'24',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'25',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'26',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'27',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'28',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'29',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'30',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'',
+        "name":'',
+        "category":'',
+        "score":'',
+        "price":'',
+        "scat":[]
+    },
+    {
+        "idx":'',
         "name":'',
         "category":'',
         "score":'',
