@@ -1,6 +1,7 @@
 import { Logo } from "../modules/Logo";
 import { Link } from "react-router-dom";
 import { menu } from "../data/gnb";
+import { List } from "../modules/List";
 
 import React from "react";
 import { faSearch, faCircleUser } from "@fortawesome/free-solid-svg-icons";
@@ -51,6 +52,7 @@ export function TopArea(props) {
             </li>
           </ul>
         </nav>
+        <List />
       </header>
     </>
   );

@@ -1,25 +1,22 @@
-import { catData } from "../data/catData";
+import {catData} from '../data/catData.js'
 
-export function List(props){
-
-    const selData =
-
-    // 리스트 만들기 함수
-    const makeList = (data) => {
-        // console.log(data);
-        return data.map((v, i) => (
-          <li key={i}>
-            {/* 숙소이미지 */}
-            <img src="" alt="하하" />
-            {/* 숙소정보 */}
-              <section className="listtit">
-                <h3>{v.name}</h3>
-                <h3>{v.score}</h3>
-                <h3>￦{v.price}</h3>
-            </section>
-          </li>
-        ));
-      };
-
+export function List(){
+  return(
+    <section className="cat-list">
+        {catData.map((v, i) => (
+          <div className="listbox" key={i}>
+            {/* 1. 이미지박스 */}
+            <div className="imbx">
+              <img src="" alt={v.txt} />
+            </div>
+            {/* 2. 설명박스 */}
+            <div className="titbx">
+              <h3>{v.name}</h3>
+              <h2>★{v.score}</h2>
+              <h2>{v.price}/박</h2>
+            </div>
+          </div>
+        ))}
+      </section>
+  )
 }
-

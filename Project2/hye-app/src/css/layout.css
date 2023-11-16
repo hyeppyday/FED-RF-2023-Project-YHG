@@ -16,6 +16,14 @@
 .cat-menu{
     display: flex;
     text-align: center;
+}
+.cat-list{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    justify-content: center
     
+}
+.listbox{
+    margin: 50px;
 }
 
