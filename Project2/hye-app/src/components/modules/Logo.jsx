@@ -1,28 +1,24 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-export const Logo = () => {
-    // 객체형 스타일 적용
-    const myStyle = {
-      top: {
-        width: "45px",
-        height: "45px",
-        marginRight: "30px"
-      },
-      bottom: {
-        height: "80px",
-      },
-    };
-  
+
+
+export const Logo = (props) => {
+
+  const goNav = useNavigate();
+
     // 자식컴포넌트 처리용함수
-    const nayaLogo = (txt) => {
+    const logoroot = (txt) => {
+      // 라우터 이동하기
+    goNav("/");
       console.log(txt);
-    }; /////////// nayaLogo //////////////
-  
-    const logoImg ='../../public/images/airbnb_logo.png'
+    }; /////////// logoroot //////////////
+
+  const logoImg ='./images/airbnb_logo.png'
     
     // 코드리턴
     return (
-      <h1 style={myStyle} onClick={() => nayaLogo("나,로고야!")}>
+      <h1 className="logo" onClick={() => logoroot("나,로고야!")}>
         <img
           src={logoImg}
           alt="Airbnb logo"

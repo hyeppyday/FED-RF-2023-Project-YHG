@@ -1,0 +1,21 @@
+/* 공통 레이아웃 CSS */
+
+/* 상단영역 */
+
+/* 로고 */
+.logo img{
+    width: 144px;
+    cursor: pointer;
+}
+
+/* GNB메뉴 */
+.gnb ul{
+    display: flex;
+}
+
+.cat-menu{
+    display: flex;
+    text-align: center;
+    
+}
+
