@@ -39,7 +39,7 @@ export const menu = [
         },
         {
             img:'./images/8.jpg',
-            txt:"키클라데스주택",
+            txt:"키클라데스 주택",
             link:"/키클라데스주택",
         },
     ];

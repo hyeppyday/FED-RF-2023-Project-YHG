@@ -19,7 +19,7 @@ export function TopArea(props) {
 
   return (
     <>
-      {/* 1. 상단영역 */}
+      {/* 상단영역 */}
       <header className="top-area">
         {/* 네비게이션 GNB파트 */}
         <nav className="gnb">

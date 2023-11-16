@@ -23,7 +23,21 @@
     justify-content: center
     
 }
+.cat-menu li img{
+    display: block;
+}
 .listbox{
     margin: 50px;
 }
+.titbx h2{
+    font-size: 20px;
+    overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+.titbx h3{
+    font-size: 17px;
+}
+
 

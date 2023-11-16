@@ -1,6 +1,12 @@
 import {catData} from '../data/catData.js'
 
-export function List(){
+
+
+export function List(props){
+
+  // 선택데이터 : 페이지 분류명으로 선택
+  const selData = catData[props.cat];
+  
   return(
     <section className="cat-list">
         {catData.map((v, i) => (
@@ -11,9 +17,9 @@ export function List(){
             </div>
             {/* 2. 설명박스 */}
             <div className="titbx">
-              <h3>{v.name}</h3>
-              <h2>★{v.score}</h2>
-              <h2>{v.price}/박</h2>
+              <h2>{v.name}</h2>
+              <h3>★{v.score}</h3>
+              <h3>{v.price}/박</h3>
             </div>
           </div>
         ))}
