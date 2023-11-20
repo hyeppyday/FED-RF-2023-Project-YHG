@@ -9,8 +9,11 @@
 }
 
 /* GNB메뉴 */
-.gnb ul{
+.gnb ul,.gnb ol{
     display: flex;
+}
+.gnb ul>li{
+    position: relative;
 }
 
 .cat-icon{
@@ -45,6 +48,35 @@
 }
 .titbx h3{
     font-size: 17px;
+}
+.gnb ol{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    display: none;
+    user-select: none;
+}
+.gnb ul>li.on ol{
+    display: flex;
+}
+.gnb ol li a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: bold;
+    color: #222;
+}
+.gnb ol li a:hover{
+    color: hotpink;
+}
+.gnb ol li{
+    width: 100px;
+}
+.gnb ol li img{
+    width: 30px;
 }
 
 

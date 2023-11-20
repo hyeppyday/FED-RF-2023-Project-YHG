@@ -1,7 +1,6 @@
 import { Logo } from "../modules/Logo";
 
-import { List } from "../modules/List";
-import { showCat } from "../modules/Cat";
+import { CatMenu } from "../modules/Cat";
 
 import React from "react";
 import { faSearch, faCircleUser } from "@fortawesome/free-solid-svg-icons";
@@ -10,6 +9,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import $ from 'jquery';
 
 export function TopArea() {
+
+  let mSts = 1;
+
+  const showSub = () => {
+    const catIcon = $('.cat-icon');
+    mSts? catIcon.addClass('on'):catIcon.removeClass('on');
+    mSts?mSts=0:mSts=1;
+  }
 
   return (
     <>
@@ -24,9 +31,12 @@ export function TopArea() {
             </li>
 
             {/* 메뉴 아이콘 : 클릭시 카테고리 등장 */}
-            <a className="cat-icon" style={{ marginLeft: "auto" }}>
-              
-            </a>
+            <li className="cat-icon" onClick={showSub} style={{marginLeft:'auto'}}>
+                <ol>
+                  <CatMenu />
+                </ol>
+
+            </li>
 
             {/* 3. 검색, 회원가입, 로그인 링크 */}
             <li>
@@ -45,7 +55,6 @@ export function TopArea() {
             </li>
           </ul>
         </nav>
-        <List />
       </header>
     </>
   );

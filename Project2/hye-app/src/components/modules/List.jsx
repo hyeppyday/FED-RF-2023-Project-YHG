@@ -2,16 +2,17 @@ import {catData} from '../data/catData.js'
 
 
 
-export function List(){
-
-  
+export function List(props){
+  // props.cat은 전달된 카테고리 정보(데이터 선별용)
+const selData = catData.filter(v=>{if(v.category==decodeURIComponent(props.cat))return true});
+  console.log(selData);
   return(
     <section className="cat-list">
-        {catData.map((v, i) => (
+        {selData.map((v, i) => (
           <div className="listbox" key={i}>
             {/* 1. 이미지박스 */}
             <div className="imbx">
-              <img src="" alt={v.txt} />
+              <img src={"./images/Category/"+v.category+"/"+(i+1)+"/1.jpg"} alt={v.txt} style={{height:'150px'}} />
             </div>
             {/* 2. 설명박스 */}
             <div className="titbx">

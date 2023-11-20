@@ -7,7 +7,7 @@ export const menu = [
         },
         {
             img:'./images/2.jpg',
-            txt:"멋진수영장",
+            txt:"멋진 수영장",
             link:"/멋진수영장",
             
         },

@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
 import { menu } from "../data/gnb";
+import { bnbCon } from "./bnbContext";
+import { useContext } from "react";
 
-export function catMenu(){
+export function CatMenu(){
+  const myCon = useContext(bnbCon);
+
+  console.log(menu);
     return(
-        
         menu.map((v, i) => (
-        <li className="cat-menu" key={i}>
-          <Link to={v.link}><img src={v.img}alt={v.txt}/>{v.txt}</Link>
+        <li className="cat-menu" key={i} onClick={()=>myCon.chgMenuCat(v.txt)}>
+          <img src={v.img} alt={v.txt}/><br/>{v.txt}
         </li>
     ))
         

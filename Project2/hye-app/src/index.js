@@ -7,6 +7,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { Layout } from "./components/layout/Layout";
+import { MainCont } from './components/pages/MainCont';
 
 
 
@@ -15,7 +16,7 @@ export default function App(){
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout/>}>
-        
+          <Route index element={<MainCont cat="해변 바로 앞" />}></Route>
         </Route>
     </Routes>
   </BrowserRouter>
