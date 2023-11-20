@@ -1,6 +1,8 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareFacebook, faSquareTwitter, faSquareInstagram } from "@fortawesome/free-solid-svg-icons";
+import {faSquareFacebook,faInstagram,faSquareTwitter } from '@fortawesome/free-brands-svg-icons'
+
+
 
 export function FooterArea(){
 
@@ -9,11 +11,11 @@ export function FooterArea(){
     return(
         <>
             {/* 하단영역 */}
-            <h2>© 2023 Airbnb, Inc.·개인정보 처리방침이용약관사이트맵한국의 변경된 환불 정책회사 세부정보</h2>
-            <a href="#"><FontAwesomeIcon icon="fa-brands fa-square-facebook"/></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"><img src="" alt="" /></a>
+            <h4>© 2023 Airbnb, Inc. · 개인정보 처리방침 · 이용약관 · 사이트맵 · 한국의 변경된 환불정책 · 회사 세부정보</h4>
+            <a href="#"><FontAwesomeIcon icon={faSquareFacebook} /></a>
+            <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+            <a href="#"><FontAwesomeIcon icon={faSquareTwitter} /></a>
+            <a href="#"><img src="../../public/imgages/naver" alt="" /></a>
             <a href="#"></a>
             
             <br/>

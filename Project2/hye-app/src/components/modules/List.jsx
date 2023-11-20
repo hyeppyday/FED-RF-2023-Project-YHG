@@ -2,10 +2,8 @@ import {catData} from '../data/catData.js'
 
 
 
-export function List(props){
+export function List(){
 
-  // 선택데이터 : 페이지 분류명으로 선택
-  const selData = catData[props.cat];
   
   return(
     <section className="cat-list">

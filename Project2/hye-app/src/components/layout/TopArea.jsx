@@ -1,21 +1,15 @@
 import { Logo } from "../modules/Logo";
-import { Link } from "react-router-dom";
-import { menu } from "../data/gnb";
+
 import { List } from "../modules/List";
+import { showCat } from "../modules/Cat";
 
 import React from "react";
 import { faSearch, faCircleUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export function TopArea(props) {
-  const showCat = () => {
-    console.log("나야나");
-    return menu.map((v, i) => (
-        <li key={i}>
-          <Link to={v.link}><img src={v.img}alt={v.txt}/>{v.txt}</Link>
-        </li>
-    ));
-  };
+import $ from 'jquery';
+
+export function TopArea() {
 
   return (
     <>
@@ -30,9 +24,8 @@ export function TopArea(props) {
             </li>
 
             {/* 메뉴 아이콘 : 클릭시 카테고리 등장 */}
-            <a className="cat-menu" style={{ marginLeft: "auto" }}>
-              <img src="./images/1.jpg" alt="" />
-              {showCat()}
+            <a className="cat-icon" style={{ marginLeft: "auto" }}>
+              
             </a>
 
             {/* 3. 검색, 회원가입, 로그인 링크 */}
