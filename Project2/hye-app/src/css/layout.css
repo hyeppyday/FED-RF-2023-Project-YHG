@@ -2,83 +2,102 @@
 
 /* 상단영역 */
 
+.top-area {
+  border-bottom: 1px solid #00000041;
+}
+
 /* 로고 */
-.logo img{
-    width: 144px;
-    cursor: pointer;
+
+.logo {
+  width: 144px;
+  cursor: pointer;
 }
 
 /* GNB메뉴 */
-.gnb ul,.gnb ol{
-    display: flex;
+.gnb ul,
+.gnb ol {
+  display: flex;
 }
-.gnb ul>li{
-    position: relative;
+.gnb ul > li:last-child {
+  margin-right: 30px;
 }
 
-.cat-icon{
-    display: flex;
-    text-align: center;
-
-    background-image: url(../../public/images/1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 100% 0;
-    width: 50px;
-    height: 50px;
+.gnb ul > li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: #666;
 }
-.cat-list{
-    display: grid;
-    grid-template-columns: repeat(4, 300px);
-    justify-content: center
+.gnb ul a:visited {
+  color: #666;
+}
+
+.cat-icon {
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+  background: url(../../public/images/aniimg.png) no-repeat;
+  width: 35px;
+  height: 27px;
+  margin-top: 20px;
+
+  /* 애니메이션: 이시이지반방마 */
+  animation: cat-any 10s steps(8) infinite;
+
+}
+
+@keyframes cat-any {
+    to{
+        background-position-y: -308px;
+    }
+
+}
+/* GNB 상세 카테고리 */
+
+.cat-menu li img {
+  display: block;
+}
+
+.gnb ol {
+  position: absolute;
+  top: 78px;
+  left: -63vw;
+  display: none;
+  user-select: none;
+  transform: translateY(-100%) ;
+  opacity: 0;
+  animation: gnb-any 1s forwards;
+}
+
+@keyframes gnb-any {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
     
 }
-.cat-menu li img{
-    display: block;
-}
-.listbox{
-    margin: 50px;
-}
-.titbx h2{
-    font-size: 20px;
-    overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  word-break: break-all;
-}
-.titbx h3{
-    font-size: 17px;
-}
-.gnb ol{
-    position: absolute;
-    top: 50px;
-    right: 0;
-    display: none;
-    user-select: none;
-}
-.gnb ul>li.on ol{
-    display: flex;
+
+.gnb ul > li.on ol {
+  display: flex;
 }
 .gnb ol li {
-    display: block;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    white-space: nowrap;
-    font-size: 12px;
-    font-weight: bold;
-    color: #222;
-    cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: bold;
+  color: #222;
+  cursor: pointer;
 }
-.gnb ol li:hover{
-    color: hotpink;
+.gnb ol li:hover {
+  color: hotpink;
 }
-.gnb ol li{
-    width: 100px;
+.gnb ol li {
+  width: 100px;
 }
-.gnb ol li img{
-    width: 30px;
+.gnb ol li img {
+  width: 30px;
 }
-
-
-

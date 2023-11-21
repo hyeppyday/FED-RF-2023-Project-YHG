@@ -9,7 +9,7 @@ export function CatMenu(){
   console.log(menu);
     return(
         menu.map((v, i) => (
-        <li className="cat-menu" key={i} onClick={()=>myCon.chgMenuCat(v.txt)}>
+        <li className="cat-menu" key={i} onClick={(e)=>{myCon.chgMenuCat(v.txt);e.stopPropagation()}}>
           <img src={v.img} alt={v.txt}/><br/>{v.txt}
         </li>
     ))

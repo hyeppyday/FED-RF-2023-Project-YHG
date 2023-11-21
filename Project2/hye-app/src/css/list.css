@@ -1,0 +1,26 @@
+/* 카테고리별 리스트 CSS */
+
+
+/* 전체 리스트 박스 */
+.cat-list{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    margin-top: 115px;
+    
+}
+
+/* 개별 리스트 박스 */
+.listbox{
+    margin: 50px;
+}
+.titbx h2{
+    font-size: 20px;
+    overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+.titbx h3{
+    font-size: 17px;
+}

@@ -7,6 +7,7 @@ import { faSearch, faCircleUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import $ from 'jquery';
+import { useEffect } from "react";
 
 export function TopArea() {
 
@@ -17,7 +18,9 @@ export function TopArea() {
     mSts? catIcon.addClass('on'):catIcon.removeClass('on');
     mSts?mSts=0:mSts=1;
   }
-
+// useEffect(()=>{
+//   $('.cat-icon ol').click(e=>e.stopPropagation())
+// })
   return (
     <>
       {/* 상단영역 */}
@@ -32,9 +35,10 @@ export function TopArea() {
 
             {/* 메뉴 아이콘 : 클릭시 카테고리 등장 */}
             <li className="cat-icon" onClick={showSub} style={{marginLeft:'auto'}}>
-                <ol>
-                  <CatMenu />
-                </ol>
+              
+                  <ol>
+                    <CatMenu />
+                  </ol>
 
             </li>
 
@@ -42,7 +46,7 @@ export function TopArea() {
             <li>
               {/* 검색기능링크 - 클릭시 검색창보이기 */}
               <a href="#">
-                <FontAwesomeIcon icon={faSearch} />
+                <FontAwesomeIcon icon={faSearch} size="2xl"/>
               </a>
             </li>
 
@@ -50,7 +54,7 @@ export function TopArea() {
             {/* 유저아이콘 클릭시 회원가입, 로그인 박스 오른쪽에서 나옴 */}
             <li>
               <a href="#">
-                <FontAwesomeIcon icon={faCircleUser} />
+                <FontAwesomeIcon icon={faCircleUser} size="2xl"/>
               </a>
             </li>
           </ul>
