@@ -12,7 +12,7 @@ const selData = catData.filter(v=>{if(v.category==decodeURIComponent(props.cat))
           <div className="listbox" key={i}>
             {/* 1. 이미지박스 */}
             <div className="imbx">
-              <img src={"./images/Category/"+v.category+"/"+(i+1)+"/1.jpg"} alt={v.txt} style={{height:'150px'}} />
+              <img src={"./images/Category/"+v.category+"/"+(i+1)+"/1.jpg"} alt={v.txt} />
             </div>
             {/* 2. 설명박스 */}
             <div className="titbx">

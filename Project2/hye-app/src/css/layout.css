@@ -6,6 +6,7 @@
   border-bottom: 1px solid #00000041;
 }
 
+
 /* 로고 */
 
 .logo {
@@ -62,7 +63,7 @@
 .gnb ol {
   position: absolute;
   top: 78px;
-  left: -63vw;
+  left: -62vw;
   display: none;
   user-select: none;
   transform: translateY(-100%) ;
@@ -100,4 +101,57 @@
 }
 .gnb ol li img {
   width: 30px;
+}
+
+/* 메인 영역 */
+.cont{
+  height: auto;
+  min-height: 100%;
+  margin-bottom: 250px;
+}
+
+/* 하단 영역 */
+.footer{
+  /* 하단에 영역고정 -> 스크롤바 생겨도 무조건 고정*/
+  position : relative;
+  height: auto;
+
+  display: block;
+  background-color: #08080826;
+}
+.info{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #9e9e9e;
+  padding: 25px 100px;
+  color: #222;
+
+}
+.sns{
+  margin-left: auto;
+  
+}
+.sns a{
+  margin: 10px; 
+}
+.sns a:visited{
+  color: #000;
+}
+.sns img{
+  width: 22px;
+}
+.footer p{
+  padding: 15px 20px;
+  font-size: 13px;
+}
+
+@media (max-width:700px) {
+  .info{
+      padding: 10px 5px;
+      display: block;
+  }
+  .info h4{
+    margin-bottom: 10px;
+  }
+
 }
