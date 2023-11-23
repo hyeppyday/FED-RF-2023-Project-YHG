@@ -1,4 +1,4 @@
-[
+export const subData =[
   {
     idx: "1",
     gps: "수영구, 부산, 한국",

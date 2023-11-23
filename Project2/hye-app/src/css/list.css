@@ -18,6 +18,7 @@
     /* margin: 50px; */
     width: 300px;
     height: 200px;
+    
 }
 .listbox img{
     border-radius: 10px;
@@ -40,6 +41,46 @@
 .titbx h3{
     font-size: 15px;
 }
+.imbx{
+   position: relative;
+}
+/* 이동버튼 */
+.cat-list .abtn{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff94;
+    position: absolute;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 10px;
+    color: #222;
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 1px 4px #0000008a;
+    display: none;
+}
+.listbox:hover .abtn{
+    display: block;
+}
+.lb{
+    top: 90px;
+    left: 10px;
+}
+.rb{
+    top: 90px;
+    right: 10px;
+}
+/* 블릿 */
+.indic{
+
+}
+.indic li{
+
+}
+.indic li.on{
+
+}
+
 @media (max-width:1000px) {
     .cat-list{
         grid-template-columns: repeat(2, 300px);
@@ -51,3 +92,4 @@
         
     }
 }
+

@@ -12,9 +12,14 @@
     font-family: 'Noto Sans KR';
     src: url(../static/fonts/NotoSansKR-Regular.woff) format("woff");
 }
+@font-face {
+    font-family: 'Dosis';
+    src: url(../static/fonts/Dosis-Bold.woff) format("woff");
+}
 
 /* 
 font-family: 'Nanum Myeongjo', serif;
 font-family: 'Noto Sans KR', sans-serif;
 font-family: 'Noto Serif KR', serif;
+font-family: 'Dosis', sans-serif;
 */
