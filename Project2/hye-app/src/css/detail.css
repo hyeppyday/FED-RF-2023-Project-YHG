@@ -1,0 +1,38 @@
+/* 숙소 상세페이지 CSS - detail.css */
+
+.main-img {
+  position: relative;
+  margin-top: 30px;
+  text-align: center;
+}
+.main-img img {
+  width: 90%;
+  height: 700px;
+  object-fit: cover;
+}
+.namebx {
+  position: absolute;
+  display: flex;
+
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #000000b0;
+  color: #fff;
+
+  padding: 30px;
+  width: 80%;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.namebx ul{
+    display: flex;
+    margin-left: auto;
+}
+.namebx h1{
+    font-size: 20px;
+}
+.namebx h3{
+    font-size: 15px;
+    
+}

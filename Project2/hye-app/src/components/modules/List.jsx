@@ -1,4 +1,4 @@
-import { data } from "jquery";
+
 import { catData } from "../data/catData.js";
 import { Link } from "react-router-dom";
 import $ from "jquery";
@@ -82,8 +82,13 @@ export function List(props) {
   return (
     <section className="cat-list">
       {selData.map((v, i) => (
-        <Link to="/detail" key={i}>
-          <div className="listbox" key={i}>
+        <Link to="/detail" key={i}
+        state={{
+          name: v.name,
+          score: v.score,
+          idx: v.idx,
+        }}>
+          <div className="listbox">
             {/* 1. 이미지박스 */}
             <div className="imbx">
               <div className="imslide">
