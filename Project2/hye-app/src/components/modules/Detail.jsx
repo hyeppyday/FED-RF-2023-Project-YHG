@@ -15,7 +15,6 @@ export function Detail() {
   const name = loc.state.name;
   const score = loc.state.score;
 
-  console.log(selData)
 
   return (
     <>
@@ -30,21 +29,18 @@ export function Detail() {
           <ul>
               <h3>★{score}</h3>
               {/* 숙소위치 : subData - gps*/}
-              {selData.map((v,i)=>
-                <h3>{v.gps}</h3>
-              )
-                }
+              <h3>{selData[0].gps}</h3>
           </ul>
         </div>
       </div>
       {/* 2. 숙소 정보 파트 */}
       <div className="deinfo">
         {/* 숙소구성 : subData - room */}
-        <h2></h2>
+        <h2>{selData[0].room}</h2>
         {/* 세로 구분선 */}
         <div className="line"></div>
         {/* 숙소 상세정보 : subData - detail */}
-        <p></p>
+        <p>{selData[0].detail}</p>
       </div>
       {/* 3. 숙소 시설 파트 */}
       <div className="amenity-box">

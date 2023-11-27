@@ -13,6 +13,7 @@
 .namebx {
   position: absolute;
   display: flex;
+  align-items: center;
 
   font-family: 'Noto Sans KR', sans-serif;
   background-color: #000000b0;
@@ -26,13 +27,18 @@
 }
 
 .namebx ul{
-    display: flex;
     margin-left: auto;
+   
 }
 .namebx h1{
     font-size: 20px;
 }
 .namebx h3{
     font-size: 15px;
+    margin-bottom:5px;
     
+}
+
+.deinfo{
+  margin-top: 100px;
 }
