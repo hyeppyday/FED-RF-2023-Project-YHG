@@ -9,19 +9,25 @@ import { data } from "jquery";
 export function Detail() {
   const loc = useLocation();
 
-  // 선택 데이터
-  const selData = subData;
-
+  
+  const idx = loc.state.idx;
   const name = loc.state.name;
   const score = loc.state.score;
+  const cat = loc.state.cat;
 
+  let seq = loc.state.seq;
+
+  // 선택 데이터
+  const selData = subData[idx-1];
+
+  // console.log("./images/Category/"+cat+"/"+idx+"/1.jpg");
 
   return (
     <>
       {/* 1. 메인사진 파트 */}
       <div className="main-img">
         {/* 메인이미지 : 첫번째 이미지*/}
-        <img src="./images/Category/해변 바로 앞/1/1.jpg" />
+        <img src={"./images/Category/"+cat+"/"+(seq+1)+"/1.jpg"} />
         <div className="namebx">
           {/* 숙소이름 : catData - name*/}
           <h1>{name}</h1>
@@ -29,18 +35,18 @@ export function Detail() {
           <ul>
               <h3>★{score}</h3>
               {/* 숙소위치 : subData - gps*/}
-              <h3>{selData[0].gps}</h3>
+              <h3>{selData.gps}</h3>
           </ul>
         </div>
       </div>
       {/* 2. 숙소 정보 파트 */}
       <div className="deinfo">
         {/* 숙소구성 : subData - room */}
-        <h2>{selData[0].room}</h2>
+        <h2>{selData.room}</h2>
         {/* 세로 구분선 */}
         <div className="line"></div>
         {/* 숙소 상세정보 : subData - detail */}
-        <p>{selData[0].detail}</p>
+        <p>{selData.detail}</p>
       </div>
       {/* 3. 숙소 시설 파트 */}
       <div className="amenity-box">

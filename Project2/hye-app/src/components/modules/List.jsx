@@ -87,6 +87,8 @@ export function List(props) {
           name: v.name,
           score: v.score,
           idx: v.idx,
+          cat: v.category,
+          seq: i,
         }}>
           <div className="listbox">
             {/* 1. 이미지박스 */}
