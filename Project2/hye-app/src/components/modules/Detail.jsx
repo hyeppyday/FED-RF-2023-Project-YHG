@@ -17,10 +17,24 @@ export function Detail() {
 
   let seq = loc.state.seq;
 
+  
   // 선택 데이터
   const selData = subData[idx-1];
-
+  
   // console.log("./images/Category/"+cat+"/"+idx+"/1.jpg");
+
+
+  const makeList = () => {
+    let temp = [];
+    for (let x = 0; x < 16; x++) {
+      temp[x] = (
+          <img
+            src={"./images/Category/" + cat + "/" + seq+1 + "/" + (x + 1) + ".jpg"}
+          />
+          );
+        } /////////// for /////////////
+      }
+      console.log(makeList())
 
   return (
     <>
@@ -46,25 +60,41 @@ export function Detail() {
         {/* 세로 구분선 */}
         <div className="line"></div>
         {/* 숙소 상세정보 : subData - detail */}
-        <p>{selData.detail}</p>
+        {/* 데이터에 입력된 엔터키 br로 변경해서 화면에 그대로 출력하는법
+        엔터는 \n로 입력되기때문에 \n마다 잘라주고 리턴값에 <br/>로 map 돌려주기 */}
+        <p>{selData.detail.split("\n").map((line)=>{
+          return(
+            <>
+            {line}
+            <br/>
+            </>
+          )
+        })}</p>
       </div>
       {/* 3. 숙소 시설 파트 */}
       <div className="amenity-box">
         {/* 백그라운드 이미지 : 두번째 이미지 */}
-        <img src="" alt="" />
+        <img src={"./images/Category/"+cat+"/"+(seq+1)+"/2.jpg"} />
         {/* 설명 박스 */}
         <div className="black-box">
           <h2>Amenities</h2>
           {/* 숙소시설 : subData - ameni */}
-          <h3></h3>
+          <h3>{selData.ameni.split("^").map((line)=>{
+            return(<>
+            {line}
+            <br/>
+            </>)
+          })}</h3>
         </div>
       </div>
       {/* 4. 숙소 사진 파트 : 15장 그리드*/}
-      <div className="gridbx"></div>
+      <div className="gridbx">
+        {makeList()}
+      </div>
       {/* 5. 숙소 지도 파트 */}
       <div className="map">
         {/* 지도주소 */}
-        <iframe src="">
+        <iframe src={selData.map}>
           {/* 지도정보 */}
           <div className="map-info">
             {/* 숙소이름 */}
