@@ -18,6 +18,7 @@
     /* margin: 50px; */
     width: 300px;
     height: 200px;
+    user-select: none;
     
 }
 .listbox img{

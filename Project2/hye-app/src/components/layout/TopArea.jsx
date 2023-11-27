@@ -11,12 +11,8 @@ import { useEffect } from "react";
 
 export function TopArea() {
 
-  let mSts = 1;
-
   const showSub = () => {
-    const catIcon = $('.cat-icon');
-    mSts? catIcon.addClass('on'):catIcon.removeClass('on');
-    mSts?mSts=0:mSts=1;
+    $('.cat-icon').toggleClass('on');
   }
 // useEffect(()=>{
 //   $('.cat-icon ol').click(e=>e.stopPropagation())

@@ -1,0 +1,57 @@
+
+/* 스와이퍼 디자인설정 */
+.swiper {
+  width: 300px;
+  height: 200px;
+  user-select: none;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  content: '＜';
+  border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff94;
+    position: absolute;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 10px;
+    color: #222;
+    font-weight: bold;
+    border: none;
+    box-shadow: 1px 1px 4px #0000008a;
+    line-height: 30px;
+  
+}
+.swiper-button-next,.swiper-button-prev{
+  text-align: center;
+}
+.swiper-button-next::after{
+  content: '＞';
+}
+
+.swiper-button-prev.swiper-button-disabled, 
+.swiper-button-next.swiper-button-disabled{
+  display: none;
+}

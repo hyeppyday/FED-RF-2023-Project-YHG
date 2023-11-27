@@ -2,6 +2,7 @@
 import { catData } from "../data/catData.js";
 import { Link } from "react-router-dom";
 import $ from "jquery";
+import { SwiperApp } from "../plugin/SwiperApp.jsx";
 
 export function List(props) {
   // props.cat은 전달된 카테고리 정보(데이터 선별용)
@@ -94,20 +95,15 @@ export function List(props) {
             {/* 1. 이미지박스 */}
             <div className="imbx">
               <div className="imslide">
-                <img
-                  src={
-                    "./images/Category/" + v.category + "/" + (i + 1) + "/1.jpg"
-                  }
-                  alt={v.txt}
-                />
+                <SwiperApp cat={v.category} seq={i+1} />
               </div>
               {/* 양쪽이동버튼 */}
-              <button className="abtn lb" onClick={goSlide}>
+              {/* <button className="abtn lb" onClick={goSlide}>
                 ＜
               </button>
               <button className="abtn rb" onClick={goSlide}>
                 ＞
-              </button>
+              </button> */}
               {/* 블릿 인디케이터 - 선택데이터의 개수만큼 만들기*/}
               <ol className="indic">
                 <li className={i == 0 ? "on" : ""}></li>

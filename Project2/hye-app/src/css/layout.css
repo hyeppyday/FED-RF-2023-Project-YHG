@@ -48,6 +48,22 @@
 
 }
 
+
+.gnb ul{
+  position: relative;
+}
+.gnb ul::after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 150px;
+  right: 200px;
+  height: 100%;
+  z-index: 999;
+  /* background-color: red; */
+}
+
 @keyframes cat-any {
     to{
         background-position-y: -308px;
@@ -60,15 +76,21 @@
   display: block;
 }
 
-.gnb ol {
+.gnb ul>li ol {
   position: absolute;
-  top: 78px;
+  top: 0px;
   left: -62vw;
-  display: none;
   user-select: none;
-  transform: translateY(-100%) ;
   opacity: 0;
-  animation: gnb-any 1s forwards;
+  height: 0;
+  transition: 1s;
+
+}
+
+.gnb ul>li.on ol{
+  opacity: 1;
+  top: 78px;
+  height: auto;
 }
 
 @keyframes gnb-any {
