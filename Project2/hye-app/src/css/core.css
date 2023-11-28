@@ -16,10 +16,15 @@
     font-family: 'Dosis';
     src: url(../static/fonts/Dosis-Bold.woff) format("woff");
 }
+@font-face {
+    font-family: 'Gowun Dodum';
+    src: url(../static/fonts/GowunDodum-Regular.woff) format("woff");
+}
 
 /* 
 font-family: 'Nanum Myeongjo', serif;
 font-family: 'Noto Sans KR', sans-serif;
 font-family: 'Noto Serif KR', serif;
 font-family: 'Dosis', sans-serif;
+font-family: 'Gowun Dodum', sans-serif;
 */

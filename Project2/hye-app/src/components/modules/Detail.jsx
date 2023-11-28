@@ -24,15 +24,17 @@ export function Detail() {
   // console.log("./images/Category/"+cat+"/"+idx+"/1.jpg");
 
 
+  // 사진 리스트 만드는 함수
   const makeList = () => {
     let temp = [];
-    for (let x = 0; x < 16; x++) {
+    for (let x = 0; x < 15; x++) {
       temp[x] = (
           <img
-            src={"./images/Category/" + cat + "/" + seq+1 + "/" + (x + 1) + ".jpg"}
+            src={"./images/Category/" + cat + "/" + Number(seq+1) + "/" + (x + 1) + ".jpg"}
           />
           );
         } /////////// for /////////////
+        return temp;
       }
       console.log(makeList())
 
@@ -79,12 +81,12 @@ export function Detail() {
         <div className="black-box">
           <h2>Amenities</h2>
           {/* 숙소시설 : subData - ameni */}
-          <h3>{selData.ameni.split("^").map((line)=>{
+          <p>{selData.ameni.split("\n").map((line)=>{
             return(<>
             {line}
             <br/>
             </>)
-          })}</h3>
+          })}</p>
         </div>
       </div>
       {/* 4. 숙소 사진 파트 : 15장 그리드*/}
@@ -94,15 +96,14 @@ export function Detail() {
       {/* 5. 숙소 지도 파트 */}
       <div className="map">
         {/* 지도주소 */}
-        <iframe src={selData.map}>
+        <iframe src={selData.map}></iframe>
           {/* 지도정보 */}
           <div className="map-info">
             {/* 숙소이름 */}
-            <h3></h3>
+            <h3>{name}</h3>
             {/* 숙소위치 */}
-            <h3></h3>
+            <h3>{selData.gps}</h3>
           </div>
-        </iframe>
       </div>
     </>
   );
