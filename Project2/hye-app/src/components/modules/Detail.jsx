@@ -4,7 +4,6 @@ import { subData } from "../data/subData";
 import { useLocation } from "react-router-dom";
 
 import '../../css/detail.css'
-import { data } from "jquery";
 
 export function Detail() {
   const loc = useLocation();
@@ -29,10 +28,13 @@ export function Detail() {
     let temp = [];
     for (let x = 0; x < 15; x++) {
       temp[x] = (
-          <img
+          <div className="moreimg">
+            <img
             src={"./images/Category/" + cat + "/" + Number(seq+1) + "/" + (x + 1) + ".jpg"}
           />
+          </div>
           );
+          
         } /////////// for /////////////
         return temp;
       }

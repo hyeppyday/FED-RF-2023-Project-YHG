@@ -17,7 +17,7 @@ export function Layout(){
     return(
     <bnbCon.Provider value={{menuCat, chgMenuCat}}>
         <TopArea/>
-        <MainArea />
+        <MainArea value ={chgMenuCat}/>
         <FooterArea/>
     </bnbCon.Provider>
     )

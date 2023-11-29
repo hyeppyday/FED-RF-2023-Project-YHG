@@ -7,6 +7,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { Layout } from "./components/layout/Layout";
+import { Main } from './components/pages/Main';
 import { MainCont } from './components/pages/MainCont';
 import { Detail } from './components/modules/Detail';
 
@@ -18,7 +19,8 @@ export default function App(){
       <Routes>
         <Route path="/" element={<Layout/>}>
           <Route index element={<MainCont cat="해변 바로 앞" />}></Route>
-          <Route path='/detail' element={<Detail/>}></Route>
+          <Route path='main' element={<Main/>}></Route>
+          <Route path='detail' element={<Detail/>}></Route>
 
         </Route>
     </Routes>

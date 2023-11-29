@@ -31,11 +31,11 @@ export function TopArea() {
 
             {/* 메뉴 아이콘 : 클릭시 카테고리 등장 */}
             <li className="cat-icon" onClick={showSub} style={{marginLeft:'auto'}}>
-              
+              <div className="mognb">
                   <ol>
                     <CatMenu />
                   </ol>
-
+              </div>
             </li>
 
             {/* 3. 검색, 회원가입, 로그인 링크 */}

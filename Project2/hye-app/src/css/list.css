@@ -20,6 +20,7 @@
     height: 200px;
     user-select: none;
     
+    
 }
 .listbox img{
     border-radius: 10px;
@@ -44,6 +45,10 @@
 }
 .imbx{
    position: relative;
+}
+.imslide{
+    border-radius: 10px;
+    overflow: hidden;
 }
 /* 이동버튼 */
 .cat-list .abtn{
