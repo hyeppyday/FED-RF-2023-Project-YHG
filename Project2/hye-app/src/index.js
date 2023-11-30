@@ -5,6 +5,9 @@ import './css/index.css';
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import  { initLightboxJS }  from  'lightbox.js-react' 
+import  'lightbox.js-react/dist/index.css'
+
 
 import { Layout } from "./components/layout/Layout";
 import { Main } from './components/pages/Main';
