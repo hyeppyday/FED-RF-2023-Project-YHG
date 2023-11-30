@@ -1,10 +1,13 @@
 import React from "react";
 import { useContext } from "react";
 import { bnbCon } from "./bnbContext";
+import { useNavigate } from "react-router-dom"
+
 
 
 
 export const Logo = () => {
+  const goNav = useNavigate();
 
   const myCon = useContext(bnbCon);
 
@@ -14,9 +17,7 @@ export const Logo = () => {
     
     // 코드리턴
     return (
-      <h1 onClick={() => 
-        // 컨텍스트 API 함수 호출!
-        myCon.chgMenuCat('main',{})}>
+      <h1 onClick={() => goNav('/')}>
         
           <img
           className="logo"

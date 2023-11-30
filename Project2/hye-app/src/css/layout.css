@@ -79,7 +79,7 @@
   transform: translate(-50%);
   user-select: none;
   opacity: 0;
-  transition: 1s;
+  /* transition: 1s; */
  
 }
 

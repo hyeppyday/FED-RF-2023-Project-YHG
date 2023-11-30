@@ -83,7 +83,7 @@ export function List(props) {
   return (
     <section className="cat-list">
       {selData.map((v, i) => (
-        <Link to="detail" key={i}
+        <Link to="/detail" key={i}
         state={{
           name: v.name,
           score: v.score,

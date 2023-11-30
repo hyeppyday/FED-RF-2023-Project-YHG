@@ -18,9 +18,9 @@ export default function App(){
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout/>}>
-          <Route index element={<MainCont cat="해변 바로 앞" />}></Route>
-          <Route path='main' element={<Main/>}></Route>
-          <Route path='detail' element={<Detail/>}></Route>
+          <Route index element={<Main />}></Route>
+          <Route path='/list' element={<MainCont cat="해변 바로 앞" />}></Route>
+          <Route path='/detail' element={<Detail/>}></Route>
 
         </Route>
     </Routes>

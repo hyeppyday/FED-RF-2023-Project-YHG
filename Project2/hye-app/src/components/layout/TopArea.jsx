@@ -12,7 +12,17 @@ import { useEffect } from "react";
 export function TopArea() {
 
   const showSub = () => {
-    $('.cat-icon').toggleClass('on');
+
+    const tg1 = $('.cat-icon');
+    const tg2= $('.cat-icon ol');
+    console.log(3333333);
+    tg2.css({transition:"1s"});
+    setTimeout(()=>tg1.toggleClass('on'),0);
+
+    setTimeout(()=>{
+      tg2.css({transition:'none'})
+    },1000)
+
   }
 // useEffect(()=>{
 //   $('.cat-icon ol').click(e=>e.stopPropagation())
