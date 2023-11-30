@@ -47,3 +47,10 @@
 .cat-ani h3{
     margin-right: 10px;
 }
+.slide{
+    overflow: hidden;
+    height: 27px;
+}
+.value{
+    transform: translateY(-30px);
+}
