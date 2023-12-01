@@ -44,6 +44,9 @@
   /* 애니메이션: 이시이지반방마 */
   animation: cat-any 10s steps(8) infinite;
 }
+.cat-icon:hover{
+  animation-play-state: paused;
+}
 
 .gnb ul {
   position: relative;
@@ -119,6 +122,7 @@
 .gnb ol li img {
   width: 30px;
 }
+
 
 /* 메인 영역 */
 .cont {

@@ -48,9 +48,7 @@
     margin-right: 10px;
 }
 .slide{
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 27px;
-}
-.value{
-    transform: translateY(-30px);
+    
 }

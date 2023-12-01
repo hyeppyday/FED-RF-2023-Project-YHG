@@ -1,0 +1,19 @@
+
+
+/* 스와이퍼 디자인설정 */
+#myswiper2{
+    width: auto;
+    height: 27px;
+    user-select: none;
+    margin: 0;
+  }
+  #swiperslide2{
+    text-align: start;
+    margin: 0;
+
+  }
+#myswiper2 .swiper-slide{
+  justify-content: left;
+}
+
+

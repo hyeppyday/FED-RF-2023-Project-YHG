@@ -1,10 +1,13 @@
 // 메인페이지 비디오 컴포넌트
 
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import $ from 'jquery'
+import { SwiperTxt } from '../plugin/SwiperTxt';
+
 
 export function Video() {
-  return (
+  
+
+return (
     <>
       <div id="top-area">
         <h1>
@@ -24,14 +27,7 @@ export function Video() {
             <h3>어떤 숙소를 찾으시나요?</h3>
             <h3>➡</h3>
             <h3 className="slide">
-                <div className="value">해변 바로 앞</div>
-                <div className="value">멋진 수영장</div>
-                <div className="value">한옥</div>
-                <div className="value">료칸</div>
-                <div className="value">통나무집</div>
-                <div className="value">캠핑장</div>
-                <div className="value">섬</div>
-                <div className="value">키클라데스 주택</div>
+                <SwiperTxt/>
             </h3>
           </div>
         </div>
