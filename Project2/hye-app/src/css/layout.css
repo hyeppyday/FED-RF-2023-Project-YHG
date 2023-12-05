@@ -4,6 +4,11 @@
 
 .top-area {
   border-bottom: 1px solid #00000041;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9999999;
 }
 
 /* 로고 */
@@ -44,7 +49,7 @@
   /* 애니메이션: 이시이지반방마 */
   animation: cat-any 10s steps(8) infinite;
 }
-.cat-icon:hover{
+.cat-icon:hover {
   animation-play-state: paused;
 }
 
@@ -60,6 +65,7 @@
   right: 200px;
   height: 100%;
   z-index: 999;
+  background-color: #fff;
 
   /* background-color: red; */
 }
@@ -77,27 +83,25 @@
 
 .gnb ul > li ol {
   position: absolute;
+  padding: 22px;
+  background-color: #ffffff;
   top: 0px;
   left: 50%;
   transform: translate(-50%);
   user-select: none;
   opacity: 0;
+  
+  justify-content: center;
   /* transition: 1s; */
- 
 }
 
 .gnb ul > li.on ol {
   opacity: 1;
-  top: 100px;
+  top: 76px;
+  width: 100%;
   /* height: auto; */
 }
 
-@keyframes gnb-any {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 .gnb ul > li.on ol {
   display: flex;
@@ -122,7 +126,6 @@
 .gnb ol li img {
   width: 30px;
 }
-
 
 /* 메인 영역 */
 .cont {
@@ -165,46 +168,42 @@
 }
 
 @media (max-width: 1200px) {
- .gnb ul>li ol{
-  position: absolute;
-  display: block;
-  opacity: 1;
-  right: 0;
-  left: 100%;
-  transform: translate(0);
-  background-color: #ffffff;
-  width: auto;
-  border-left: 1px solid #0000006b;
- }
- .gnb ul > li.on ol{
-  top: 0;
-  left: 0;
-  display: block;
- }
- .mognb{
-  position: absolute;
-  top: 76px;
-  width: 300px;
-  right: 0;
-  height: 0;
-  z-index: 999;
-  background-color: #000000;
-  
- }
- .mognb ol li{
-  display: flex;
-
+  .gnb ul > li ol {
+    position: absolute;
+    display: block;
+    opacity: 1;
+    right: 0;
+    left: 100%;
+    transform: translate(0);
+    background-color: #ffffff;
+    width: auto;
+    border-left: 1px solid #0000006b;
+  }
+  .gnb ul > li.on ol {
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  .mognb {
+    position: absolute;
+    top: 76px;
+    width: 300px;
+    right: 0;
+    height: 0;
+    z-index: 999;
+    background-color: #000000;
+  }
+  .mognb ol li {
+    display: flex;
 
     padding: 32px;
     border-bottom: 1px solid #0000006b;
     width: 100%;
- }
- .mognb ol li img{
-  padding-right: 30px;
- }
-
+  }
+  .mognb ol li img {
+    padding-right: 30px;
+  }
 }
-
 
 @media (max-width: 700px) {
   .info {

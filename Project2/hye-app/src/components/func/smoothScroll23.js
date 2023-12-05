@@ -4,9 +4,9 @@
 // arranged by Tom Brace Parker
 
 // startSS()함수를 호출하여 사용
-function startSS() {
+export function startSS() {
     // 전체 스크롤 대상일때 document를 보냄
-    new SmoothScroll(document, 60, 12)
+    new SmoothScroll(document, 100, 12)
     // 특정박스일 경우 document.querySelector(선택요소)를 씀!
     // new SmoothScroll(document.querySelector('.wrap'), 60, 12)
 }
@@ -92,5 +92,3 @@ function SmoothScroll(target, speed, smooth) {
         );
     }()
 }
-
-export {startSS}

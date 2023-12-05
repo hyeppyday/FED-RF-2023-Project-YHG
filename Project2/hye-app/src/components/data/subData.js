@@ -524,7 +524,334 @@ export const subData =[
     map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d25874.5130997965!2d129.2319!3d35.8413!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1699866105026!5m2!1sko!2skr",
   },
   {
-    idx: "",
+    idx: "19",
+    gps: "飛騨市古川町殿町, 岐阜県, 일본",
+    room: "최대 인원 7명 침실 3개 침대 3개 욕실 2개",
+    detail: `IORI SETOGAWA is a renovated traditional townhouse located in the center of "Setogawa river and Shirakabe Dozo Street", a famous street for its beauty in Hida Furukawa.
+
+    You can enjoy a special time spent in an extraordinary space, gathering with family or friends while watching the flickering flames from the wood stove.
+    
+    The bathroom is equipped with a private sauna, aroma oil, Hida cypress bathtub, and open-air bath space, making you to enjoy an extraordinary experience of relaxation.
+    숙소
+    【Our Concept】
+    The concept of IORI SETOGAWA is to "Wellness experience in a luxurious old townhouse". The Setogawa River, which has been loved by the local people for many years, and the carp swimming leisurely are just a step away from the accommodation. You can spend a luxurious time here in Hida Furukawa, surrounded by the slow flow of time and the sound of the Setogawa River, to reset your mind and body in an essential space and feel a sense of space.
+    We hope that your stay at IORI STAY will be a journey that leads you to a fulfilling experience.`,
+    ameni: `강 전망
+    주방
+    무선 인터넷
+    전용 온수 욕조 - 24시간 이용 가능
+    전용 사우나
+    TV
+    세탁기 – 건물 내
+    건조기
+    숙소 내 보안 카메라`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d25745.450267928638!2d137.18829!3d36.23509!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701761795671!5m2!1sko!2skr",
+  },
+  {
+    idx: "20",
+    gps: "Hida-shi, Gifu-ken, 일본",
+    room: "최대 인원 8명 침실 3개 욕실 1개",
+    detail: `This Sukiya-zukuri* house built by combining the superb local craftsmanship and various kind of national timbers.
+
+    Sukiya-zukuri* is one type of Japanese residential architectural style. Suki means refined, well cultivated taste and delight in elegant pursuits and refers to enjoyment of the exquisitely performed tea ceremony.
+    
+    Dating back to Nara Period (700AD), the local woodworkers and carpenters developed their outstanding technique in the environment with abundant forest resources, and they served their craftsmanship in the ancient capitals, Kyoto and Nara. People called them “Hida no Takumi (Hida’s Master Builders)” with respect.
+    
+    Now the carpentry spirits and culture are survived yet here. Suehiro house is special and experimental one built by "Hida no Takumi" who have respect for "Suki". The wooden house built about 40 years ago might not be an historical folk house. However, the structure built by sheer persistence of "Hida no Takumi" is worth seeing.`,
+    ameni: `정원 전망
+    주방
+    초고속 와이파이 – 95Mbps
+    업무 전용 공간
+    건물 내 무료 주차
+    온수 욕조
+    세탁기 무료 사용 – 숙소 내
+    건조기 무료 사용 – 숙소 내
+    숙소 내 보안 카메라`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d25745.094627926035!2d137.184!3d36.23617!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701762106607!5m2!1sko!2skr",
+  },
+  {
+    idx: "21",
+    gps: "京都市上京区, 京都府, 일본",
+    room: "최대 인원 3명 침실 1개 침대 4개 욕실 1개",
+    detail: `Just 5 minutes by walk from subway Imadegawa station. You can stay like you live in Kyoto. We have wooden bath with small garden view. There are wooden deck besides living space, you will have relaxing time at the wooden deck with Japanese traditional style garden "Karesansui "garden view.
+    This house is barrier free. There are distance between Tatami room and wood floor but we can prepare bed at wood floor so I think it is no problem. Please feel free to contact us if you have any questions.
+    숙소
+    There are small kitchen and kitchen wear is prepared.
+    The house is built by traditional Japanese style but it is modern. There are floor heating and air conditioning.
+    Free WiFi.
+    
+    We have 2 houses,the house is next door, 8 people can stay at onetime. If you would like to, please make reservation from A&B.`,
+    ameni: `정원 전망
+    주방
+    초고속 와이파이 – 210Mbps
+    업무 전용 공간
+    전용 온수 욕조
+    HDTV
+    세탁기 무료 사용 – 숙소 내
+    건조기 무료 사용 – 숙소 내
+    에어컨 - 분리형 무배관 시스템`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d26136.460447626858!2d135.75418!3d35.03029000000001!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701762308747!5m2!1sko!2skr",
+  },
+  {
+    idx: "22",
+    gps: "Kyōto-shi, Kyōto-fu, 일본",
+    room: "최대 인원 6명 침실 3개 침대 4개 욕실 2개",
+    detail: `Built at the beginning of the Meiji era, around 1875, our house has managed to resist the passage of time but needed to be extensively remodeled to improve its comfort and safety. A team of award-winning hotel architects gutted then reinforced the structure and corrected the tilts and shifts. The roof also had to be made lighter, insulation material and anti-seismic features were included. When the building was finally deemed sound again, all the necessary high-level amenities a modern and luxurious lifestyle demands were added. Our interior designer added the finishing touches.
+
+    The result is a harmonious combination of traditional Japanese Sukiya architecture, subtle modern elegance and complete comfort at all seasons of the year.
+    
+    Our house operates as a fully licensed hotel business and has passed the rigorous safety tests of the city of Kyoto fire department. We not only abide by the city regulations but are also authorized by our community council to host our guests.`,
+    ameni: `도시 스카이라인 전망
+    정원 전망
+    주방
+    무선 인터넷
+    전용 온수 욕조
+    세탁기 무료 사용 – 숙소 내
+    건조기 무료 사용 – 숙소 내
+    중앙 냉방시설
+    전용 파티오 또는 발코니`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d26147.740218549865!2d135.756!3d34.995!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701762604661!5m2!1sko!2skr",
+  },
+  {
+    idx: "23",
+    gps: "Minami Ward, Kyoto, Kyoto, 일본",
+    room: "최대 인원 4명 침실 1개 욕실 1개",
+    detail: `☆　There is floor-heating, and the windows are designed with great care to provide shading, heat retention, light transmission, and ventilation, making it very comfortable even in the cold Kyoto.
+    ☆　The Japanese hinoki cypress bath with a view of the inner garden has a relaxing wood scent.
+    ☆ The living room is divided into two sections, Western and Japanese, with tatami mats where you can sit comfortably and enjoy the garden while drinking tea, and Western space where you can relax on the sofa.
+    ☆ This is a relaxing space with a sense of harmony, equipped with comfortable facilities while retaining the atmosphere of a traditional machiya townhouse.
+    ☆　The rooms have been completely renovated in the spring of 2021, and are of the highest grade of the Kouhaku Machiya design, with the warmth of wood.
+  `,
+    ameni: `주방
+    무선 인터넷
+    업무 전용 공간
+    TV
+    세탁기
+    에어컨
+    욕조
+    여행 가방 보관 가능
+    헤어드라이어
+    냉장고`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d26133.914815834516!2d135.73781!3d35.03825!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701762832147!5m2!1sko!2skr",
+  },
+  {
+    idx: "24",
+    gps: "京都市, 京都府, 일본",
+    room: "최대 인원 5명 침실 2개 침대 5개 욕실 2개",
+    detail: `It is a two-story Kyomachiya style house. The bed size has two semi-double beds and two Japanese futon beds. In the kitchen there is an electric kettle, a microwave and a refrigerator. Bathroom is a big bath that adults take in slowly, making wooden beautiful. It is a refurbished old town house in Kyoto.
+    On the first floor there is a large sofa and a table in a relaxing Japanese-style living room. There is also a kitchen where you can cook easily. There is a big bath, a toilet and a washing machine in the back of the first floor. There is also a shower room, a toilet and a washroom on the second floor.
+    I will lend you a two-storey house so please stay slowly.
+    It is equipped for long-term stay.
+    It is an accommodation facility that you can fully enjoy Kyoto so please stay and stay.
+    ※ The design of the garden, the position of the bath will vary depending on the building. Please acknowledge it beforehand.`,
+    ameni: `주방
+    무선 인터넷
+    전용 온수 욕조
+    TV
+    세탁기 무료 사용 – 건물 내
+    건조기 무료 사용 - 건물 내
+    에어컨
+    여행 가방 보관 가능
+    헤어드라이어
+    냉장고`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d26148.133185564784!2d135.7649!3d34.993770000000005!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701763048987!5m2!1sko!2skr",
+  },
+  {
+    idx: "25",
+    gps: "Heungnam-dong, Gunsan, 전라북도, 한국",
+    room: "최대 인원 4명 침실 2개 침대 2개 욕실 2개",
+    detail: `#월명하다 (月明하다)
+    달빛이 밝다.
+    
+    구도심과 도심 사이에 위치해
+    과거와 현재를 모두 느낄 수 있는
+    잊지 못할 하루가 바로 여기서 시작됩니다.
+    일상 속 스트레스를 휴식을 통해
+    치유하고 여유를 느껴 보세요
+    
+    유튜브에 [월명하다]를 검색하고
+    디테일한 숙소 영상을 확인하세요
+    숙소
+    🏡독채하우스 (48평)+🏕옥상 테라스 (40평)
+    96평 단독사용
+    
+    💡숙소 예약 전 확인사항
+    •월명하다는 최대4인까지 사용가능합니다.
+    •저희 숙소는 고객님들의 안전을 위해
+    성인만 이용 가능합니다.
+    (아동.유아 동반 불가입니다)`,
+    ameni: `도시 스카이라인 전망
+    산 전망
+    주방
+    무선 인터넷
+    업무 전용 공간
+    건물 내 무료 간이차고 – 2대 주차 가능
+    TV + 크롬캐스트, 넷플릭스
+    세탁기 무료 사용 – 숙소 내
+    건조기 무료 사용 – 숙소 내
+    에어컨`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d25830.69938643765!2d126.71580000000002!3d35.9754!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701765906424!5m2!1sko!2skr",
+  },
+  {
+    idx: "26",
+    gps: "상면, 가평군, 경기도, 한국",
+    room: "최대 인원 2명 침실 1개 침대 1개 욕실 1개",
+    detail: `-단독 바베큐장 (기본양념 무료제공)
+    -불멍
+    -야외 수영장 (여름)
+    -포켓볼장 무료
+    -보드게임 무료 대여
+    숙소
+    #예약 숙소: G2동
+    
+    #원하는 날짜 예약이 마감됐을시, 제 프로필을 눌러서 G1, G3 객실 예약도 확인해보세요
+    
+    
+    
+    [체크인] 15:00 이후
+    [체크아웃] 11:00 이전
+    [기준 인원] 2인 (유아포함 2인 / 인원추가 불가)
+    
+    *숯불 이용 예정이신 경우에는 마감 시간이 있기 때문에
+    늦더라도 19시 전 체크인 필요합니다`,
+    ameni: `주방
+    무선 인터넷
+    업무 전용 공간
+    건물 내 무료 주차
+    공용 수영장
+    TV
+    에어컨
+    뒷마당
+    헤어드라이어
+    숙소 내 보안 카메라`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d25234.00199973238!2d127.36329999999998!3d37.76073!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701765055225!5m2!1sko!2skr",
+  },
+  {
+    idx: "27",
+    gps: "Half Moon Bay, 캘리포니아, 미국",
+    room: "최대 인원 4명 침실 1개 침대 2개 욕실 1개",
+    detail: `One of a kind Airstream overlooking a stunning beach, Pacific Ocean and California Coastline, perched high on a cliff to create an unforgettable magical experience of a lifetime.
+
+    If you can’t find availability for the date you are interested, check out our second newer unit here
+    https://www.airbnb.com/h/luxurycaliforniacoastairstream
+    숙소
+    New 22 ' Airstream Bambi, sleeps up to 4 people, ideally 2 adults and 2 children or 3 Adults.
+    
+    2 adults fit comfortably on the spacious queen size bed with bay window.
+    
+    2 children ( 6 and above) or 1 mid size adult on convertible bed located in the dinette area
+    
+    Full shower and bathroom with hot-water.
+    
+    24 inch TV with Roku with Netflix account
+    
+    Fast Wifi`,
+    ameni: `바다 전망
+    바다 전망
+    공용 해변과 인접 - 해변
+    주방
+    초고속 와이파이 – 373Mbps
+    업무 전용 공간
+    건물 내 무료 주차
+    반려동물 입실 가능
+    30"TV
+    중앙 냉방시설`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d25369.486501760963!2d-122.40566000000001!3d37.36178!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701766083796!5m2!1sko!2skr",
+  },
+  {
+    idx: "28",
+    gps: "강화군, 인천, 한국",
+    room: "최대 인원 2명 침실 1개 침대 1개 욕실 1개",
+    detail: `[공지사항]
+    ㅁ 샤워실과 화장실은 카라반과 떨어져 있습니다.
+    ㅁ 숙소 내부 기본 제공 - 침대, 침구, 수건2개, 칼, 가위, 조리도구, 커피포트, 에어컨
+    ㅁ 숙소 외부 기본 제공 - 테이블, 의자 2개, 미니의자 1개, 선풍기, 랜턴, 버너
+    ㅁ 냄비, 후라이팬 등 조리기구들은 야외에 마련되어 있습니다. 필요하신 기구들 가지고 가셔서 사용 후, 세척하여 반납하셔야 합니다.
+    ㅁ 접시, 젓가락 수저는 일회용으로 제공됩니다. (추후 변경 예정)
+    
+    [인원추가요금]
+    ㅁ 기준 인원 초과 시 1인당 추가 비용 : 8세 이상 20,000원 / 8세 미만 10,000원 / 현장결제
+    ㅁ 기준 인원을 초과하는 경우, 사전에 숙소로 전화 문의 부탁드립니다.
+    ㅁ 각 객실마다 정해진 최대 수용 인원(영유아포함) 초과를 엄격히 금하며, 예약된 인원 외에는 입실이 불가합니다.
+    
+    [방문객 없는 캠핑장]
+    수도권 지역이라 방문객 추가 인원을 허용하다 보면 여러분들이 생각하시는 것보다 방문 하시는 분들이 엄청 많습니다.
+    한팀 두팀 봐드리다 보면 식사시간 때 기준으로 화장실 개수대 샤워실은 물론, 주차장 편의시설 포함한 캠핑장 내 모든 것들이 포화상태가 되어 편하게 쉬러 오신 다른 팀들이 많은 피해를 보게 됩니다. 이용에 참고 부탁드립니다.`,
+    ameni: `주방
+    무선 인터넷
+    건물 내 무료 주차
+    에어컨
+    냉장고
+    숙소 내 보안 카메라`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d25243.244037463857!2d126.41063!3d37.73363!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701766398754!5m2!1sko!2skr",
+  },
+  {
+    idx: "29",
+    gps: "애월읍, 제주시, 제주도, 한국",
+    room: "최대 인원 5명 침실 1개 침대 1개 욕실 1개",
+    detail: `제주도 애월읍 수산리에 위치하고 있는 그린스테이 는
+    우리가 사는 지구. 그리고 제주의 환경을 위해
+    자연스러운 삶을 동경하며
+    무해하고 지속가능한 삶과 쉼을 추구하는
+    '누구하나'가 되고 싶은 바람을 담았습니다.
+    
+    청소와 세탁에 사용하는 세제들은 물론
+    기본으로 제공되는 어매니티와
+    침구나 티슈 등 사용하는 물품들을 친환경용품으로 준비하며
+    우리의 여행과 쉼이 무해하기를 바라는 마음으로 스테이를 정돈합니다.
+    인스타 ID - 누구하나 에서 더 많은 사진을 보실 수 있습니다.
+    
+    캠핑카가 있는 작은 마당에서 불멍과 별멍을 함께 즐기실 수 있으며
+    에리바 투어링 캠핑카 또한 게스트분들만을 위해 깔끔하게 정돈합니다.
+    욕실에 있는 조적욕조에서 돌담을 바라보며 포근한 시간을 보내실 수도 있습니다.`,
+    ameni: `산 전망
+    해변과 인접
+    주방
+    무선 인터넷
+    업무 전용 공간
+    건물 내 무료 주차
+    전용 온수 욕조
+    전기차 충전시설
+    세탁기 무료 사용 – 숙소 내
+    중앙 냉방시설`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d26626.381377206664!2d126.3851!3d33.4676!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701766756119!5m2!1sko!2skr",
+  },
+  {
+    idx: "30",
+    gps: "Gangneung, 강원도, 한국",
+    room: "최대 인원 6명 침실 2개 침대 4개 욕실 3개",
+    detail: `소나무숲이 눈앞에 펼쳐지는 아름다운 강릉 독채스테이 캠퍼하우스(camper house🏕)입니다.
+    숙소
+    캠퍼하우스는 거실,침실2,욕실3,마당으로 이루어져 모든 게스트분들이 편안하게 머무실 수 있도록노력한 자연친화적인 공간입니다.
+    (2층은 외부에서 실내계단로 이어집니다)
+    
+    집안 창으로는 초록의 싱그러움을 느낄 수 있고
+    병풍처럼 펼쳐진 송림숲을 바라보며 넓은 잔디마당에서 바베큐를 즐길 수 있습니다.
+    
+    10분 내에 강릉의 주요 관광지에 접근가능한 거리에 위치해 다양한 볼거리,먹거리를 누리며 강릉의 아름다움을 한껏 즐길수 있는 공간입니다.
+    
+    문의 공일공 8490 8485
+    
+    집과 정원을 포함한 스테이의 모든 공간이 울타리로 둘러쌓여 있습니다.
+    반려동물과 사람이 함께 편안하게 머물 수 있는 장소가 되었으면 합니다.
+    
+    숙소 사진은 어떠한 보정도 하지 않은 숙소 그대로의
+    모습입니다
+    `,
+    ameni: `산 전망
+    정원 전망
+    주방
+    무선 인터넷
+    업무 전용 공간
+    건물 내 무료 주차
+    반려동물 입실 가능
+    TV
+    에어컨
+    전용 파티오 또는 발코니`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d25223.842892808214!2d128.8759!3d37.7905!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701767577891!5m2!1sko!2skr",
+  },
+  {
+    idx: "31",
     gps: "",
     room: "",
     detail: ``,
@@ -532,7 +859,7 @@ export const subData =[
     map: "",
   },
   {
-    idx: "",
+    idx: "32",
     gps: "",
     room: "",
     detail: ``,
@@ -540,7 +867,7 @@ export const subData =[
     map: "",
   },
   {
-    idx: "",
+    idx: "33",
     gps: "",
     room: "",
     detail: ``,
@@ -548,7 +875,7 @@ export const subData =[
     map: "",
   },
   {
-    idx: "",
+    idx: "34",
     gps: "",
     room: "",
     detail: ``,
@@ -556,7 +883,7 @@ export const subData =[
     map: "",
   },
   {
-    idx: "",
+    idx: "35",
     gps: "",
     room: "",
     detail: ``,
@@ -564,7 +891,7 @@ export const subData =[
     map: "",
   },
   {
-    idx: "",
+    idx: "36",
     gps: "",
     room: "",
     detail: ``,
@@ -572,7 +899,7 @@ export const subData =[
     map: "",
   },
   {
-    idx: "",
+    idx: "37",
     gps: "",
     room: "",
     detail: ``,
@@ -580,7 +907,7 @@ export const subData =[
     map: "",
   },
   {
-    idx: "",
+    idx: "38",
     gps: "",
     room: "",
     detail: ``,
@@ -588,7 +915,7 @@ export const subData =[
     map: "",
   },
   {
-    idx: "",
+    idx: "39",
     gps: "",
     room: "",
     detail: ``,
@@ -596,15 +923,7 @@ export const subData =[
     map: "",
   },
   {
-    idx: "",
-    gps: "",
-    room: "",
-    detail: ``,
-    ameni: ``,
-    map: "",
-  },
-  {
-    idx: "",
+    idx: "40",
     gps: "",
     room: "",
     detail: ``,

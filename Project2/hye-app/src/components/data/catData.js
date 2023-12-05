@@ -5,7 +5,7 @@ export const catData = [
         "category":'해변 바로 앞',
         "score":'4.87',
         "price":'110,000',
-        "scat":[]
+        "scat":['해변바로앞']
         
     },
     {
@@ -14,7 +14,7 @@ export const catData = [
         "category":'해변 바로 앞',
         "score":'4.71',
         "price":'214,000',
-        "scat":['바베큐장']
+        "scat":['바베큐장,해변바로앞']
     },
     {
         "idx":'3',
@@ -22,7 +22,7 @@ export const catData = [
         "category":'해변 바로 앞',
         "score":'4.93',
         "price":'248,354',
-        "scat":['마당','욕조']
+        "scat":['마당','욕조,해변바로앞']
     },
     {
         "idx":'4',
@@ -30,7 +30,7 @@ export const catData = [
         "category":'해변 바로 앞',
         "score":'4.79',
         "price":'250,000',
-        "scat":['마당','복층']
+        "scat":['마당','복층,해변바로앞']
     },
     {
         "idx":'5',
@@ -38,7 +38,7 @@ export const catData = [
         "category":'해변 바로 앞',
         "score":'3.47',
         "price":'65,000',
-        "scat":['복층']
+        "scat":['복층,해변바로앞']
     },
     {
         "idx":'6',
@@ -46,7 +46,7 @@ export const catData = [
         "category":'해변 바로 앞',
         "score":'4.94',
         "price":'550,000',
-        "scat":['바베큐장,발코니,욕조']
+        "scat":['바베큐장,발코니,욕조,해변바로앞']
     },
     {
         "idx":'7',
@@ -54,7 +54,7 @@ export const catData = [
         "category":'한옥',
         "score":'4.76',
         "price":'340,000',
-        "scat":['복층,발코니']
+        "scat":['복층,발코니,한옥']
     },
     {
         "idx":'8',
@@ -62,7 +62,7 @@ export const catData = [
         "category":'한옥',
         "score":'4.99',
         "price":'173,914',
-        "scat":['마당']
+        "scat":['마당,한옥']
     },
     {
         "idx":'9',
@@ -70,7 +70,7 @@ export const catData = [
         "category":'한옥',
         "score":'5.0',
         "price":'360,000',
-        "scat":['욕조']
+        "scat":['욕조,한옥']
     },
     {
         "idx":'10',
@@ -78,7 +78,7 @@ export const catData = [
         "category":'한옥',
         "score":'4.90',
         "price":'330,000',
-        "scat":['욕조,마당']
+        "scat":['욕조,마당,한옥']
     },
     {
         "idx":'11',
@@ -86,7 +86,7 @@ export const catData = [
         "category":'한옥',
         "score":'4.91',
         "price":'150,000',
-        "scat":['바베큐장,마당']
+        "scat":['바베큐장,마당,한옥']
     },
     {
         "idx":'12',
@@ -94,7 +94,7 @@ export const catData = [
         "category":'한옥',
         "score":'4.75',
         "price":'184,000',
-        "scat":['복층,발코니,마당']
+        "scat":['복층,발코니,마당,한옥']
     },
     {
         "idx":'13',
@@ -102,7 +102,7 @@ export const catData = [
         "category":'멋진 수영장',
         "score":'5.0',
         "price":'404,000',
-        "scat":['바베큐장,마당,욕조']
+        "scat":['바베큐장,마당,욕조,멋진수영장']
     },
     {
         "idx":'14',
@@ -110,7 +110,7 @@ export const catData = [
         "category":'멋진 수영장',
         "score":'4.98',
         "price":'619,650',
-        "scat":['복층,발코니']
+        "scat":['복층,발코니,멋진수영장']
     },
     {
         "idx":'15',
@@ -118,7 +118,7 @@ export const catData = [
         "category":'멋진 수영장',
         "score":'5.0',
         "price":'253,493',
-        "scat":['마당']
+        "scat":['마당,멋진수영장']
     },
     {
         "idx":'16',
@@ -126,7 +126,7 @@ export const catData = [
         "category":'멋진 수영장',
         "score":'4.93',
         "price":'390,000',
-        "scat":['한옥']
+        "scat":['한옥,멋진수영장']
     },
     {
         "idx":'17',
@@ -134,7 +134,7 @@ export const catData = [
         "category":'멋진 수영장',
         "score":'5.0',
         "price":'174,000',
-        "scat":['복층,바베큐장']
+        "scat":['복층,바베큐장,멋진수영장']
     },
     {
         "idx":'18',
@@ -142,103 +142,103 @@ export const catData = [
         "category":'멋진 수영장',
         "score":'4.93',
         "price":'270,600',
-        "scat":['한옥,복층,바베큐장']
+        "scat":['한옥,복층,바베큐장,멋진수영장']
     },
     {
         "idx":'19',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "name":'IORI SETOGAWA【Luxury Antique house with Sauna】',
+        "category":'료칸',
+        "score":'4.89',
+        "price":'551,347',
+        "scat":['욕조,복층,료칸']
     },
     {
         "idx":'20',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "name":'SUKIYA-Zukuri Suehiro【Authentic house/Old town】',
+        "category":'료칸',
+        "score":'4.94',
+        "price":'168,072',
+        "scat":['료칸,마당']
     },
     {
         "idx":'21',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "name":'B:Kyoto MACHIYA with garden woodbath Barrier free',
+        "category":'료칸',
+        "score":'4.97',
+        "price":'309,466',
+        "scat":['료칸,욕조,마당']
     },
     {
         "idx":'22',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "name":'CITY-CENTER, UNIQUE, LUXURY, HISTORICAL TOWNHOUSE',
+        "category":'료칸',
+        "score":'4.99',
+        "price":'591,658',
+        "scat":['료칸,발코니']
     },
     {
         "idx":'23',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "name":'<Kyoto Machiya Kouhaku> Fuku for Kitano Tenmangu',
+        "category":'료칸',
+        "score":'4.91',
+        "price":'142,738',
+        "scat":['료칸,복층']
     },
     {
         "idx":'24',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "name":'kyoto villa soso (Near Kyoto station)',
+        "category":'료칸',
+        "score":'4.92',
+        "price":'930,176',
+        "scat":['료칸']
     },
     {
         "idx":'25',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "name":'도심속 감성 루프탑 독채 하우스(복성루 도보4분)-월명하다',
+        "category":'캠핑장',
+        "score":'4.98',
+        "price":'160,000',
+        "scat":['캠핑장,복층']
     },
     {
         "idx":'26',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "name":'글램핑G2동 수영장, 불멍, 단독바베큐장, 개인샤워실이 있는 프리미엄 글램핑',
+        "category":'캠핑장',
+        "score":'4.88',
+        "price":'176,000',
+        "scat":['캠핑장,바베큐장']
     },
     {
         "idx":'27',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "name":'Stunning California Coast Airstream (New Listing)',
+        "category":'캠핑장',
+        "score":'4.99',
+        "price":'484,559',
+        "scat":['캠핑장,바베큐장']
     },
     {
         "idx":'28',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "name":'숲 속에서 즐기는 캠핑, 감성인테리어 카라반 실루엣',
+        "category":'캠핑장',
+        "score":'4.78',
+        "price":'205,640',
+        "scat":['캠핑장,바베큐장,마당']
     },
     {
         "idx":'29',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "name":'캠핑카가 있는 빨간벽돌집, 그린스테이 Greenstay 누구하나',
+        "category":'캠핑장',
+        "score":'4.97',
+        "price":'258,000',
+        "scat":['캠핑장,욕조,복층']
     },
     {
         "idx":'30',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "name":'캠퍼하우스(본채)',
+        "category":'캠핑장',
+        "score":'4.89',
+        "price":'192,000',
+        "scat":['캠핑장,복층,욕조,발코니']
     },
     {
         "idx":'',

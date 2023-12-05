@@ -5,7 +5,6 @@ import './css/index.css';
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import  { initLightboxJS }  from  'lightbox.js-react' 
 import  'lightbox.js-react/dist/index.css'
 
 
@@ -13,6 +12,7 @@ import { Layout } from "./components/layout/Layout";
 import { Main } from './components/pages/Main';
 import { MainCont } from './components/pages/MainCont';
 import { Detail } from './components/modules/Detail';
+import ScrollToTop from './components/func/Scroll';
 
 
 
@@ -24,9 +24,10 @@ export default function App(){
           <Route index element={<Main />}></Route>
           <Route path='/list' element={<MainCont cat="해변 바로 앞" />}></Route>
           <Route path='/detail' element={<Detail/>}></Route>
-
         </Route>
     </Routes>
+    {/* 페이지 이동시 스크롤값 초기화 */}
+    <ScrollToTop/>
   </BrowserRouter>
   )
 }//////////////// App 컴포넌트 //////////////////

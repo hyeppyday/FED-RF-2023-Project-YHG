@@ -1,5 +1,8 @@
 /* 메인 첫화면 CSS - main.css */
 
+body{
+  transition: background-color 1s ease;
+}
 /***************** 비디오 영역 *****************/
 #top-area {
   text-align: center;
@@ -10,7 +13,7 @@
   color: #ff5a60;
   margin-bottom: 30px;
   font-size: 3vw;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 /* 비디오 박스 */
 .video {
@@ -25,30 +28,97 @@
   width: 100%;
   height: 100%;
 }
-.vidbx{
-    position: relative;
-    margin: 0 auto;
-    width: 70%;
+.vidbx {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
 }
-.bdbx{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 999;
+.bdbx {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
 }
 /* 비디오 아래 텍스트 */
-.cat-ani{
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    border-bottom: 1px solid #0000005e;
-    font-family: 'Noto Sans KR', sans-serif;
+.cat-ani {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  border-bottom: 1px solid #0000005e;
+  font-family: "Noto Sans KR", sans-serif;
 }
-.cat-ani h3{
-    margin-right: 10px;
+.cat-ani h3 {
+  margin-right: 10px;
 }
-.slide{
-    /* overflow: hidden; */
-    height: 27px;
-    
+.slide {
+  /* overflow: hidden; */
+  height: 27px;
+}
+
+/***************** 스타일 영역 ******************/
+
+.style {
+  position: relative;
+  margin-top: 200px;
+  text-align: center;
+}
+.style h1 {
+  font-family: "Nanum Myeongjo", serif;
+  margin: 60px auto;
+  font-size: 45px;
+  width: 151px;
+  color: #fff;
+
+}
+
+/* 이미지 박스 */
+
+.imgbx {
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+}
+.imgbx span {
+  position: relative;
+}
+.imgbx img {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  margin: 0 30px;
+}
+.imgbx h3 {
+  position: absolute;
+ 
+  left: 50%;
+  transform: translate(-50%);
+
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: bold;
+  font-size: 17px;
+  outline: 1px solid #00000088;
+  border-radius: 35px;
+  width: 120px;
+  padding: 15px;
+  margin-top: 15px;
+
+  cursor: pointer;
+}
+
+.imgbx h3:hover{
+  background-color: #ff5a608d;
+  color: #000000;
+  outline: none;
+  transition: .2s;
+}
+
+.imgbx span:nth-child(2) {
+  margin-top: 70px;
+}
+
+.panel{
+  position: absolute;
+  background-color: #dd8888;
+  width: 100%;
+  height: 500px;
 }
