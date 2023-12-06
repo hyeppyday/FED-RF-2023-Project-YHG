@@ -85,7 +85,7 @@
   position: absolute;
   padding: 22px;
   background-color: #ffffff;
-  top: 0px;
+  top: -14px;
   left: 50%;
   transform: translate(-50%);
   user-select: none;

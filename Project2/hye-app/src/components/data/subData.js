@@ -852,90 +852,418 @@ export const subData =[
   },
   {
     idx: "31",
-    gps: "",
-    room: "",
-    detail: ``,
-    ameni: ``,
-    map: "",
+    gps: "Nago, Okinawa, 일본",
+    room: "최대 인원 6명 침실 2개 침대 2개 욕실 1개",
+    detail: `Unwind at this beautifully designed sustainable treehouse, where you can fully immerse yourself in nature. Through our 360 jungle view in the spiral treehouse, to the luxury space in AeroHouse, you can experience the magic of the Okinawa’s Yanbaru forest. We also have optional activities including takibi (fire place) dinner, sauna, body treatment, river trekking, and an eight-wheeler adventure tour! Please note that due to the elevated location, children under the age of 10 cannot stay.
+    숙소
+    Note: When reserving for six people, two people can sleep on the king size bed in AeroHouse, two people on the couch (with sheets and comforter), and two people on the semi-double size bed in the tree house.
+    **We use a system called eco-cute to heat up water overnight, so we only have enough warm water for 40 minutes shower + one time to fill the bath tub for sustainability reasons.`,
+    ameni: `산 전망
+    강 전망
+    주방
+    무선 인터넷
+    업무 전용 공간
+    건물 내 무료 주차
+    전용 온수 욕조
+    사우나
+    숙소 내 보안 카메라`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d28539.689561612373!2d128.07553!3d26.60166!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701832910196!5m2!1sko!2skr",
   },
   {
     idx: "32",
-    gps: "",
-    room: "",
-    detail: ``,
-    ameni: ``,
-    map: "",
+    gps: "나가노, Nagano, 일본",
+    room: "최대 인원 4명 침실 1개 침대 3개 욕실 1개",
+    detail: `This is a stylish log cabin located in a pristine wooded area at an altitude of 1,300 meters (4,265 feet) in Iizuna, Nagano. The home is the perfect retreat for couples, families or small groups. It features a wood burning stove, large TV, Blu-ray/DVD player, stereo, leather chairs, and full kitchen. Enjoy hiking, skiing, BBQ, golf or hot spring onsen baths in the area. The home is approximately a 20-minute drive from Nagano Station on the JR Hokuriko Shinkansen bullet train and Shinano Railway.
+    숙소
+    This is an all natural log home that mixes the best of traditional wood construction with modern comfort. It is cool in the summer and warm and cozy in the winter. Anyone seeking a relaxing time in a rural, isolated setting will not be disappointed.`,
+    ameni: `산 전망
+    주방
+    무선 인터넷
+    건물 내 무료 주차
+    TV + 일반 케이블 TV
+    세탁기 무료 사용 – 숙소 내
+    건조기 무료 사용 – 숙소 내
+    중앙 냉방시설
+    숙소 내 보안 카메라`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d25585.332761398808!2d138.12171!3d36.71856!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701833073732!5m2!1sko!2skr",
   },
   {
     idx: "33",
-    gps: "",
-    room: "",
-    detail: ``,
-    ameni: ``,
-    map: "",
+    gps: " Agatsuma District, Gunma, 일본",
+    room: "최대 인원 5명 침실 2개 침대 2개 욕실 1개",
+    detail: `７つの空間に１０００㎡まるまる、プライベートヴィラとして一棟を貸切。
+    一棟貸切の「ロックフォレスト」は主に７つのコンセプトがあります。
+    それぞれの“過ごし方”を、ご提供させていただきます。
+    
+    地元で新鮮な食材を調達した後はロックフォレストへと移動、車を駐車場に入れ階段を上がると囲炉裏スペースへ食材を運びましょう。 他の人と会うこともありません。
+    
+    東京から軽井沢まで新幹線で６０分、軽井沢駅から車で３０分で行けますので、例えば午前中はお仕事して、午後半休でも大丈夫。
+    
+    大自然に囲まれてゆっくりと非日常をお過ごしください。
+    숙소
+    　
+    ◉浴室
+    檜で作った寝湯専用の風呂桶で源泉掛け流し温泉の湯船に横たわり、浴槽の枕にアタマを乗せ湯の浮力に身を任せて寝るように入浴、窓から見える大自然を眺めながら入浴をお楽しみください。檜のバストレーも備え付けてありますので読書もお楽しみいただけます。
+    `,
+    ameni: `안뜰 전망
+    정원 전망
+    주방
+    무선 인터넷
+    업무 전용 공간
+    건물 내 무료 주차
+    전용 온수 욕조 - 24시간 이용 가능
+    숙소 내 보안 카메라`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d25670.579556565583!2d138.540625!3d36.461847!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701833270818!5m2!1sko!2skr",
   },
   {
     idx: "34",
-    gps: "",
-    room: "",
-    detail: ``,
-    ameni: ``,
-    map: "",
+    gps: "애월읍, 제주시, 제주도, 한국",
+    room: "최대 인원 4명 침실 1개 침대 2개 욕실 1개",
+    detail: `숙소 설명
+    안녕하세요, 애월 소낭집에 오신 것을 환영해요.
+    
+    이 곳은 몸과 마음의 온전한 휴식을 원하는 분들을 위한 공간이에요.
+    
+    제주 시내를 조금 지나 들어오시면 프라이빗 한 곳에 넓은 정원이 펼쳐져 있어요.
+    카나리아 야자나무와 동백, 작년에 심어 놓은 한라봉 나무가 자라고, 잔디밭 너머 귤밭도 있어요!
+    계절마다 불어오는 각기 다른 향들이 정말 좋아요.
+    
+    소낭집은 네덜란드산 통나무로 만들어져서 들어가시면 피톤치드 향이 가득해요. 제주의 청정한 날씨와 깨끗한 바람은 저희 소낭집과 정말 잘 어우러진답니다.
+    
+    복도를 지나 별도로 마련된 침실에는 함께 여행하는 소중한 사람들과 도란도란 이야기하며 잠드실 수 있도록 침대 두개를 나란히 두었어요. 나무집이 주는 향과 온기는 머무시는 분들의 숙면을 도와드릴 거에요.
+    
+    오시면 정말 좋아하실 거에요^^`,
+    ameni: `산 전망
+    바다 전망
+    주방
+    무선 인터넷
+    건물 내 무료 주차
+    TV
+    세탁기 무료 사용 – 건물 내
+    중앙 냉방시설
+    욕조
+    숙소 내 보안 카메라`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d26627.41970869179!2d126.40385!3d33.46422!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701833499734!5m2!1sko!2skr",
   },
   {
     idx: "35",
-    gps: "",
-    room: "",
-    detail: ``,
-    ameni: ``,
-    map: "",
+    gps: "Tha Sai, Chiang Rai, 태국",
+    room: "최대 인원 2명 원룸 침대 1개 욕실 1개",
+    detail: `Saabay House provides luxurious Thai style cabins in a secluded location close to the centre of Chiang Rai. 10 minutes from the city centre and its Night Bazaar, 20 minutes from the airport. Chiang Rai is an ideal base for exploring the regions many temples, visiting the Golden Triangle, hill tribes, and for scenic mountain trekking.
+    숙소
+    Saabay House provides individual Thai style cabins decorated with style, the cabins have there own bathroom, tea & coffee making, and refrigerator. There is a covered communal common area in the adjoining Thai house. Complimentary WiFi is provided.
+    
+    Breakfast can be provided for a small modest fee.`,
+    ameni: `주방
+    무선 인터넷
+    건물 내 무료 주차
+    에어컨`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d30018.22282428783!2d99.830126!3d19.870486!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701833682357!5m2!1sko!2skr",
   },
   {
     idx: "36",
-    gps: "",
-    room: "",
-    detail: ``,
-    ameni: ``,
-    map: "",
+    gps: "Uruma, Okinawa, 일본",
+    room: "최대 인원 8명 침실 3개 침대 6개 욕실 2개",
+    detail: `沖縄の中部、うるま市の丘の上にあるログハウス。この施設は３５年前に家族だけで建てた沖縄で初めてのログハウスです。長く外国人向けの貸別荘として経営しておりましたが、2022年、ワーケーション宿「YUKUISTAY」として生まれ変わりました。ただ休暇を過ごすのではなく、大自然の中でのロングステイをライフスタイルの一部として取りいれてみませんか？YUKUISTAYの「Yukui」とは、沖縄の方言で「ゆっくりくつろぐ」という意味です。沖縄のログハウスという非日常的な空間で、大自然に身をゆだねながら、リラックスした状態でお仕事をしてほしい！静かな時間と、環境が違う多様な人との出会いが、きっとあなたの人生にプラスに働くことでしょう。集中して仕事をした後には、大自然の海と山で週末を過ごすのも良し、沖縄の伝統文化に触れるのも良し。家族との癒しの時間や、地元の方との出会いを楽しんでください。涼しくなる夕刻からの様々なアクティビティもご紹介できます。YUKUISTAYでは、地元で生まれ育った私たちならでは！の思い出作りをサポートします。`,
+    ameni: `해변 전망
+    도시 스카이라인 전망
+    주방
+    무선 인터넷
+    업무 전용 공간
+    건물 내 거주자용 무료 차고 – 2대 주차 가능
+    반려동물 입실 가능
+    숙소 내 보안 카메라`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d28584.886591102833!2d127.78807000000002!3d26.4199!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701833951856!5m2!1sko!2skr",
   },
   {
     idx: "37",
-    gps: "",
-    room: "",
-    detail: ``,
-    ameni: ``,
-    map: "",
+    gps: "Kaafu Atoll, South, 몰디브",
+    room: "최대 인원 6명 침실 2개 침대 3개 욕실 2개",
+    detail: `In The Two Bedroom Villa, the first floor features a master bedroom and a second bedroom with king and twin beds, each equipped with its own terrace. The ground floor, with a living area and outdoor terrace which provides direct access to the beach, is perfect for family bonding.
+
+    > Entire Place at a 4 star Resort
+    > 140 SQM
+    > Place is by 45 minutes speedboat ride,
+    > Maximum Occupancy 6 Guests
+    
+    Kindly, ping me before sending reservation request to arrange transportation to & from Male Airport.
+  
+    First floor master bedroom with one king sized bed + second bedroom with two twin beds; both with a private terrace
+    Ground floor living space with an outdoor terrace
+    Complimentary Wi-Fi access
+    Bluetooth docking station
+    32-inch flat screen TV
+    Outdoor rain shower
+    Signature bathroom amenities
+    Pillow menu
+    Ceiling fan
+    Mini bar
+    Coffee/tea making facility
+    In-room safe
+    Hair dryer
+    Environmentally friendly bed and bath linen programme`,
+    ameni: `바다 전망
+    해변과 인접 - 해변
+    무선 인터넷
+    공용 수영장 -
+    TV
+    에어컨
+    욕조
+    전용 파티오 또는 발코니
+    여행 가방 보관 가능`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d31844.435707493267!2d73.47338!3d3.9051800000000005!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701840987265!5m2!1sko!2skr",
   },
   {
     idx: "38",
-    gps: "",
-    room: "",
-    detail: ``,
-    ameni: ``,
-    map: "",
+    gps: "Coron, Palawan, 필리핀",
+    room: "최대 인원 4명 침실 1개 침대 2개 욕실 1개",
+    detail: `Sand Island Eco-Lodge's cliff villa with stunning overlooking sea views and large roof deck above. Enjoy the private beach, snorkeling on the reef, free kayaks, and fast Starlink satellite wifi. Island hopping and scuba diving and Hobie Cat available. Queen bed (and extra queen foam mattress on floor if needed), ensuite, kitchenette, dining table, ceiling fan, veranda. Meals available or cook your own. Easily accessible by boat from Coron. Private and peaceful and beautiful.
+    게스트 이용 가능 공간/시설
+    Free access to beach and free use of snorkeling gear and kayaks.
+    기타 주의사항
+    Thank you for booking a stay at Sand Island Eco-Lodge! We are entirely solar-powered and use rainwater. Feel free to ask us any questions. In the meantime, here's the basic info:
+    
+    We can arrange a shared van from Busuanga Airport to Coron. It costs 300 pesos per person and takes 30 minutes.
+    `,
+    ameni: `해변과 인접
+    주방
+    무선 인터넷
+    TV
+    파티오 또는 발코니
+    뒷마당
+    냉장고
+    전자레인지
+    헬스장
+    장기 숙박 가능`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d31230.74610747226!2d120.056111!3d11.915994!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701841168551!5m2!1sko!2skr",
   },
   {
     idx: "39",
-    gps: "",
-    room: "",
-    detail: ``,
-    ameni: ``,
-    map: "",
+    gps: "말레(Male), 몰디브",
+    room: "최대 인원 3명 침실 1개 침대 2개 욕실 1개",
+    detail: `숙소
+    VILLA FACILITIES:
+    
+    King size bed
+    Pillow menu
+    Separate living area
+    Unforgettable views of the Indian Ocean
+    Direct access to the lagoon and house reef
+    Indoor and outdoor shower
+    Private split level sundeck with loungers and four poster day bed
+    Private infinity pool
+    Mini bar and wine rack
+    In-villa entertainment system with plasma TV and DVD selection
+    Espresso machine
+    Complimentary WiFi
+    Butler service by dedicated lifestyle hosts
+    Selection of special amenities and benefits`,
+    ameni: `바다 전망
+    바다 전망
+    해변과 인접 - 해변
+    무선 인터넷
+    업무 전용 공간
+    전용 수영장 - 연중 언제든 예약 가능, 24시간 이용 가능
+    전용 온수 욕조 - 연중 언제든 예약 가능
+    TV
+    중앙 냉방시설`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d31834.074943358788!2d73.5123!3d4.16934!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701841342594!5m2!1sko!2skr",
   },
   {
     idx: "40",
-    gps: "",
-    room: "",
-    detail: ``,
-    ameni: ``,
-    map: "",
+    gps: "Koh Samui District, 태국",
+    room: "최대 인원 12명 침실 7개 침대 10개 욕실 8.5개",
+    detail: `Mangroves sprout from shallows and low tide reveals sandbars on Laem Sor Beach in front of this sleek-lined retreat on Koh Samui’s southwest coast. A central L-shaped pool features in-water loungers, a shallow area, and a swim-up bar. Open-sided living areas let in sea views and warm breezes. Book a day trip to the islet of Koh Tan from Thong Krut or head into the village for dinner on the water.
+
+    Copyright © Luxury Retreats. All rights reserved.
+    
+    
+    BEDROOM & BATHROOM
+    • Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower & bathtub, Dual vanity, Safe, Desk, Terrace, Ocean view
+    • Bedroom 2: King size bed, Ensuite bathroom with stand-alone rain shower & bathtub, Safe, Terrace
+    • Bedroom 3: King size bed, Ensuite bathroom with stand-alone rain shower & bathtub, Safe, Terrace
+    • Bedroom 4: King size bed, Ensuite bathroom with stand-alone rain shower, Safe, Desk, Private balcony, Ocean view
+    • Bedroom 5: King size bed, Ensuite bathroom with stand-alone rain shower, Safe, Desk, Private balcony, Ocean view
+    • Bedroom 6: King size bed, Ensuite bathroom with stand-alone rain shower, Safe, Desk, Private balcony, Ocean view
+    • Bedroom 7: 2 Twin over queen size bunk beds, Ensuite bathroom with stand-alone rain shower, Television, Terrace`,
+    ameni: `바다 전망
+    셰프
+    공항 교통편
+    숙소 관리자
+    수영장
+    사우나
+    영화관
+    주방
+    무선 인터넷
+    숙소 내 보안 카메라`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d31488.4067946077!2d99.970316!3d9.41694!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701841516725!5m2!1sko!2skr",
   },
   {
-    idx: "",
-    gps: "",
-    room: "",
-    detail: ``,
-    ameni: ``,
-    map: "",
+    idx: "41",
+    gps: "Maldives, Malé, 몰디브",
+    room: "최대 인원 3명 침실 1개 침대 1개 단독 사용 욕실 1개",
+    detail: `This Over-the-Water Villas is a first-of-its-kind in the Indian Ocean. This gorgeous Over-the-Water Villas convey an intimate connection to the Indian Sea.
+
+    > Entire Villa
+    > 5 Star Island Resort
+    > 44 SQM
+    > Villa over water on stilt
+    > 20 minutes speedboat ride
+    > Multiple meals options available to choose
+    
+    Kindly, ping me to make arrangements for transportation to & from airport before sending reservation request`,
+    ameni: `바다 전망
+    해변과 인접 - 해변
+    무선 인터넷
+    공용 수영장 -
+    에어컨
+    욕조
+    전용 파티오 또는 발코니
+    헤어드라이어
+    아침식사`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d31832.777979771865!2d73.4135!3d4.20124!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701841658913!5m2!1sko!2skr",
+  },
+  {
+    idx: "42",
+    gps: "말레이, 서부 비사야, 필리핀",
+    room: "최대 인원 2명 침실 1개 침대 2개 욕실 1개",
+    detail: `Our private villa by the white sand beach located in the mainland facing Boracay . With its unique design, our villa provides a equipped kitchen to the spacious bedrooms and living areas, a workstation with a view, you'll have everything you need to feel at home.And of course, what staycation would be complete without spending time outdoors? Our villa comes with its own private pool and direct access to the white sand beach, so you can soak up the sun and enjoy the stunning views.
+    숙소
+    Private staycation villa that is very good for people who want quite place to stay, private place that they can only access and stunning views from their room... very good for relaxing the busy days of life...
+    게스트 이용 가능 공간/시설
+    You have direct access to the pool on the rooftop that you can see the views of the mountain in the back and ocean view in the front. You have a full access to the white beach Infront of the house.You can play valley ball and rocket tennis on the beach with your partner because of spacious private place you can only access...`,
+    ameni: `산 전망
+    바다 전망
+    전용 해변과 인접 - 해변
+    주방
+    와이파이 – 24Mbps
+    업무 전용 공간
+    건물 내 무료 주차
+    전용 야외 수영장 - 24시간 이용 가능, 루프톱`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d31232.62595669797!2d121.90058!3d11.899640000000002!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701841816932!5m2!1sko!2skr",
+  },
+  {
+    idx: "43",
+    gps: "Adamantas, 그리스",
+    room: "최대 인원 2명 침실 1개 침대 1개 욕실 1개",
+    detail: `Blu 5 is a 44 sq.m suite which includes a queen bed plus an identical single armchair bed aside that can conveniently accommodate 3 adults. Spacious showers and adjoining W.C.s, built in the traditional island style are included. It is air-conditioned, equipped with kitchenette, refrigerator, flat screen tv, safe box, super soft luxury linen, hair dryers and espresso and French coffee makers. Hi-speed wi-fi free of charge is also available. Individual veranda with relaxing summer furniture with a wonderful view of Milos Bay with direct access to a 130 sq. meters pool with hydromassage and personal sunbeds. Blu studios' visitors enjoy peace and quietness, away from public roads. An ample and super convenient parking space exists next to the room. The facility in total has easy access to most of the island's majestic beaches.
+    Apart of the standard state cleaning procedures against Covid-19 the suite is being sanitised with RoomFogger after each check out to ensure your health safety.`,
+    ameni: `만 전망
+    주방
+    무선 인터넷
+    업무 전용 공간
+    건물 내 무료 주차
+    공용 수영장
+    반려동물 입실 가능
+    TV
+    숙소 내 보안 카메라`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d25582.104928654593!2d24.46418!3d36.72825!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701842414490!5m2!1sko!2skr",
+  },
+  {
+    idx: "44",
+    gps: "Emporio, 그리스",
+    room: "최대 인원 6명 침실 2개 침대 4개 욕실 2.5개",
+    detail: `The Canava Villa #2 comes with a master bedroom - king size bed- which is positioned at the very end of the ground floor which can be isolated from the main space through a sliding Japanese-inspired large window. The bedroom is also ensuite with its own shower and toilet. The shower cabin can also offer hydromassage facilities. Worth to mention that while you are laying in the bed you are enjoying a view to a rocky enlightened “garden” by your side.
+    Upper floor can accommodate up to 4 people, providing four single floor mattresses and having their own ensuite bathroom as well. Upon request we can set them up as 2 double ones.
+    On the ground floor, apart from the fully equipped kitchen, you can enjoy the living room area with a fireplace, big comfortable sofas, flat smart TV, Bluetooth audio system, workspace and there is also a WC for your own guests so as not to use the own of the master's room!
+    Your private patio awaits you with a private plunge pool with Jacuzzi, outdoor dinning area and sun lounges!
+    Canava Villa #2 can accommodate up to 6 people in its COCO-MAT mattresses and pillows.`,
+    ameni: `계곡 전망
+    바다 전망
+    주방
+    와이파이 – 44Mbps
+    업무 전용 공간
+    건물 내 무료 주차
+    전용 야외 수영장 - 24시간 이용 가능
+    공용 온수 욕조 - 24시간 이용 가능
+    55인치 HDTV + 넷플릭스
+    세탁기 무료 사용 – 건물 내`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d25704.323301437475!2d25.447!3d36.3598!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701842580548!5m2!1sko!2skr",
+  },
+  {
+    idx: "45",
+    gps: "산토리니, 그리스",
+    room: "최대 인원 4명 침실 1개 침대 3개 욕실 1개",
+    detail: `Blue Senses Balcony Villa (55 Sq m) is part of a two-storey Villa in Santorini Island that can accommodate up to 8 guests in total-couples, friends or families.
+    It is at the upper Floor, fully autonomous and can host up to 4 guests. Fitted with a King size bed and two single sofa-beds, en-suite bathroom with shower and fully equipped kitchenette. Its balcony overlooks the surrounding landscapes, and the Aegean Sea.
+    Included: a private swimming pool at the ground-backside level of the complex.`,
+    ameni: `주방
+    무선 인터넷
+    건물 내 무료 주차
+    수영장
+    TV
+    에어컨
+    파티오 또는 발코니
+    여행 가방 보관 가능`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d25690.861632464857!2d25.45196!3d36.40054!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701842741313!5m2!1sko!2skr",
+  },
+  {
+    idx: "46",
+    gps: "Drios Paros, 그리스",
+    room: "최대 인원 8명 침실 3개 침대 4개 욕실 2개",
+    detail: `The Yin Yang Villa is located at the traditional village of Dryos only one breath away from the amazing ‘private-like’ beach of Boutari and only 4 minutes walk from the cosmopolitan Golden Beach. This exceptional villa is build at a spectacular location offering unimaginable levels of privacy and easy access to cafes, bars, restaurants and local super market.
+    We will be waiting for your contact in order to give you the best possible option on your staying`,
+    ameni: `해변과 인접 - 해변
+    주방
+    무선 인터넷
+    건물 내 무료 주차
+    반려동물 입실 가능
+    TV
+    세탁기
+    에어컨`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d25489.31324308892!2d25.23128!3d37.00588!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701842960566!5m2!1sko!2skr",
+  },
+  {
+    idx: "47",
+    gps: "미코노스, 그리스",
+    room: "최대 인원 8명 침실 4개 침대 4개 욕실 4.5개",
+    detail: `Located in one of the islands' most private areas, yet very close to the vivid Mykonos town and many other points of interest, Villa TerraMar is here to offer you an unforgettable stay.
+    This new gem introduces itself to the most discerning travellers who seek for peaceful, stress free vacation, as well as, all the comforts only a modern villa can provide.
+    숙소
+    Villa TerraMar offers to its guests views of the Aegean Sea and sky.
+    Mykonos town, Little Venice, Corfos and Ornos bays will be very pleasant to your eyes also, while you spend the afternoon relaxing around the outdoor lounge areas of the property.
+    
+    
+    SERVICES INCLUDED:
+    
+    • Daily cleaning Service
+    
+    • Change of Sheets 2 times/week
+    Towels 3 times per week
+    
+    • Transportation arrangements ( car rentals / vans / drivers )
+    
+    • Boat rentals
+    
+    • 24/7 assistace`,
+    ameni: `만 전망
+    바다 전망
+    공용 해변과 인접
+    주방
+    무선 인터넷
+    건물 내 무료 주차 차고
+    전용 야외 수영장 - 인피니티
+    숙소 내 보안 카메라`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d25345.627024947597!2d25.3168!3d37.4323!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701843212400!5m2!1sko!2skr",
+  },
+  {
+    idx: "48",
+    gps: "Tinos, Cyclades, 그리스",
+    room: "최대 인원 7명 침실 3개 침대 5개 욕실 2개",
+    detail: `ANNEZA’S COUNTRY HOUSES is situated on a private property, close to the village of Tzados and a 15-minute drive to the town of Tinos. This location is an important axis point for exploring everything Tinos has to offer; inviting guests to enjoy their holidays surrounded by nature and in a friendly and welcoming family atmosphere.
+    숙소
+    Anneza’s Country Houses is a fully furnished which consists of:
+    3 bedrooms (1 double bed,4 single beds) – 2 bathrooms (shower in one / bath in the other) -kitchen - living room – balcony and two verandas where views of the family garden can be enjoyed.
+    게스트 이용 가능 공간/시설
+    Guests are given the full range of the house, veranda and all common areas, including the garden and the barbecue.`,
+    ameni: `주방
+    무선 인터넷
+    도로 주차(무료)
+    TV
+    세탁기 무료 사용 – 숙소 내
+    파티오 또는 발코니
+    뒷마당
+    실내 벽난로: 장작 사용`,
+    map: "https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d25297.07274652251!2d25.18724!3d37.57546000000001!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1701843140967!5m2!1sko!2skr",
   },
 ];

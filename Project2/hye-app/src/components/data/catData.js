@@ -241,83 +241,147 @@ export const catData = [
         "scat":['캠핑장,복층,욕조,발코니']
     },
     {
-        "idx":'',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "idx":'31',
+        "name":'Treeful Treehouse Spiral Treehouse＋AeroHouse',
+        "category":'통나무집',
+        "score":'4.86',
+        "price":'1,125,467',
+        "scat":['통나무집,바베큐장,욕조']
     },
     {
-        "idx":'',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "idx":'32',
+        "name":'Elegant, secluded cabin for couples & families',
+        "category":'통나무집',
+        "score":'4.92',
+        "price":'714,582',
+        "scat":['통나무집,복층,욕조']
     },
     {
-        "idx":'',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "idx":'33',
+        "name":'１日１組限定　ROCK FOREST（岩の上に立つ貸別荘 天然温泉 源泉掛け流し「寝湯」）',
+        "category":'통나무집',
+        "score":'4.89',
+        "price":'595,740',
+        "scat":['통나무집,욕조,복층']
     },
     {
-        "idx":'',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "idx":'34',
+        "name":'애월 소낭집 #4_네 번째, 정원이 아름다운 제주 감성 나무집',
+        "category":'통나무집',
+        "score":'4.96',
+        "price":'130,000',
+        "scat":['통나무집,발코니']
     },
     {
-        "idx":'',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "idx":'35',
+        "name":'เฮือนสบาย Saabay Home 1of4 Thai style in the city',
+        "category":'통나무집',
+        "score":'4.88',
+        "price":'26,374',
+        "scat":['통나무집,마당']
     },
     {
-        "idx":'',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "idx":'36',
+        "name":'ログハウス一棟貸 / ワーケーション宿/ YUKUI STAY OKINAWA',
+        "category":'통나무집',
+        "score":'4.97',
+        "price":'203,477',
+        "scat":['통나무집,욕조, 복층']
     },
     {
-        "idx":'',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "idx":'37',
+        "name":'Two Bedroom Beach House Seaview',
+        "category":'섬',
+        "score":'4.76',
+        "price":'1,051,125',
+        "scat":['섬,발코니']
     },
     {
-        "idx":'',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "idx":'38',
+        "name":'Seaview Villa at Sand Island Eco-Lodge',
+        "category":'섬',
+        "score":'5.0',
+        "price":'147,219',
+        "scat":['섬,발코니,복층']
     },
     {
-        "idx":'',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "idx":'39',
+        "name":'Stunning Private Villa on the Water',
+        "category":'섬',
+        "score":'4.98',
+        "price":'2,627,813',
+        "scat":['섬']
     },
     {
-        "idx":'',
-        "name":'',
-        "category":'',
-        "score":'',
-        "price":'',
-        "scat":[]
+        "idx":'40',
+        "name":'코사무이(Ko Samui), Koh Samui District, 태국의 럭셔리 숙소',
+        "category":'섬',
+        "score":'5.0',
+        "price":'3,199,888',
+        "scat":['섬,복층,마당']
+    },
+    {
+        "idx":'41',
+        "name":'Villa Located Over Turquoise Waters',
+        "category":'섬',
+        "score":'4.85',
+        "price":'788,344',
+        "scat":['섬']
+    },
+    {
+        "idx":'42',
+        "name":'Private guesthouse villa with Rooftop Pool',
+        "category":'섬',
+        "score":'4.88',
+        "price":'130,597',
+        "scat":['섬,복층,마당']
+    },
+    {
+        "idx":'43',
+        "name":'BLU 5 Suite Pool/Sea view priv. veranda 1304295',
+        "category":'키클라데스 주택',
+        "score":'5.0',
+        "price":'177,669',
+        "scat":['키클라데스 주택,발코니']
+    },
+    {
+        "idx":'44',
+        "name":'Canava Villas II - Private Pool - Santorini',
+        "category":'키클라데스 주택',
+        "score":'4.98',
+        "price":'634,350',
+        "scat":['키클라데스 주택,욕조']
+    },
+    {
+        "idx":'45',
+        "name":'Blue Senses Balcony Villa - Private Pool',
+        "category":'키클라데스 주택',
+        "score":'5.0',
+        "price":'127,922',
+        "scat":['키클라데스 주택,복층']
+    },
+    {
+        "idx":'46',
+        "name":'Yin Yang Villa - Paros',
+        "category":'키클라데스 주택',
+        "score":'4.78',
+        "price":'604,075',
+        "scat":['키클라데스 주택,마당']
+    },
+    {
+        "idx":'47',
+        "name":'Villa TerraMar by Alpha Omega Mykonos',
+        "category":'키클라데스 주택',
+        "score":'4.97',
+        "price":'710,677',
+        "scat":['키클라데스 주택,복층']
+    },
+    {
+        "idx":'48',
+        "name":`Anneza's Country Houses`,
+        "category":'키클라데스 주택',
+        "score":'5.0',
+        "price":'142,135 ',
+        "scat":['키클라데스 주택']
     },
 ]

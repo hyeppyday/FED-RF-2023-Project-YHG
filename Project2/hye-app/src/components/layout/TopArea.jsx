@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import $ from 'jquery';
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export function TopArea() {
 
@@ -15,13 +16,15 @@ export function TopArea() {
 
     const tg1 = $('.cat-icon');
     const tg2= $('.cat-icon ol');
-    console.log(3333333);
+    
     tg2.css({transition:"1s"});
     setTimeout(()=>tg1.toggleClass('on'),0);
 
     setTimeout(()=>{
       tg2.css({transition:'none'})
     },1000)
+
+    
 
   }
 // useEffect(()=>{
@@ -59,9 +62,9 @@ export function TopArea() {
             {/* 회원가입, 로그인은 로그인 아닌 상태일때 나옴 */}
             {/* 유저아이콘 클릭시 회원가입, 로그인 박스 오른쪽에서 나옴 */}
             <li>
-              <a href="#">
+              <Link to="/member">
                 <FontAwesomeIcon icon={faCircleUser} size="2xl"/>
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

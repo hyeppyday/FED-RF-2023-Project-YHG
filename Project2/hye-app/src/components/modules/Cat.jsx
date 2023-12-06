@@ -9,7 +9,7 @@ export function CatMenu(){
 const goNav = useNavigate();
 
 
-  console.log(menu);
+  // console.log(menu);
     return(
 
         menu.map((v, i) => (

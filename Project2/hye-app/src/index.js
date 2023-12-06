@@ -13,6 +13,7 @@ import { Main } from './components/pages/Main';
 import { MainCont } from './components/pages/MainCont';
 import { Detail } from './components/modules/Detail';
 import ScrollToTop from './components/func/Scroll';
+import { Member } from './components/pages/Member';
 
 
 
@@ -24,6 +25,7 @@ export default function App(){
           <Route index element={<Main />}></Route>
           <Route path='/list' element={<MainCont cat="해변 바로 앞" />}></Route>
           <Route path='/detail' element={<Detail/>}></Route>
+          <Route path="member" element={<Member />} />
         </Route>
     </Routes>
     {/* 페이지 이동시 스크롤값 초기화 */}
