@@ -2,7 +2,7 @@
 
 import { subData } from "../data/subData";
 import { useLocation } from "react-router-dom";
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 import $ from 'jquery';
 
@@ -48,7 +48,7 @@ export function Detail() {
 
     return temp;
   };
-  console.log(makeList());
+  // console.log(makeList());
 
   useEffect(() => {
     // 대상: .photobox
@@ -72,7 +72,7 @@ export function Detail() {
       // 0. 포토박스 순번 변수에 할당!
       // 트랙이 생겼으므로 이미 할당된 순번을 읽어온다!
       // for문으로 생성시 data-seq에 순번이 있음!
-      pseq = $(this).attr("data-seq");
+      pseq = $(this).attr("datatype");
       // console.log("포토박스순번:"+pseq)
 
       // 1. 클릭된 박스의 하위 img 요소의 src 읽어오기
@@ -154,28 +154,29 @@ export function Detail() {
 
       // 1. 버튼 구분하기 : is(".rb")는 오른쪽버튼인가?
       let wbtn = $(this).is(".rb");
-      console.log("오른쪽버튼?" + wbtn);
+      // console.log("오른쪽버튼?" + wbtn);
 
       // 2. 버튼에 따라 포토박스 순번변경하기
       // 원리: 포토박스 순번을 변경하여 이미지와 설명을 변경함
       if (wbtn) {
         // 오른쪽버튼
         pseq++;
-        if (pseq === pcnt) pseq = 0;
-        // 한계수 - 순번이 개수와 같으면 처음으로
+        if (pseq === pcnt+1) pseq = 1;
+        // 한계수 - 순번이 개수+1이면 처음으로
       } ////////// if문 //////////////
       else {
         // 왼쪽버튼
         pseq--;
-        if (pseq === -1) pseq = pcnt - 1;
-        // 한계수 - 순번이 0보다 작으로 끝번호로
+        if (pseq === 0) pseq = pcnt;
+        // 한계수 - 번호가 1보다 작으로 끝번호로
       } ////////// else문 ////////////
 
-      console.log("변경순번:" + pseq);
+      // console.log("변경순번:" + pseq);
 
       // 3. 변경된 순번에 맞는 큰 이미지와 설명넣기
       // 3-1. 큰 이미지 변경 : 이미지이름은 순번보다 1큼
-      imbx.find("img").attr("src", "flexImg/" + (pseq + 1) + ".jpg");
+      imbx.find("img").attr("src", 
+      "./images/Category/" + cat + "/" + Number(seq + 1) + "/" + pseq + ".jpg");
     }); ////////////// click /////////////////////
     //////////////////////////////////////////////
   }, []);
@@ -207,12 +208,12 @@ export function Detail() {
         {/* 데이터에 입력된 엔터키 br로 변경해서 화면에 그대로 출력하는법
         엔터는 \n로 입력되기때문에 \n마다 잘라주고 리턴값에 <br/>로 map 돌려주기 */}
         <p>
-          {selData.detail.split("\n").map((line) => {
+          {selData.detail.split("\n").map((line,i) => {
             return (
-              <>
+              <Fragment key={i}>
                 {line}
                 <br />
-              </>
+              </Fragment>
             );
           })}
         </p>
@@ -226,12 +227,12 @@ export function Detail() {
           <h2>Amenities</h2>
           {/* 숙소시설 : subData - ameni */}
           <p>
-            {selData.ameni.split("\n").map((line) => {
+            {selData.ameni.split("\n").map((line,i) => {
               return (
-                <>
+                <Fragment key={i}>
                   {line}
                   <br />
-                </>
+                </Fragment>
               );
             })}
           </p>

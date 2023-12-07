@@ -211,6 +211,7 @@
   background-color: rgba(255, 255, 255, 0.9);
   display: none;
   /* 처음에 안보임 */
+  z-index: 99999999;
 }
 
 /* 이동버튼 공통 */
