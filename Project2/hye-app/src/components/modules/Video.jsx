@@ -19,7 +19,7 @@ return (
             <div className="bdbx"></div>
             <iframe
               src="https://www.youtube.com/embed/TAf1_23Ihmw?autoplay=1&mute=1&controls=0&loop=1&playlist=TAf1_23Ihmw"
-              frameborder="0"
+              style={{border:'none'}}
               allow="autoplay"
             ></iframe>
           </div>

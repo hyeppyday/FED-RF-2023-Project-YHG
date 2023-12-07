@@ -10,6 +10,9 @@ body{
 }
 /* 메인 텍스트 */
 #top-area h1 {
+  position: fixed;
+  top: 100px;
+  width: 100%;
   color: #ff5a60;
   margin-bottom: 30px;
   font-size: 3vw;
@@ -20,6 +23,7 @@ body{
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
+  margin-top: 300px;
 }
 .video iframe {
   position: absolute;
@@ -80,6 +84,26 @@ body{
 }
 .imgbx span {
   position: relative;
+  transition: 2s ease-in-out;
+}
+.imgbx span:nth-child(1) {
+  transform: translateX(70%);
+  margin-top: 30px;
+}
+.imgbx.on span:nth-child(1) {
+  transform: translateX(0%);
+  margin-top: 0px;
+}
+.imgbx span:nth-child(2) {
+  z-index: 1;
+}
+.imgbx span:nth-child(3) {
+  transform: translateX(-60%);
+  margin-top: 10px;
+}
+.imgbx.on span:nth-child(3) {
+  transform: translateX(0%);
+  margin-top: 0px;
 }
 .imgbx img {
   width: 300px;
@@ -104,6 +128,12 @@ body{
   margin-top: 15px;
 
   cursor: pointer;
+  opacity: 0;
+  
+  transition: 2s ease-in-out;
+}
+.imgbx.on h3 {
+  opacity: 1;
 }
 
 .imgbx h3:hover{
