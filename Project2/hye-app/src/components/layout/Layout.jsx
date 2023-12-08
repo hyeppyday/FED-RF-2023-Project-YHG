@@ -3,6 +3,7 @@ import { MainArea } from "./MainArea"
 import { TopArea } from "./TopArea"
 import { bnbCon } from "../modules/bnbContext"
 import { useState } from "react"
+import { useEffect } from "react"
 
 
 // Airbnb 레이아웃 컴포넌트
@@ -14,8 +15,15 @@ export function Layout(){
         setMenuCat(txt);
     }
 
+    const [bNum,setBNum] = useState(100);
+
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    },[])
+
+
     return(
-    <bnbCon.Provider value={{menuCat, chgMenuCat}}>
+    <bnbCon.Provider value={{menuCat, chgMenuCat,bNum,setBNum}}>
         <TopArea/>
         <MainArea/>
         <FooterArea/>

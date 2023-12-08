@@ -1,12 +1,13 @@
 // 메인페이지 두번째 컨텐츠 your travel style
 
 import { bnbCon } from "./bnbContext";
-import { useCallback, useContext, useState } from "react";
+import { useCallback, useContext, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export function Style() {
   const myCon = useContext(bnbCon);
   const goNav = useNavigate();
+
 
   // 여행 스타일 컨텐츠 페이지 랜덤이동
 
@@ -14,10 +15,25 @@ export function Style() {
   const Peaceful = ["한옥", "료칸", "섬"];
   const Mystic = ["통나무집", "키클라데스 주택"];
 
-  const getRandom = (length) => {
-    return parseInt(Math.random() * length);
-  };
 
+
+  const getRandom = (length) => {
+    
+    
+
+    let newNum = parseInt(Math.random() * length)
+    console.log('랜덤수:',newNum,myCon.setBNum)
+
+    while(newNum==myCon.setBNum){
+      newNum = parseInt(Math.random() * length);
+      console.log('다시랜덤:',newNum)
+    }
+    
+    myCon.setBNum(newNum);
+
+    return newNum;
+  };
+  
 
   return (
     <>

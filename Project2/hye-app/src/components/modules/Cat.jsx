@@ -13,7 +13,8 @@ const goNav = useNavigate();
     return(
 
         menu.map((v, i) => (
-        <li className="cat-menu" key={i} onClick={(e)=>{myCon.chgMenuCat(v.txt);e.stopPropagation();goNav('/list')}}>
+        <li className="cat-menu" key={i} onClick={(e)=>{myCon.chgMenuCat(v.txt);
+        e.stopPropagation();goNav('/list')}}>
           <img src={v.img} alt={v.txt}/><br/>{v.txt}
         </li>
     ))
