@@ -16,12 +16,12 @@ export function View(){
                     </div>
                     {/* 오버시 이미지 크게보이는 박스 */}
                     <div className="bigimg">
+                        {/* 이미지 어두운효과 박스 */}
+                        <div className="blackbx"></div>
                         {/* 숙소 위치 */}
                         <h3></h3>
                         {/* 평점 */}
                         <h3></h3>
-                        {/* 이미지 어두운효과 박스 */}
-                        <div className="blackbx"></div>
                     </div>
                 </div>
             </div>

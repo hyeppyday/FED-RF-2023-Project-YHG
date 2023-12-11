@@ -5,6 +5,7 @@ import "../../css/main.css";
 import { useEffect } from "react";
 
 import $ from "jquery";
+import { View } from "../modules/View";
 
 // 메인 첫 페이지 컴포넌트
 export function Main() {
@@ -72,6 +73,7 @@ export function Main() {
     <>
       <Video />
       <Style />
+      <View />
     </>
   );
 } ////////////// Main //////////////////
