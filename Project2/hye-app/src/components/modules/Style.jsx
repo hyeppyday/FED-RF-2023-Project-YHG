@@ -4,10 +4,11 @@ import { bnbCon } from "./bnbContext";
 import { useCallback, useContext, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import $ from "jquery";
+
 export function Style() {
   const myCon = useContext(bnbCon);
   const goNav = useNavigate();
-
 
   // 여행 스타일 컨텐츠 페이지 랜덤이동
 
@@ -15,25 +16,28 @@ export function Style() {
   const Peaceful = ["한옥", "료칸", "섬"];
   const Mystic = ["통나무집", "키클라데스 주택"];
 
+  const getRandom = (length, iam) => {
+    const idx = $(iam).index();
+    console.log("순번:", idx,iam);
 
-
-  const getRandom = (length) => {
+    let newNum = parseInt(Math.random() * length);
     
-    
+    // 두자릿수로 만들기
+    let doubleOne = String(idx) + newNum;
+    console.log("두자릿수:",doubleOne);
+    console.log("랜덤수:", doubleOne, "===", myCon.bNum);
 
-    let newNum = parseInt(Math.random() * length)
-    console.log('랜덤수:',newNum,myCon.setBNum)
-
-    while(newNum==myCon.setBNum){
+    while (doubleOne == myCon.bNum) {
       newNum = parseInt(Math.random() * length);
-      console.log('다시랜덤:',newNum)
+      // 두자릿수로 만들기
+      doubleOne = String(idx) + newNum;
+      console.log("다시랜덤:", doubleOne);
     }
-    
-    myCon.setBNum(newNum);
+
+    myCon.setBNum(doubleOne);
 
     return newNum;
   };
-  
 
   return (
     <>
@@ -47,8 +51,11 @@ export function Style() {
 
         <div className="imgbx">
           <span
-            onClick={() => {
-              myCon.chgMenuCat(Peaceful[getRandom(Peaceful.length)]);
+            onClick={(e) => {
+              myCon.chgMenuCat(
+                Peaceful[getRandom(Peaceful.length,
+                e.currentTarget)]
+              );
               goNav("/list");
             }}
           >
@@ -56,8 +63,11 @@ export function Style() {
             <h3>Peaceful</h3>
           </span>
           <span
-            onClick={() => {
-              myCon.chgMenuCat(Active[getRandom(Active.length)]);
+            onClick={(e) => {
+              myCon.chgMenuCat(
+                Active[getRandom(Active.length,
+                e.currentTarget)]
+              );
               goNav("/list");
             }}
           >
@@ -65,8 +75,11 @@ export function Style() {
             <h3>Active</h3>
           </span>
           <span
-            onClick={() => {
-              myCon.chgMenuCat(Mystic[getRandom(Mystic.length)]);
+            onClick={(e) => {
+              myCon.chgMenuCat(
+                Mystic[getRandom(Mystic.length,
+                e.currentTarget)]
+              );
               goNav("/list");
             }}
           >
