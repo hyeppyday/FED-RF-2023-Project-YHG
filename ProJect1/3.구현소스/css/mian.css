@@ -37,11 +37,11 @@ body.on::after {
     z-index: 9999;
     /* 보여줄 요소는 이것보다 높게 */
 }
-body{
+body.html{
     overflow-x: hidden;
 }
 #cont{
-    margin-top: 35%;
+    margin-top: 32%;
     position: relative;
     overflow: hidden;
 }
@@ -49,13 +49,16 @@ body{
 /* 메인 이미지 영역 */
 .main-bg {
     position: absolute;
-    top: 24%;
+    top: 34%;
     left: 0;
-    object-fit: contain;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
     object-position: bottom;
     transform:scale(2);
     opacity: 0;
     animation: first-ani 1.2s ease-in-out 0.2s forwards;
+    overflow: hidden;
 }
 @keyframes first-ani {
     to {
@@ -63,18 +66,15 @@ body{
         opacity: 1;
     }
 }
-.main-bg img {
-    width: 100%;
-    height: 90%;
-}
+
 /* 메인 이미지 글씨 영역 */
 .bg-top {
-    height: 280px;
+    height: 350px;
     position: relative;
     transform: translateY(-100%);
     background-color: #ffffff;
     z-index: 9;
-    animation: second-ani 0.8s ease-out 0.8s forwards;
+    animation: second-ani 1s ease-out 0.7s forwards;
 
 }
 @keyframes second-ani {
@@ -162,7 +162,7 @@ body{
     border: 1px solid #000000;
     padding: 7px;
     border-radius: 10px;
-    font-size: .8vw;
+    font-size: 15px;
     letter-spacing: 0.67px;
     
 }
@@ -178,10 +178,11 @@ body{
 .bx-info{
     width: 100%;
     height: 300px;
-    padding-bottom: 50px;
     background-color: rgb(47 46 46);
     display: flex;
+    align-items: center;
     z-index: 9;
+    padding: 30px 0;
 }
 .name-bx{
     width: 50%; 
@@ -215,10 +216,9 @@ body{
     
 }
 .ex-bx{
-    margin-top: 60px;
     width: 50%;
     line-height: 2;
-    font-size: 0.9vw;
+    font-size: 14px;
     color: #fff;
 }
 .ex-bx>span{
@@ -333,4 +333,60 @@ body{
 .vpj iframe,.mv-box{
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width:1024px) {
+    .name-bx .sname{
+        font-size: 40px;
+        left: 35%;
+    }
+    .name-bx .lname{
+        font-size: 40px;
+       width: 200px;
+    }
+    .main-logo{
+        width: 9vw;
+    }
+    .name-part{
+        font-size: 85px;
+    }
+    .slide-name{height: 85px;}
+    .cont-bg{height: 80vh;}
+    .vpj{
+        width: 500px;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    #cont{
+        margin-top: 30%;
+    }
+    .cont-bg{
+        height: 65vh;
+    }
+    .bg-top{
+        height: 200px;
+        animation: none;
+        transform: translateY(0);
+    }
+    .main-bg{
+        top: 45%;
+        animation: none;
+        opacity: 1;
+        z-index: 1;
+        left: 150px;
+    }
+    .main-bg img{
+        width: 450px;
+        height: 200px;
+    }
+    .name-part{
+        font-size: 4rem;
+    }
+    .name-part{
+        font-size: 50px;
+    }
+    .slide-name{height: 50px;}
+    
 }
