@@ -14,10 +14,20 @@ import "./css/swiper.css";
 // 사용할 스와이퍼 모듈을 불러온다
 // (여기서는 페이지네이션,네비게이션,자동넘김)
 import { Navigation } from "swiper/modules";
+import { useEffect, useRef } from "react";
 
 export function SwiperApp(props) {
   // props.cat - 카테고리명
   // props.seq - 순번
+
+  const myRef = useRef(null);
+  
+  // 랜더링 후 적용(스와이퍼 초기화)
+  useEffect(()=>{
+    // console.log(myRef);
+    myRef.current.swiper.slideTo(0,0);
+  })
+
   // 리스트만들기 함수 ////
   const makeList = () => {
     let temp = [];
@@ -39,6 +49,7 @@ export function SwiperApp(props) {
   return (
     <>
       <Swiper
+      ref={myRef}
         /* ref 속성에 useRef 할당변수를 넣어서 외부에 연결함 */
         slidesPerView={1}
         spaceBetween={0}
