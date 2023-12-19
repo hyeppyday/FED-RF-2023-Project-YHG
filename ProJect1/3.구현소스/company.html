@@ -12,13 +12,14 @@
             href="https://static.wixstatic.com/media/e319cf_2587dec5a24c465894d063405d52ea88~mv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/e319cf_2587dec5a24c465894d063405d52ea88~mv2.png"
             type="image/x-icon"
         />
-        <!-- 메인 JS -->
-        <script type="module" src="./js/main.js"></script>
         <!-- 제이쿼리 라이브러리 + UI -->
         <script src="./js/jquery-3.7.1.min.js"></script>
         <script src="./js/jquery-ui.min.js"></script>
         <!-- 모바일용 드래그/드롭 이벤트 전환 플러그인 -->
         <script src="./js/jquery-touch-punch.min.js"></script>
+
+        <!-- 서브 JS -->
+        <script type="module" src="./js/sub.js"></script>
 </head>
 
 <style>
@@ -102,7 +103,7 @@ main{
 </style>
 <body>
     <!-- 상단영역 -->
-    <header id="top">
+    <header id="top" class="header">
         <!-- 메인로고 -->
         <div class="main-logo">
             <a href="./index.html"><img src="./img/en_02.png" alt="메인로고" /></a>
