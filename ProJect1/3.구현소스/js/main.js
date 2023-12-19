@@ -2,10 +2,7 @@
 
 // 부드러운 스크롤 불러오기
 import { startSS, setPos } from "./smoothScroll20.js";
-// DOM 함수 불러오기
-import dFn from "./dom.js";
-
-
+import dFn from './dom.js';
 
 // 부드러운 스크롤 호출
 startSS();
@@ -38,6 +35,7 @@ const chkMob = () => {
   console.log("모바일?", mob);
   // 부가기능 : 모바일일때 서브메뉴 기본 스타일 지우기
   if (mob) $(".sub-menu").attr("style", "");
+
 }; /////// chkMob함수 ///////
 
 // 모바일 검사함수 최초호출
@@ -66,7 +64,8 @@ $(".ham").click(() => {
 // 대상: .gnb>li
 $(".gnb li").click(function () {
   if (!mob) return; //모바일 아니면 나가!
-  console.log("나클릭?");
+
+  console.log("나클릭?",this);
    // 서브메뉴 슬라이드 애니로 보이기/숨기기
   // 대상: .smenu
   $(this).find('.sub-menu') // 클릭된li 하위 .smenu
@@ -75,6 +74,12 @@ $(".gnb li").click(function () {
   .siblings().find('.sub-menu') // 다른 li들 하위 .smenu
   .slideUp(300,'easeInOutQuad') // 스르륵 닫힘! 모두
 }); //////////// click ////////////////
+
+// 모바일일 경우에만 서브페이지 있는 li a태그 기본이동 막기
+$('.noclick').click(function(e){
+if(!mob) return;
+e.preventDefault()
+})
 
 
 // 1. 대상선정
@@ -149,7 +154,8 @@ console.log('대상:',mvbtn,vpj,cbtn);
 // 2. 이벤트설정 및 함수구현
 // 2-1. 뷰프로젝트 버튼 클릭시
 mvbtn.forEach((ele,idx)=>{
-  dFn.addEvt(ele,'click',()=>{
+  window.onload=function(){
+    dFn.addEvt(ele,'click',()=>{
     /* 영상보이기 */
     vpj.classList.add('on');
     /* 가림막보이기 */
@@ -164,12 +170,13 @@ mvbtn.forEach((ele,idx)=>{
     // alert(idx);
     
   }); //////// click이벤트함수 ////////
-
+}
 })
 
 
 // 2-2. 닫기버튼 클릭시
-dFn.addEvt(cbtn,'click',()=>{
+
+  dFn.addEvt(cbtn,'click',()=>{
   /* 영상숨기기 */
   vpj.classList.remove('on');
   /* 가림막숨기기 */

@@ -355,15 +355,17 @@ body.html{
     .vpj{
         width: 500px;
     }
-
+    .circle1 img{left: -5%;}
+    .circle2 img{left: 12%;}
+    .circle3 img{left: 73%;}
 }
 
 @media screen and (max-width:700px) {
     #cont{
-        margin-top: 30%;
+margin-top: 0;
     }
     .cont-bg{
-        height: 65vh;
+        height: 105vh;
     }
     .bg-top{
         height: 200px;
@@ -378,8 +380,7 @@ body.html{
         left: 150px;
     }
     .main-bg img{
-        width: 450px;
-        height: 200px;
+display: none;
     }
     .name-part{
         font-size: 4rem;
@@ -388,5 +389,7 @@ body.html{
         font-size: 50px;
     }
     .slide-name{height: 50px;}
-    
+    .circle1 img{left: -11%;}
+    .circle2 img{left: 5%;}
+    .circle3 img{left: 70%;}
 }

@@ -1,211 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>BreadBarbershop</title>
-        <link
-            rel="shortcut icon"
-            href="https://static.wixstatic.com/media/e319cf_2587dec5a24c465894d063405d52ea88~mv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/e319cf_2587dec5a24c465894d063405d52ea88~mv2.png"
-            type="image/x-icon"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BreadBarbershop</title>
+    <link
+      rel="shortcut icon"
+      href="https://static.wixstatic.com/media/e319cf_2587dec5a24c465894d063405d52ea88~mv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/e319cf_2587dec5a24c465894d063405d52ea88~mv2.png"
+      type="image/x-icon"
+    />
 
-        <!-- 메인CSS -->
-        <link rel="stylesheet" href="./css/mian.css" />
-        <script type="module" src="./js/main.js"></script>
-        <!-- 제이쿼리 라이브러리 + UI -->
+    <!-- 메인CSS -->
+    <link rel="stylesheet" href="./css/mian.css" />
+    <!-- 메인 JS -->
+    <script type="module" src="./js/main.js"></script>
+    <!-- 제이쿼리 라이브러리 + UI -->
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
     <!-- 모바일용 드래그/드롭 이벤트 전환 플러그인 -->
     <script src="./js/jquery-touch-punch.min.js"></script>
-       
-    </script>
-    </head>
-    <body>
-        <!-- 상단영역 -->
-        <header id="top" class="header">
-            <!-- 메인로고 -->
-            <div class="main-logo">
-                <a href="./index.html"><img src="./img/en_02.png" alt="메인로고" /></a>
+  </head>
+  <body>
+    <!-- 상단영역 -->
+    <header id="top" class="header">
+      <!-- 메인로고 -->
+      <div class="main-logo">
+        <a href="./index.html"><img src="./img/en_02.png" alt="메인로고" /></a>
+      </div>
+      <!-- 상단메뉴 -->
+      <div class="main-menu">
+        <nav class="gnb">
+          <li>
+            <a href="./company.html">COMPANY</a>
+          </li>
+          <li class="li-sub">
+            <a href="project.html" class="noclick">BUSINESS ∨</a>
+            <div class="sub-menu">
+              <ol>
+                <li>
+                  <a href="project.html">PROJECT</a>
+                </li>
+                <li>
+                  <a href="#">PRODUCT</a>
+                </li>
+              </ol>
             </div>
-            <!-- 상단메뉴 -->
-            <div class="main-menu">
-                <nav class="gnb">
-                    <li>
-                        <a href="./company.html">COMPANY</a>
-                    </li>
-                    <li class="li-sub">
-                        <a href="#">BUSINESS ∨</a>
-                        <div class="sub-menu">
-                            <ol>
-                                <li>
-                                    <a href="project.html">PROJECT</a>
-                                </li>
-                                <li>
-                                    <a href="#">PRODUCT</a>
-                                </li>
-                            </ol>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">NEWS</a>
-                    </li>
-                    <li>
-                        <a href="./recruit.html">RECRUIT</a>
-                    </li>
-                    <li>
-                        <a href="./contact.html">CONTACT</a>
-                    </li>
-                </nav>
-            </div>
-            <button class="ham"></button>
-        </header>
-        <section id="banner">
-            <div class="bg-top part">
-            </div>
-            <div class="name-part">
-                <div class="slide-name">
-                    <div class="name1 mname"><h1>BREAD</h1>
-                    </div>
-                </div>
-                <div class="slide-name">
-                    <div class="name2 mname"><h1>BARBERSHOP</h1>
-                </div>
-            </div>
-            
-            </div>
-            <div class="main-bg part">
-                <img src="img/main-bg.png" alt="메인배경이미지" />
-            </div>
-        </section>
-        <main id="cont">
-            <div class="cont-bg">
-                <img class="img1"src="./img/111new.png" alt="" />
-            </div>
-            <div class="bx-info  special-box">
-                <a href="#" class="cont-mvbtn"> VIEW PROJECT </a>
-                <div class="name-bx">
-                    <span class="cont-name sname">Bread Barbershop</span>
-                </div>
-                <div class="ex-bx">
-                    <span>2019 ~</span>
-                    <span>Season 1 ~ 3</span>
-                    <span>Bread the genius barber and his assistant Wilk story</span>
-                    <span>브레드 이발소 : 2019년 1월 제작</span>
-                    <span>시즌 1 ~ 3</span>
-                    <span>천재 이발사 브레드와 그 이발소 직원들의 이야기를 그린 코미디 시트콤 애니메이션</span>
-                    <div></div>
-                    <a href="project.html">More info</a>
-                </div>
-            </div>
-            <div class="cont-bg">
-                <img class="img2" src="./img/cherry_main_good.png" alt="" />
-            </div>
-            <div class="bx-info  special-box">
-                <a href="#" class="cont-mvbtn"> VIEW PROJECT </a>
-                <div class="name-bx">
-                    <span class="cont-name sname">Cherry Toon</span>
-                </div>
-                <div class="ex-bx">
-                    <span>2020 ~</span>
-                    <span>Season 1, 2</span>
-                    <span>Cherry and friends daily life stoy</span>
-                    <span>체리툰 : 2020년 4월 제작</span>
-                    <span>시즌 1, 2</span>
-                    <span>체리와 친구들의 우정 일상 영상툰</span>
-                    <div></div>
-                    <a href="./project.html#cherry">More info</a>
-                </div>
-            </div>
-            <div class="cont-bg">
-                <img class="img3" src="./img/coco_main1_waifu2x_noise0_scale4x.png" alt="" />
-            </div>
-            <div class="bx-info  special-box">
-                <div class="name-bx">
-                    <span class="cont-name lname">Coco and Siro</span>
-                </div>
-                <div class="ex-bx">
-                    <span>In production</span>
-                    <span>COCO and SIRO daily story</span>
-                    <span>코코시로</span>
-                    <span>핫초코 코코와 마시멜로 고양이 시로의 따뜻한 이야기</span>
-                    <div></div>
-                    
-                </div>
-            </div>
-            <div class="cont-bg">
-                <img class="img3" src="./img/world travel main good.png" alt="" />
-            </div>
-            <div class="bx-info  special-box">
-                <a href="#" class="cont-mvbtn"> VIEW PROJECT </a>
-                <div class="name-bx">
-                    <span class="cont-name lname"> Bread And Wilk's World Tour</span>
-                </div>
-                <div class="ex-bx">
-                    <span>2022 ~</span>
-                    <span>Season 1,2</span>
-                    <span>Bread and Wilk travel to cities around the world</span>
-                    <span>​브레드와 윌크의 세계여행</span>
-                    <span>시즌 1,2</span>
-                    <span>브레드와 윌크가 세계 도시를 여행하며 랜드마크를 관광하고 역사적 위인들도 만나는 콘텐츠</span>
-                    <div></div>
-                    <a href="./project.html#World">More info</a>
-                </div>
-            </div>
-            <section id="news">
-                <div class="news-tit">
-                    <h2>NEWS</h2>
-                </div>
-                <div class="news-bx">
-                    <div class="news-list">
-                        <a class="news-name" href="#">깨끗한나라, ‘브레드 이발소’ 미용티슈 선보여</a>
-                        <span class="news-txt">breadbarbershop</span>
-                
-                        <span class="news-txt">2022년 4월 20일</span>
-                    </div>
-                    <div class="news-list">
-                        <a class="news-name" href="#">"바퀴달린 브레드 이발소를 아시나요?" 클룩, 이색 버스투어</a>
-                        <span class="news-txt">breadbarbershop</span>
-                        <span class="news-txt">2022년 4월 20일</span>
-                    </div>
-                    <div class="news-list">
-                        <a class="news-name" href="#">브레드이발소, 애경산업 캐릭터 담은 '2080 키즈 치약' 출시!</a>
-                        <span class="news-txt">breadbarbershop</span>
-                        <span class="news-txt">2021년 12월 20일</span>
-                    </div>
-                    <div class="news-list">
-                        <a class="news-name" href="#">유니세프 75주년 캠페인 이벤트 with 브레드이발소!</a>
-                        <span class="news-txt">breadbarbershop</span>
-                        <span class="news-txt">2021년 12월 20일</span>
-                    </div>
-                </div>
-                <div class="circle">
-                    <div class="circle1"><img src="./img/조약돌.png" alt="" class="trembling"></div>
-                    <div class="circle2"><img src="img/조약돌.png" alt="" class="trembling"></div>
-                    <div class="circle3"><img src="./img/circle.png" alt="" class="trembling"></div>
-                </div>
-            </section>
-        </main>
-        <footer id="info">
-            <div class="txt">
-                <div class="subject-txt">CONTENTS ANIMATION COMPANY </div>
-                <div>Adress  : 서울특별시 영등포구 문래북로 56, 7층</div>
-                <div>©2023 by 브레드이발소</div>
-                
-            </div>
-            <div class="social">
-                <a href="https://www.youtube.com/channel/UCKBt6VowYGmBpXFf3rVhaQA"><img src="./img/youtube.png" alt=""></a>
-                <a href="https://www.instagram.com/breadbarbershop/"><img src="./img/instagram.png" alt=""></a>
-                <a href="https://www.tiktok.com/tag/%EB%B8%8C%EB%A0%88%EB%93%9C%EC%9D%B4%EB%B0%9C%EC%86%8C"><img src="./img/tiktok.png" alt=""></a>
-                <a href="https://www.facebook.com/BreadBarbershop/?ref=aymt_homepage_panel&eid=ARBzvHRZOP4VojpKXX9YTIi1_SaqScIW-6v4C5dSKS5WsgFAmTu-9QhXtb_nVwxE-M0RpY0tfe74HqwW"><img src="./img/facebook.png" alt=""></a>
-            </div>
-        </footer>
-        <!-- 뷰프로젝트 박스 -->
-        <div class="vpj">
-            <!-- 영상 아이프레임 -->
-            <div class="mv-box"></div>
-            <!-- 닫기버튼 -->
-            <button class="cbtn">×</button>
+          </li>
+          <li>
+            <a href="#">NEWS</a>
+          </li>
+          <li>
+            <a href="./recruit.html">RECRUIT</a>
+          </li>
+          <li>
+            <a href="./contact.html">CONTACT</a>
+          </li>
+        </nav>
+      </div>
+      <button class="ham"></button>
+    </header>
+    <section id="banner">
+      <div class="bg-top part"></div>
+      <div class="name-part">
+        <div class="slide-name">
+          <div class="name1 mname"><h1>BREAD</h1></div>
         </div>
-    </body>
+        <div class="slide-name">
+          <div class="name2 mname"><h1>BARBERSHOP</h1></div>
+        </div>
+      </div>
+      <div class="main-bg part">
+        <img src="img/main-bg.png" alt="메인배경이미지" />
+      </div>
+    </section>
+    <main id="cont">
+      <div class="cont-bg">
+        <img class="img1" src="./img/111new.png" alt="" />
+      </div>
+      <div class="bx-info special-box">
+        <a href="#" class="cont-mvbtn"> VIEW PROJECT </a>
+        <div class="name-bx">
+          <span class="cont-name sname">Bread Barbershop</span>
+        </div>
+        <div class="ex-bx">
+          <span>2019 ~</span>
+          <span>Season 1 ~ 3</span>
+          <span>Bread the genius barber and his assistant Wilk story</span>
+          <span>브레드 이발소 : 2019년 1월 제작</span>
+          <span>시즌 1 ~ 3</span>
+          <span
+            >천재 이발사 브레드와 그 이발소 직원들의 이야기를 그린 코미디 시트콤
+            애니메이션</span
+          >
+          <div></div>
+          <a href="project.html">More info</a>
+        </div>
+      </div>
+      <div class="cont-bg">
+        <img class="img2" src="./img/cherry_main_good.png" alt="" />
+      </div>
+      <div class="bx-info special-box">
+        <a href="#" class="cont-mvbtn"> VIEW PROJECT </a>
+        <div class="name-bx">
+          <span class="cont-name sname">Cherry Toon</span>
+        </div>
+        <div class="ex-bx">
+          <span>2020 ~</span>
+          <span>Season 1, 2</span>
+          <span>Cherry and friends daily life stoy</span>
+          <span>체리툰 : 2020년 4월 제작</span>
+          <span>시즌 1, 2</span>
+          <span>체리와 친구들의 우정 일상 영상툰</span>
+          <div></div>
+          <a href="./project.html#cherry">More info</a>
+        </div>
+      </div>
+      <div class="cont-bg">
+        <img
+          class="img3"
+          src="./img/coco_main1_waifu2x_noise0_scale4x.png"
+          alt=""
+        />
+      </div>
+      <div class="bx-info special-box">
+        <div class="name-bx">
+          <span class="cont-name lname">Coco and Siro</span>
+        </div>
+        <div class="ex-bx">
+          <span>In production</span>
+          <span>COCO and SIRO daily story</span>
+          <span>코코시로</span>
+          <span>핫초코 코코와 마시멜로 고양이 시로의 따뜻한 이야기</span>
+          <div></div>
+        </div>
+      </div>
+      <div class="cont-bg">
+        <img class="img3" src="./img/world travel main good.png" alt="" />
+      </div>
+      <div class="bx-info special-box">
+        <a href="#" class="cont-mvbtn"> VIEW PROJECT </a>
+        <div class="name-bx">
+          <span class="cont-name lname"> Bread And Wilk's World Tour</span>
+        </div>
+        <div class="ex-bx">
+          <span>2022 ~</span>
+          <span>Season 1,2</span>
+          <span>Bread and Wilk travel to cities around the world</span>
+          <span>​브레드와 윌크의 세계여행</span>
+          <span>시즌 1,2</span>
+          <span
+            >브레드와 윌크가 세계 도시를 여행하며 랜드마크를 관광하고 역사적
+            위인들도 만나는 콘텐츠</span
+          >
+          <div></div>
+          <a href="./project.html#World">More info</a>
+        </div>
+      </div>
+      <section id="news">
+        <div class="news-tit">
+          <h2>NEWS</h2>
+        </div>
+        <div class="news-bx">
+          <div class="news-list">
+            <a class="news-name" href="#"
+              >깨끗한나라, ‘브레드 이발소’ 미용티슈 선보여</a
+            >
+            <span class="news-txt">breadbarbershop</span>
+
+            <span class="news-txt">2022년 4월 20일</span>
+          </div>
+          <div class="news-list">
+            <a class="news-name" href="#"
+              >"바퀴달린 브레드 이발소를 아시나요?" 클룩, 이색 버스투어</a
+            >
+            <span class="news-txt">breadbarbershop</span>
+            <span class="news-txt">2022년 4월 20일</span>
+          </div>
+          <div class="news-list">
+            <a class="news-name" href="#"
+              >브레드이발소, 애경산업 캐릭터 담은 '2080 키즈 치약' 출시!</a
+            >
+            <span class="news-txt">breadbarbershop</span>
+            <span class="news-txt">2021년 12월 20일</span>
+          </div>
+          <div class="news-list">
+            <a class="news-name" href="#"
+              >유니세프 75주년 캠페인 이벤트 with 브레드이발소!</a
+            >
+            <span class="news-txt">breadbarbershop</span>
+            <span class="news-txt">2021년 12월 20일</span>
+          </div>
+        </div>
+        <div class="circle">
+          <div class="circle1">
+            <img src="./img/조약돌.png" alt="" class="trembling" />
+          </div>
+          <div class="circle2">
+            <img src="img/조약돌.png" alt="" class="trembling" />
+          </div>
+          <div class="circle3">
+            <img src="./img/circle.png" alt="" class="trembling" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="info">
+      <div class="txt">
+        <div class="subject-txt">CONTENTS ANIMATION COMPANY</div>
+        <div>Adress : 서울특별시 영등포구 문래북로 56, 7층</div>
+        <div>©2023 by 브레드이발소</div>
+      </div>
+      <div class="social">
+        <a href="https://www.youtube.com/channel/UCKBt6VowYGmBpXFf3rVhaQA"
+          ><img src="./img/youtube.png" alt=""
+        /></a>
+        <a href="https://www.instagram.com/breadbarbershop/"
+          ><img src="./img/instagram.png" alt=""
+        /></a>
+        <a
+          href="https://www.tiktok.com/tag/%EB%B8%8C%EB%A0%88%EB%93%9C%EC%9D%B4%EB%B0%9C%EC%86%8C"
+          ><img src="./img/tiktok.png" alt=""
+        /></a>
+        <a
+          href="https://www.facebook.com/BreadBarbershop/?ref=aymt_homepage_panel&eid=ARBzvHRZOP4VojpKXX9YTIi1_SaqScIW-6v4C5dSKS5WsgFAmTu-9QhXtb_nVwxE-M0RpY0tfe74HqwW"
+          ><img src="./img/facebook.png" alt=""
+        /></a>
+      </div>
+    </footer>
+    <!-- 뷰프로젝트 박스 -->
+    <div class="vpj">
+      <!-- 영상 아이프레임 -->
+      <div class="mv-box"></div>
+      <!-- 닫기버튼 -->
+      <button class="cbtn">×</button>
+    </div>
+  </body>
+  
 </html>
