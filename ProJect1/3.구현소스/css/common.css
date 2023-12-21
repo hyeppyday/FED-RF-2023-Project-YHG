@@ -226,6 +226,8 @@ footer{
     overflow: visible;
     height: auto;
     display: none;
+    opacity: 1;
+    height: 50px;
 }
 .header.on .sub-menu{
     transition: none;
@@ -236,6 +238,8 @@ footer{
 .sub-menu ol{
     text-align: left;
 }
-
+.main-logo{
+    width: 90px;
+}
 
 }
