@@ -13,7 +13,7 @@ export function SwiperTxt() {
       <Swiper
         direction={"vertical"}
         autoplay={{
-          delay: 2500,
+          delay: 1800,
           disableOnInteraction: false,
         }}
         loop={true}
