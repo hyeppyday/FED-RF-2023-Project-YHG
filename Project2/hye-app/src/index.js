@@ -13,6 +13,7 @@ import { MainCont } from "./components/pages/MainCont";
 import { Detail } from "./components/modules/Detail";
 
 import { Member } from "./components/pages/Member";
+import { SchPage } from "./components/pages/SchPage";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/list" element={<MainCont cat="해변 바로 앞" />} />
           <Route path="/detail" element={<Detail />} />
           <Route path="member" element={<Member />} />
+          <Route path="schpage" element={<SchPage />} />
         </Route>
       </Routes>
     </HashRouter>

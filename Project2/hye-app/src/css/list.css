@@ -76,16 +76,7 @@
     top: 90px;
     right: 10px;
 }
-/* 블릿 */
-.indic{
 
-}
-.indic li{
-
-}
-.indic li.on{
-
-}
 
 @media (max-width:1000px) {
     .cat-list{

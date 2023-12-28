@@ -16,6 +16,7 @@
 .logo {
   width: 144px;
   cursor: pointer;
+
 }
 
 /* GNB메뉴 */
@@ -32,6 +33,7 @@
   align-items: center;
   padding: 5px;
   color: #666;
+
 }
 .gnb ul a:visited {
   color: #666;
@@ -84,12 +86,14 @@
 .gnb ul > li ol {
   position: absolute;
   padding: 22px;
+  width: 80%;
   background-color: #ffffff;
   top: -14px;
   left: 50%;
   transform: translate(-50%);
   user-select: none;
   opacity: 0;
+
   
   justify-content: center;
   /* transition: 1s; */
@@ -97,8 +101,9 @@
 
 .gnb ul > li.on ol {
   opacity: 1;
-  top: 76px;
+  top: 77px;
   width: 100%;
+  
   /* height: auto; */
 }
 
@@ -125,6 +130,38 @@
 }
 .gnb ol li img {
   width: 30px;
+}
+
+/* gnb 검색입력창 박스 */
+.searchingGnb{    
+  position: absolute;
+  right: 25px;
+    top: 101px;
+  line-height: 41px;
+
+  width: 250px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #efefef;
+  box-sizing: border-box;
+  padding: 0 5px;
+  display: none;/* 처음에 안보임! */
+}
+.searchingGnb input{
+  font-size: 15px;
+  width: 77%;
+  margin-top: 5px;
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+}
+input:focus{
+  outline: none;
+}
+.schbtnGnb{
+  cursor: pointer;
+  margin-top: 9px;
+  margin-left: 10px;
 }
 
 /* 메인 영역 */

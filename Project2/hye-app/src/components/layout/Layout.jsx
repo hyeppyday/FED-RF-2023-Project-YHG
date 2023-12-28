@@ -2,8 +2,9 @@ import { FooterArea } from "./FooterArea"
 import { MainArea } from "./MainArea"
 import { TopArea } from "./TopArea"
 import { bnbCon } from "../modules/bnbContext"
-import { useState } from "react"
+import { useCallback, useState } from "react"
 import { useEffect } from "react"
+import { useNavigate } from "react-router-dom"
 
 
 // Airbnb 레이아웃 컴포넌트
@@ -21,10 +22,16 @@ export function Layout(){
         window.scrollTo(0,0);
     },[])
 
+    // 라우터 이동객체설정
+  const goNav = useNavigate();
+
+  // 라우터 이동함수 : pgName - 페이지이름 / param - 전달값
+  const chgPage = useCallback((pgName,param) => goNav(pgName,param),[]);
 
     return(
-    <bnbCon.Provider value={{menuCat, chgMenuCat,bNum,setBNum}}>
-        <TopArea/>
+    <bnbCon.Provider value={{chgPage,menuCat, chgMenuCat,bNum,setBNum}}>
+        <TopArea
+        chgPageFn={ chgPage } />
         <MainArea/>
         <FooterArea/>
     </bnbCon.Provider>
