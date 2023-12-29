@@ -9,6 +9,8 @@ export function View() {
 
   console.log('선택데이터:',selData)
 
+  const arr = ['a.jpg','b.jpg','c.jpg'];
+
   return (
     <>
       {/* 전체박스 */}
@@ -19,11 +21,24 @@ export function View() {
         <div className="view-random">
           {/* 랜덤 데이터 뿌려지는 박스 */}
           <div className="random-box">
-            {selData.map((v,i)=>{
+            <ul>
+              <li><img src={arr[0]} alt="" /></li>
+              <li><img src="" alt="" /></li>
+              <li><img src="" alt="" /></li>
+              <li><img src="" alt="" /></li>
+              <li><img src="" alt="" /></li>
+              <li><img src="" alt="" /></li>
+              <li><img src="" alt="" /></li>
+              <li><img src="" alt="" /></li>
+              <li><img src={arr[9]} alt="" /></li>
+            </ul>
+            
+
+            {/* selData.map((v,i)=>{
                 
             })
                 
-            }
+             */}
             </div>
           {/* 오버시 이미지 크게보이는 박스 */}
           <div className="bigimg">

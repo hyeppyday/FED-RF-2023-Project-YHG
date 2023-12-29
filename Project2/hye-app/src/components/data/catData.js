@@ -5,7 +5,8 @@ export const catData = [
         "category":'해변 바로 앞',
         "score":'4.87',
         "price":'110,000',
-        "scat":['해변바로앞']
+        "scat":['해변바로앞'],
+        "icat":1
         
     },
     {
@@ -14,7 +15,8 @@ export const catData = [
         "category":'해변 바로 앞',
         "score":'4.71',
         "price":'214,000',
-        "scat":['바베큐장,해변바로앞']
+        "scat":['바베큐장,해변바로앞'],
+        "icat":1
     },
     {
         "idx":'3',
@@ -22,7 +24,8 @@ export const catData = [
         "category":'해변 바로 앞',
         "score":'4.93',
         "price":'248,354',
-        "scat":['마당','욕조,해변바로앞']
+        "scat":['마당','욕조,해변바로앞'],
+        "icat":1
     },
     {
         "idx":'4',
@@ -30,7 +33,8 @@ export const catData = [
         "category":'해변 바로 앞',
         "score":'4.79',
         "price":'250,000',
-        "scat":['마당','복층,해변바로앞']
+        "scat":['마당','복층,해변바로앞'],
+        "icat":1
     },
     {
         "idx":'5',
@@ -38,7 +42,8 @@ export const catData = [
         "category":'해변 바로 앞',
         "score":'3.47',
         "price":'65,000',
-        "scat":['복층,해변바로앞']
+        "scat":['복층,해변바로앞'],
+        "icat":1
     },
     {
         "idx":'6',
@@ -46,7 +51,8 @@ export const catData = [
         "category":'해변 바로 앞',
         "score":'4.94',
         "price":'550,000',
-        "scat":['바베큐장,발코니,욕조,해변바로앞']
+        "scat":['바베큐장,발코니,욕조,해변바로앞'],
+        "icat":1
     },
     {
         "idx":'7',
@@ -54,7 +60,8 @@ export const catData = [
         "category":'한옥',
         "score":'4.76',
         "price":'340,000',
-        "scat":['복층,발코니,한옥']
+        "scat":['복층,발코니,한옥'],
+        "icat":1
     },
     {
         "idx":'8',
@@ -62,7 +69,8 @@ export const catData = [
         "category":'한옥',
         "score":'4.99',
         "price":'173,914',
-        "scat":['마당,한옥']
+        "scat":['마당,한옥'],
+        "icat":1
     },
     {
         "idx":'9',
@@ -70,7 +78,8 @@ export const catData = [
         "category":'한옥',
         "score":'5.0',
         "price":'360,000',
-        "scat":['욕조,한옥']
+        "scat":['욕조,한옥'],
+        "icat":1
     },
     {
         "idx":'10',
@@ -78,7 +87,8 @@ export const catData = [
         "category":'한옥',
         "score":'4.90',
         "price":'330,000',
-        "scat":['욕조,마당,한옥']
+        "scat":['욕조,마당,한옥'],
+        "icat":1
     },
     {
         "idx":'11',
@@ -86,7 +96,8 @@ export const catData = [
         "category":'한옥',
         "score":'4.91',
         "price":'150,000',
-        "scat":['바베큐장,마당,한옥']
+        "scat":['바베큐장,마당,한옥'],
+        "icat":1
     },
     {
         "idx":'12',
@@ -94,7 +105,8 @@ export const catData = [
         "category":'한옥',
         "score":'4.75',
         "price":'184,000',
-        "scat":['복층,발코니,마당,한옥']
+        "scat":['복층,발코니,마당,한옥'],
+        "icat":2
     },
     {
         "idx":'13',
@@ -102,7 +114,8 @@ export const catData = [
         "category":'멋진 수영장',
         "score":'5.0',
         "price":'404,000',
-        "scat":['바베큐장,마당,욕조,멋진수영장']
+        "scat":['바베큐장,마당,욕조,멋진수영장'],
+        "icat":1
     },
     {
         "idx":'14',
@@ -110,7 +123,8 @@ export const catData = [
         "category":'멋진 수영장',
         "score":'4.98',
         "price":'619,650',
-        "scat":['복층,발코니,멋진수영장']
+        "scat":['복층,발코니,멋진수영장'],
+        "icat":1
     },
     {
         "idx":'15',
@@ -118,7 +132,8 @@ export const catData = [
         "category":'멋진 수영장',
         "score":'5.0',
         "price":'253,493',
-        "scat":['마당,멋진수영장']
+        "scat":['마당,멋진수영장'],
+        "icat":1
     },
     {
         "idx":'16',
@@ -126,7 +141,8 @@ export const catData = [
         "category":'멋진 수영장',
         "score":'4.93',
         "price":'390,000',
-        "scat":['한옥,멋진수영장']
+        "scat":['한옥,멋진수영장'],
+        "icat":1
     },
     {
         "idx":'17',
@@ -134,7 +150,8 @@ export const catData = [
         "category":'멋진 수영장',
         "score":'5.0',
         "price":'174,000',
-        "scat":['복층,바베큐장,멋진수영장']
+        "scat":['복층,바베큐장,멋진수영장'],
+        "icat":1
     },
     {
         "idx":'18',
@@ -142,7 +159,8 @@ export const catData = [
         "category":'멋진 수영장',
         "score":'4.93',
         "price":'270,600',
-        "scat":['한옥,복층,바베큐장,멋진수영장']
+        "scat":['한옥,복층,바베큐장,멋진수영장'],
+        "icat":1
     },
     {
         "idx":'19',
@@ -150,7 +168,8 @@ export const catData = [
         "category":'료칸',
         "score":'4.89',
         "price":'551,347',
-        "scat":['욕조,복층,료칸']
+        "scat":['욕조,복층,료칸'],
+        "icat":1
     },
     {
         "idx":'20',
@@ -158,7 +177,8 @@ export const catData = [
         "category":'료칸',
         "score":'4.94',
         "price":'168,072',
-        "scat":['료칸,마당']
+        "scat":['료칸,마당'],
+        "icat":1
     },
     {
         "idx":'21',
@@ -166,7 +186,8 @@ export const catData = [
         "category":'료칸',
         "score":'4.97',
         "price":'309,466',
-        "scat":['료칸,욕조,마당']
+        "scat":['료칸,욕조,마당'],
+        "icat":1
     },
     {
         "idx":'22',
@@ -174,7 +195,8 @@ export const catData = [
         "category":'료칸',
         "score":'4.99',
         "price":'591,658',
-        "scat":['료칸,발코니']
+        "scat":['료칸,발코니'],
+        "icat":1
     },
     {
         "idx":'23',
@@ -182,7 +204,8 @@ export const catData = [
         "category":'료칸',
         "score":'4.91',
         "price":'142,738',
-        "scat":['료칸,복층']
+        "scat":['료칸,복층'],
+        "icat":1
     },
     {
         "idx":'24',
@@ -190,7 +213,8 @@ export const catData = [
         "category":'료칸',
         "score":'4.92',
         "price":'930,176',
-        "scat":['료칸']
+        "scat":['료칸'],
+        "icat":1
     },
     {
         "idx":'25',
@@ -198,7 +222,8 @@ export const catData = [
         "category":'캠핑장',
         "score":'4.98',
         "price":'160,000',
-        "scat":['캠핑장,복층']
+        "scat":['캠핑장,복층'],
+        "icat":1
     },
     {
         "idx":'26',
@@ -206,7 +231,8 @@ export const catData = [
         "category":'캠핑장',
         "score":'4.88',
         "price":'176,000',
-        "scat":['캠핑장,바베큐장']
+        "scat":['캠핑장,바베큐장'],
+        "icat":1
     },
     {
         "idx":'27',
@@ -214,7 +240,8 @@ export const catData = [
         "category":'캠핑장',
         "score":'4.99',
         "price":'484,559',
-        "scat":['캠핑장,바베큐장']
+        "scat":['캠핑장,바베큐장'],
+        "icat":1
     },
     {
         "idx":'28',
@@ -222,7 +249,8 @@ export const catData = [
         "category":'캠핑장',
         "score":'4.78',
         "price":'205,640',
-        "scat":['캠핑장,바베큐장,마당']
+        "scat":['캠핑장,바베큐장,마당'],
+        "icat":1
     },
     {
         "idx":'29',
@@ -230,7 +258,8 @@ export const catData = [
         "category":'캠핑장',
         "score":'4.97',
         "price":'258,000',
-        "scat":['캠핑장,욕조,복층']
+        "scat":['캠핑장,욕조,복층'],
+        "icat":1
     },
     {
         "idx":'30',
@@ -238,7 +267,8 @@ export const catData = [
         "category":'캠핑장',
         "score":'4.89',
         "price":'192,000',
-        "scat":['캠핑장,복층,욕조,발코니']
+        "scat":['캠핑장,복층,욕조,발코니'],
+        "icat":1
     },
     {
         "idx":'31',
@@ -246,7 +276,8 @@ export const catData = [
         "category":'통나무집',
         "score":'4.86',
         "price":'1,125,467',
-        "scat":['통나무집,바베큐장,욕조']
+        "scat":['통나무집,바베큐장,욕조'],
+        "icat":1
     },
     {
         "idx":'32',
@@ -254,7 +285,8 @@ export const catData = [
         "category":'통나무집',
         "score":'4.92',
         "price":'714,582',
-        "scat":['통나무집,복층,욕조']
+        "scat":['통나무집,복층,욕조'],
+        "icat":1
     },
     {
         "idx":'33',
@@ -262,7 +294,8 @@ export const catData = [
         "category":'통나무집',
         "score":'4.89',
         "price":'595,740',
-        "scat":['통나무집,욕조,복층']
+        "scat":['통나무집,욕조,복층'],
+        "icat":1
     },
     {
         "idx":'34',
@@ -270,7 +303,8 @@ export const catData = [
         "category":'통나무집',
         "score":'4.96',
         "price":'130,000',
-        "scat":['통나무집,발코니']
+        "scat":['통나무집,발코니'],
+        "icat":1
     },
     {
         "idx":'35',
@@ -278,7 +312,8 @@ export const catData = [
         "category":'통나무집',
         "score":'4.88',
         "price":'26,374',
-        "scat":['통나무집,마당']
+        "scat":['통나무집,마당'],
+        "icat":1
     },
     {
         "idx":'36',
@@ -286,7 +321,8 @@ export const catData = [
         "category":'통나무집',
         "score":'4.97',
         "price":'203,477',
-        "scat":['통나무집,욕조, 복층']
+        "scat":['통나무집,욕조, 복층'],
+        "icat":1
     },
     {
         "idx":'37',
@@ -294,7 +330,8 @@ export const catData = [
         "category":'섬',
         "score":'4.76',
         "price":'1,051,125',
-        "scat":['섬,발코니']
+        "scat":['섬,발코니'],
+        "icat":1
     },
     {
         "idx":'38',
@@ -302,7 +339,8 @@ export const catData = [
         "category":'섬',
         "score":'5.0',
         "price":'147,219',
-        "scat":['섬,발코니,복층']
+        "scat":['섬,발코니,복층'],
+        "icat":2
     },
     {
         "idx":'39',
@@ -310,7 +348,8 @@ export const catData = [
         "category":'섬',
         "score":'4.98',
         "price":'2,627,813',
-        "scat":['섬']
+        "scat":['섬'],
+        "icat":1
     },
     {
         "idx":'40',
@@ -318,7 +357,8 @@ export const catData = [
         "category":'섬',
         "score":'5.0',
         "price":'3,199,888',
-        "scat":['섬,복층,마당']
+        "scat":['섬,복층,마당'],
+        "icat":1
     },
     {
         "idx":'41',
@@ -326,7 +366,8 @@ export const catData = [
         "category":'섬',
         "score":'4.85',
         "price":'788,344',
-        "scat":['섬']
+        "scat":['섬'],
+        "icat":1
     },
     {
         "idx":'42',
@@ -334,7 +375,8 @@ export const catData = [
         "category":'섬',
         "score":'4.88',
         "price":'130,597',
-        "scat":['섬,복층,마당']
+        "scat":['섬,복층,마당'],
+        "icat":1
     },
     {
         "idx":'43',
@@ -342,7 +384,8 @@ export const catData = [
         "category":'키클라데스 주택',
         "score":'5.0',
         "price":'177,669',
-        "scat":['키클라데스 주택,발코니']
+        "scat":['키클라데스 주택,발코니'],
+        "icat":1
     },
     {
         "idx":'44',
@@ -350,7 +393,8 @@ export const catData = [
         "category":'키클라데스 주택',
         "score":'4.98',
         "price":'634,350',
-        "scat":['키클라데스 주택,욕조']
+        "scat":['키클라데스 주택,욕조'],
+        "icat":1
     },
     {
         "idx":'45',
@@ -358,7 +402,8 @@ export const catData = [
         "category":'키클라데스 주택',
         "score":'5.0',
         "price":'127,922',
-        "scat":['키클라데스 주택,복층']
+        "scat":['키클라데스 주택,복층'],
+        "icat":1
     },
     {
         "idx":'46',
@@ -366,7 +411,8 @@ export const catData = [
         "category":'키클라데스 주택',
         "score":'4.78',
         "price":'604,075',
-        "scat":['키클라데스 주택,마당']
+        "scat":['키클라데스 주택,마당'],
+        "icat":1
     },
     {
         "idx":'47',
@@ -374,7 +420,8 @@ export const catData = [
         "category":'키클라데스 주택',
         "score":'4.97',
         "price":'710,677',
-        "scat":['키클라데스 주택,복층']
+        "scat":['키클라데스 주택,복층'],
+        "icat":1
     },
     {
         "idx":'48',
@@ -382,6 +429,7 @@ export const catData = [
         "category":'키클라데스 주택',
         "score":'5.0',
         "price":'142,135 ',
-        "scat":['키클라데스 주택']
+        "scat":['키클라데스 주택'],
+        "icat":1
     },
 ]

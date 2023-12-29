@@ -35,7 +35,7 @@ const searchList = () =>{
           {/* 2-1. 결과 타이틀 */}
           <h2 className="restit">{props.kword}으로 검색한 숙소들</h2>
           {/* 2-3. 숙소 리스트 컴포넌트 */}
-          <SchList/>
+          <SchList kword={props.kword} />
         </div>
       </section>
     </>

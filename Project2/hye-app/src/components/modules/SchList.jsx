@@ -10,8 +10,11 @@ import { SwiperApp } from "../plugin/SwiperApp";
 export function SchList(props) {
 // props.cat은 전달된 카테고리 정보(데이터 선별용)
 const selData = catData.filter((v) => {
-  if (v.category == decodeURIComponent(props.cat)) return true;
+  console.log();
+  if (v.scat.join('').indexOf(props.kword)!==-1) return true;
 });
+
+console.log(selData);
 
   return (
     <>
@@ -33,7 +36,7 @@ const selData = catData.filter((v) => {
                   {/* 1. 이미지박스 */}
                   <div className="imbx">
                     <div className="imslide">
-                      <SwiperApp cat={v.category} seq={i + 1} />
+                      <SwiperApp cat={v.category} seq={v.icat} />
                     </div>
                     <ol className="indic">
                       <li className={i == 0 ? "on" : ""}></li>
