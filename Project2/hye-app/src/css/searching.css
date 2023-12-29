@@ -28,7 +28,10 @@ input:focus{
 
 .restit{
     font-size: min(35px,4vw);
-    margin: 10px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 /* 검색박스 */

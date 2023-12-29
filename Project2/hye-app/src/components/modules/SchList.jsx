@@ -19,7 +19,7 @@ console.log(selData);
   return (
     <>
       {
-          <ul className="clist">
+          <ul className="cat-list" style={{marginTop:'280px'}}>
             {selData.map((v, i) => (
               <Link
                 to="/detail"
