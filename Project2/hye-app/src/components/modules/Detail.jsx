@@ -16,8 +16,11 @@ export function Detail() {
   const name = loc.state.name;
   const score = loc.state.score;
   const cat = loc.state.cat;
+  const icat = loc.state.icat;
 
-  let seq = loc.state.seq;
+  console.log("순번:",icat);
+
+  // let seq = loc.state.seq;
 
   // 선택 데이터
   const selData = subData[idx - 1];
@@ -36,7 +39,7 @@ export function Detail() {
               "./images/Category/" +
               cat +
               "/" +
-              Number(seq + 1) +
+              icat +
               "/" +
               (x + 1) +
               ".jpg"
@@ -176,7 +179,7 @@ export function Detail() {
       // 3. 변경된 순번에 맞는 큰 이미지와 설명넣기
       // 3-1. 큰 이미지 변경 : 이미지이름은 순번보다 1큼
       imbx.find("img").attr("src", 
-      "./images/Category/" + cat + "/" + Number(seq + 1) + "/" + pseq + ".jpg");
+      "./images/Category/" + cat + "/" + icat + "/" + pseq + ".jpg");
     }); ////////////// click /////////////////////
     //////////////////////////////////////////////
   }, []);
@@ -186,7 +189,7 @@ export function Detail() {
       {/* 1. 메인사진 파트 */}
       <div className="main-img">
         {/* 메인이미지 : 첫번째 이미지*/}
-        <img src={"./images/Category/" + cat + "/" + (seq + 1) + "/1.jpg"} />
+        <img src={"./images/Category/" + cat + "/" + icat + "/1.jpg"} />
         <div className="namebx">
           {/* 숙소이름 : catData - name*/}
           <h1>{name}</h1>
@@ -221,7 +224,7 @@ export function Detail() {
       {/* 3. 숙소 시설 파트 */}
       <div className="amenity-box">
         {/* 백그라운드 이미지 : 두번째 이미지 */}
-        <img src={"./images/Category/" + cat + "/" + (seq + 1) + "/2.jpg"} />
+        <img src={"./images/Category/" + cat + "/" + icat + "/2.jpg"} />
         {/* 설명 박스 */}
         <div className="black-box">
           <h2>Amenities</h2>

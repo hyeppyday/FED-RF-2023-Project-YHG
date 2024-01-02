@@ -15,7 +15,7 @@ body{
   width: 100%;
   color: #ff5a60;
   margin-bottom: 30px;
-  font-size: 3vw;
+  font-size: max(3vw,40px);
   font-family: "Noto Sans KR", sans-serif;
 }
 /* 비디오 박스 */

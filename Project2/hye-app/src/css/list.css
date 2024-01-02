@@ -50,33 +50,6 @@
     border-radius: 10px;
     overflow: hidden;
 }
-/* 이동버튼 */
-.cat-list .abtn{
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    background-color: #ffffff94;
-    position: absolute;
-    font-family: 'Nanum Myeongjo', serif;
-    font-size: 10px;
-    color: #222;
-    font-weight: bold;
-    border: none;
-    box-shadow: 1px 1px 4px #0000008a;
-    display: none;
-}
-.listbox:hover .abtn{
-    display: block;
-}
-.lb{
-    top: 90px;
-    left: 10px;
-}
-.rb{
-    top: 90px;
-    right: 10px;
-}
-
 
 @media (max-width:1000px) {
     .cat-list{

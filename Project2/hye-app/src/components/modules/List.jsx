@@ -21,7 +21,7 @@ export function List(props) {
           score: v.score,
           idx: v.idx,
           cat: v.category,
-          seq: i,
+          icat: v.icat,
         }}>
           <div className="listbox">
             {/* 1. 이미지박스 */}
@@ -29,13 +29,7 @@ export function List(props) {
               <div className="imslide">
                 <SwiperApp cat={v.category} seq={i+1} />
               </div>
-              {/* 양쪽이동버튼 */}
-              {/* <button className="abtn lb" onClick={goSlide}>
-                ＜
-              </button>
-              <button className="abtn rb" onClick={goSlide}>
-                ＞
-              </button> */}
+           
               {/* 블릿 인디케이터 - 선택데이터의 개수만큼 만들기*/}
               <ol className="indic">
                 <li className={i == 0 ? "on" : ""}></li>

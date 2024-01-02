@@ -1,4 +1,4 @@
-// DC PJ 캐릭터 검색결과 리스트 컴포넌트
+// 숙소 검색 결과 리스트 컴포넌트
 
 import { catData } from "../data/catData.js";
 import { Link } from "react-router-dom";
@@ -29,7 +29,7 @@ console.log(selData);
                   score: v.score,
                   idx: v.idx,
                   cat: v.category,
-                  seq: i,
+                  icat:v.icat,
                 }}
               >
                 <div className="listbox">
