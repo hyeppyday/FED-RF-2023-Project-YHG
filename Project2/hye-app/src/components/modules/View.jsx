@@ -1,6 +1,7 @@
 // 메인페이지 둘러보세요 컨텐츠 컴포넌트
 import { subData } from "../data/subData";
 import { useLocation } from "react-router-dom";
+import { catData } from "../data/catData";
 
 import "../../css/view.css";
 import { Fragment, useEffect } from "react";
@@ -44,7 +45,7 @@ export function View() {
     let rdm2 = Math.ceil(Math.random() * 6);
 
     // 새로운 조합 src
-    let newSrc = "./images/Category/" + catTxt[rdm1] + "/" + rdm2 + "/1.jpg";
+    let newSrc = "./images/Category/" + catTxt[rdm1].replace(/\s/gi,'%20') + "/" + rdm2 + "/1.jpg";
     return newSrc;
   };
 
@@ -81,16 +82,36 @@ export function View() {
   makeArr();
 
   const setEvt = (e) => {
-    const csrc = $(e.currentTarget).attr("src");
-    // console.log("현재src:", csrc);
-    $(".bigimg").css("background-image", `url(${csrc})`);
+    const tgEle = $(e.currentTarget);
+    const csrc = tgEle.attr("src");
+    console.log("현재src:", csrc);
+
+
+    const temp = csrc.split('/');
+    console.log(temp[3],temp[4]);
+
+    const fdata = catData.find(v=>{
+      if(v.category===temp[3].replace(/%20/gi,' ')&&v.icat===Number(temp[4])) return true;
+    });
+
+    console.log('선택Data:',fdata);
+
+    const loca = subData.find(v=>{
+      if(v.idx===fdata.idx) return true;
+    })
+
+
+    $('.bigimg').css("background-image", `url(${csrc})`)
+    .find('h3').first().text(loca.gps).next().text(fdata.score);
   }; //////// setEvt /////////////
 
   const arrNum = [2, 4, 7, 8, 13, 14, 16, 17];
   const chkNum = (x) => {
+    // console.log('입력:',x);
     let retVal = true;
     arrNum.forEach((v) => {
-      if (v === x) return false;
+      if (v === x) retVal = false;
+      // console.log('돌아!',v);
     });
 
     return retVal;
@@ -101,19 +122,16 @@ export function View() {
 
     let setNum = -1;
 
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 18; i++) {
       console.log(chkNum(i));
       temp[i] = (
-        <Fragment key={i}>
-          {chkNum(i) && (
-            <li>
-              <img src={arr[++setNum]} alt="image" onMouseEnter={setEvt} />
-            </li>
+        <li key={i}>
+          {chkNum(i) ? (
+            <img src={arr[++setNum]} alt="image" onMouseEnter={setEvt} />
+          ) : (
+            ""
           )}
-          {!chkNum(i) && (
-            <li></li>
-          )}
-        </Fragment>
+        </li>
       );
     }
 
@@ -131,12 +149,6 @@ export function View() {
           {/* 랜덤 데이터 뿌려지는 박스 */}
           <div className="random-box">
             <ul>{makeList()}</ul>
-
-            {/* selData.map((v,i)=>{
-                
-            })
-                
-             */}
           </div>
           {/* 오버시 이미지 크게보이는 박스 */}
           <div className="bigimg">

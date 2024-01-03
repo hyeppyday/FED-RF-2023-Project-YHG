@@ -16,7 +16,7 @@ export function Main() {
     const i3Tg = $(".imgbx");
     const mtit = $('.panel h1');
 
-    console.log(i3BoxTop);
+    // // console.log(i3BoxTop);
   
 
     tit.css({
@@ -28,7 +28,7 @@ export function Main() {
 
     const showEle = (e) => {
       let scTop = $(window).scrollTop();
-      console.log(scTop);
+      // console.log(scTop);
 
       /// 타이틀 ////
       if (scTop > 0 && scTop<=112 ) {
