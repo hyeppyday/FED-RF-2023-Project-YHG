@@ -1,6 +1,6 @@
 // 메인페이지 둘러보세요 컨텐츠 컴포넌트
 import { subData } from "../data/subData";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { catData } from "../data/catData";
 
 import "../../css/view.css";
@@ -9,11 +9,6 @@ import { Fragment, useEffect } from "react";
 import $ from "jquery";
 
 export function View() {
-  // 선택 데이터
-  const selData = subData;
-
-  console.log("선택데이터:", selData);
-
   const arr = [
     // "https://cdn.pixabay.com/photo/2016/05/02/09/45/japan-1366872_1280.jpg",
     // "https://cdn.pixabay.com/photo/2015/07/15/11/51/resort-846075_640.jpg",
@@ -45,7 +40,12 @@ export function View() {
     let rdm2 = Math.ceil(Math.random() * 6);
 
     // 새로운 조합 src
-    let newSrc = "./images/Category/" + catTxt[rdm1].replace(/\s/gi,'%20') + "/" + rdm2 + "/1.jpg";
+    let newSrc =
+      "./images/Category/" +
+      catTxt[rdm1].replace(/\s/gi, "%20") +
+      "/" +
+      rdm2 +
+      "/1.jpg";
     return newSrc;
   };
 
@@ -86,23 +86,30 @@ export function View() {
     const csrc = tgEle.attr("src");
     console.log("현재src:", csrc);
 
+    const temp = csrc.split("/");
+    console.log(temp[3], temp[4]);
 
-    const temp = csrc.split('/');
-    console.log(temp[3],temp[4]);
+    const fdata = catData.find((v) => {
+      if (
+        v.category === temp[3].replace(/%20/gi, " ") &&
+        v.icat === Number(temp[4])
+        )
+        return true;
+      });
+      
+    console.log("선택Data:", fdata);
 
-    const fdata = catData.find(v=>{
-      if(v.category===temp[3].replace(/%20/gi,' ')&&v.icat===Number(temp[4])) return true;
+    const loca = subData.find((v) => {
+      if (v.idx === fdata.idx) return true;
     });
 
-    console.log('선택Data:',fdata);
-
-    const loca = subData.find(v=>{
-      if(v.idx===fdata.idx) return true;
-    })
-
-
-    $('.bigimg').css("background-image", `url(${csrc})`)
-    .find('h3').first().text(loca.gps).next().text(fdata.score);
+    $(".bigimg")
+      .css("background-image", `url(${csrc})`)
+      .find("h3")
+      .first()
+      .text(loca.gps)
+      .next()
+      .text("★ " + fdata.score);
   }; //////// setEvt /////////////
 
   const arrNum = [2, 4, 7, 8, 13, 14, 16, 17];
@@ -123,7 +130,7 @@ export function View() {
     let setNum = -1;
 
     for (let i = 0; i < 18; i++) {
-      console.log(chkNum(i));
+      // console.log(chkNum(i));
       temp[i] = (
         <li key={i}>
           {chkNum(i) ? (

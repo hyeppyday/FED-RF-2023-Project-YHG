@@ -22,12 +22,11 @@
 /* 그리드 박스 */
 .random-box ul{
     display: grid;
-    grid-template-columns: repeat(4,320px);
-    grid-template-rows: repeat(5,180px);
+    grid-template-columns: repeat(4,260px);
+    grid-template-rows: repeat(5,150px);
     column-gap: 10px;
     row-gap: 10px;
 
-    width: 70%;
 }
 
 .random-box img{
@@ -61,8 +60,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 30%;
-    margin-left: 100px;
+    width: 26%;
+    margin-left: 150px;
+
 }
 
 .bigimg h3{

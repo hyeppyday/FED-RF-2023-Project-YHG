@@ -15,6 +15,7 @@ export function Main() {
     const i3BoxTop = $(".panel").offset().top;
     const i3Tg = $(".imgbx");
     const mtit = $('.panel h1');
+    const viewtit = $('view-box h1');
 
     // // console.log(i3BoxTop);
   
