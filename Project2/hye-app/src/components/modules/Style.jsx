@@ -51,40 +51,58 @@ export function Style() {
 
         <div className="imgbx">
           <span
-            onClick={(e) => {
+            
+          >
+            <img src="./images/style1.jpg" alt="" onClick={(e) => {
               myCon.chgMenuCat(
                 Peaceful[getRandom(Peaceful.length,
                 e.currentTarget)]
               );
               goNav("/list");
-            }}
-          >
-            <img src="./images/style1.jpg" alt="" />
-            <h3>Peaceful</h3>
+            }}/>
+            <h3 onClick={(e) => {
+              myCon.chgMenuCat(
+                Peaceful[getRandom(Peaceful.length,
+                e.currentTarget)]
+              );
+              goNav("/list");
+            }}>Peaceful</h3>
           </span>
           <span
-            onClick={(e) => {
+            
+          >
+            <img src="./images/style2.jpg" alt="" onClick={(e) => {
               myCon.chgMenuCat(
                 Active[getRandom(Active.length,
                 e.currentTarget)]
               );
               goNav("/list");
-            }}
-          >
-            <img src="./images/style2.jpg" alt="" />
-            <h3>Active</h3>
+            }}/>
+            <h3 onClick={(e) => {
+              myCon.chgMenuCat(
+                Active[getRandom(Active.length,
+                e.currentTarget)]
+              );
+              goNav("/list");
+            }}>Active</h3>
           </span>
           <span
-            onClick={(e) => {
+            
+          >
+            <img src="./images/style3.jpg" alt="" onClick={(e) => {
               myCon.chgMenuCat(
                 Mystic[getRandom(Mystic.length,
                 e.currentTarget)]
               );
               goNav("/list");
-            }}
-          >
-            <img src="./images/style3.jpg" alt="" />
-            <h3>Mystic</h3>
+            }}/>
+            <h3 onClick={(e) => {
+              myCon.chgMenuCat(
+                Mystic[getRandom(Mystic.length,
+                e.currentTarget)]
+              );
+              goNav("/list");
+            }}> Mystic</h3>
           </span>
         </div>
       </section>

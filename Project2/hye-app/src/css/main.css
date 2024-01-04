@@ -156,3 +156,40 @@ body{
   height: 500px;
 }
 
+@media (max-width:1024px) {
+  .imgbx span:nth-child(2) {margin-top:0px}
+.imgbx span {
+    display:block;
+    margin-bottom: 100px;
+    transition: none;
+}
+.imgbx img {
+  width: 70vw;
+  height: 40vw;
+}
+.imgbx {
+display:block;
+padding-top: 300px;
+}
+
+.imgbx span:nth-child(1) {
+  transform: translateX(0%);
+}
+
+.imgbx span:nth-child(3) {
+  transform: translateX(0%);
+
+}
+.imgbx h3{
+  opacity: 1;
+}
+
+}
+@media (max-width:600px) {
+  .swipertxt{
+    font-size: 13px;
+  }
+  .cat-ani{
+    font-size: 11px;
+  }
+}

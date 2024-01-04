@@ -6,13 +6,12 @@ import React from "react";
 import { faSearch, faCircleUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import $ from 'jquery';
+import $ from "jquery";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { catData } from "../data/catData";
 
-export function TopArea({chgPageFn}) {
-
+export function TopArea({ chgPageFn }) {
   // 검색 관련 함수들 ///////////////////////////
 
   // 1. 검색창 보이기 함수
@@ -30,9 +29,8 @@ export function TopArea({chgPageFn}) {
   const enterKey = (e) => {
     // console.log(e.key)
     if (e.key === "Enter") {
-
-       // 모바일에서 열린 메뉴창 닫기
-       $(".top-area").removeClass('on');
+      // 모바일에서 열린 메뉴창 닫기
+      $(".top-area").removeClass("on");
       // 입력창의 입력값 읽어오기 : val() 사용!
       let txt = $(e.target).val().trim();
       console.log(txt);
@@ -53,30 +51,28 @@ export function TopArea({chgPageFn}) {
     // console.log('나는 검색하러 간다!!')
     // 라우터 이동함수로 이동하기
     chgPageFn("/schpage", { state: { keyword: txt } });
-
-    
   }; //////////// goSearch ////////////
 
+  const showSub = (e) => {
+    const tg1 = $(".cat-icon");
+    const tg2 = $(".incat");
 
+    tg2.css({ transition: "1s" });
+    setTimeout(() => tg1.toggleClass("on"), 0);
 
-  const showSub = () => {
+    setTimeout(() => {
+      tg2.css({ transition: "none" });
+    }, 1000);
 
-    const tg1 = $('.cat-icon');
-    const tg2= $('.cat-icon ol');
-    
-    tg2.css({transition:"1s"});
-    setTimeout(()=>tg1.toggleClass('on'),0);
+    e.stopPropagation();
+  };
 
-    setTimeout(()=>{
-      tg2.css({transition:'none'})
-    },1000)
-
-    
-
-  }
-// useEffect(()=>{
-//   $('.cat-icon ol').click(e=>e.stopPropagation())
-// })
+  const noclick = (e) => {
+    e.stopPropagation();
+  };
+  // useEffect(()=>{
+  //   $('.cat-icon ol').click(e=>e.stopPropagation())
+  // })
   return (
     <>
       {/* 상단영역 */}
@@ -90,14 +86,14 @@ export function TopArea({chgPageFn}) {
             </li>
 
             {/* 메뉴 아이콘 : 클릭시 카테고리 등장 */}
-            <li className="cat-icon" onClick={showSub} style={{marginLeft:'auto'}}>
-              <div className="mognb">
-                  <ol>
-                    <CatMenu />
-                  </ol>
-              </div>
-            </li>
-
+            <li
+              className="cat-icon"
+              onClick={showSub}
+              style={{ marginLeft: "auto" }}
+            ></li>
+            <ol className="incat" onClick={noclick}>
+              <CatMenu />
+            </ol>
             {/* 3. 검색, 회원가입, 로그인 링크 */}
             <li>
               {/* 검색입력박스 */}
@@ -112,7 +108,7 @@ export function TopArea({chgPageFn}) {
               </div>
               {/* 검색기능링크 - 클릭시 검색창보이기 */}
               <a href="#" onClick={showSearch}>
-                <FontAwesomeIcon icon={faSearch} size="2xl"/>
+                <FontAwesomeIcon icon={faSearch} size="2xl" />
               </a>
             </li>
 
@@ -120,7 +116,7 @@ export function TopArea({chgPageFn}) {
             {/* 유저아이콘 클릭시 회원가입, 로그인 박스 오른쪽에서 나옴 */}
             <li>
               <Link to="/member">
-                <FontAwesomeIcon icon={faCircleUser} size="2xl"/>
+                <FontAwesomeIcon icon={faCircleUser} size="2xl" />
               </Link>
             </li>
           </ul>

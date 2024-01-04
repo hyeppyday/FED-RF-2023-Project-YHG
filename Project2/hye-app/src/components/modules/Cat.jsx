@@ -17,7 +17,9 @@ const goNav = useNavigate();
         e.stopPropagation();goNav('/list')}}>
           <img src={v.img} alt={v.txt}/><br/>{v.txt}
         </li>
+        
     ))
+    
      
     )
 } ///////////// showCat ///////////////

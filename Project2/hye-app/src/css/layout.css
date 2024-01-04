@@ -3,7 +3,7 @@
 /* 상단영역 */
 
 .top-area {
-  border-bottom: 1px solid #00000041;
+ 
   position: fixed;
   top: 0;
   width: 100%;
@@ -16,10 +16,10 @@
 .logo {
   width: 144px;
   cursor: pointer;
-
 }
 
 /* GNB메뉴 */
+
 .gnb ul,
 .gnb ol {
   display: flex;
@@ -33,7 +33,7 @@
   align-items: center;
   padding: 5px;
   color: #666;
-
+  z-index: 9999;
 }
 .gnb ul a:visited {
   color: #666;
@@ -63,11 +63,12 @@
   display: block;
   position: absolute;
   top: 0;
-  left: 150px;
-  right: 200px;
+  left: 0;
+  width: 100%;
   height: 100%;
   z-index: 999;
   background-color: #fff;
+  border-bottom: 1px solid #00000041;
 
   /* background-color: red; */
 }
@@ -78,37 +79,35 @@
   }
 }
 /* GNB 상세 카테고리 */
-
 .cat-menu li img {
   display: block;
 }
 
-.gnb ul > li ol {
+.gnb ul > li +.incat{
   position: absolute;
   padding: 22px;
-  width: 80%;
+  width: 100%;
   background-color: #ffffff;
-  top: -14px;
+  top: -15px;
   left: 50%;
   transform: translate(-50%);
   user-select: none;
-  opacity: 0;
 
-  
+  cursor: default;
+
   justify-content: center;
   /* transition: 1s; */
 }
 
-.gnb ul > li.on ol {
+.gnb ul > li.on + .incat {
   opacity: 1;
   top: 77px;
-  width: 100%;
-  
+  /* width: 100%; */
+
   /* height: auto; */
 }
 
-
-.gnb ul > li.on ol {
+.gnb ul > li.on + .incat {
   display: flex;
 }
 .gnb ol li {
@@ -133,10 +132,10 @@
 }
 
 /* gnb 검색입력창 박스 */
-.searchingGnb{    
+.searchingGnb {
   position: absolute;
   right: 25px;
-    top: 101px;
+  top: 101px;
   line-height: 41px;
 
   width: 250px;
@@ -145,9 +144,9 @@
   background-color: #efefef;
   box-sizing: border-box;
   padding: 0 5px;
-  display: none;/* 처음에 안보임! */
+  display: none; /* 처음에 안보임! */
 }
-.searchingGnb input{
+.searchingGnb input {
   font-size: 15px;
   width: 77%;
   margin-top: 5px;
@@ -155,10 +154,10 @@
   background-color: transparent;
   border: none;
 }
-input:focus{
+input:focus {
   outline: none;
 }
-.schbtnGnb{
+.schbtnGnb {
   cursor: pointer;
   margin-top: 9px;
   margin-left: 10px;
@@ -205,41 +204,38 @@ input:focus{
 }
 
 @media (max-width: 1200px) {
-  .gnb ul > li ol {
+  .gnb ul > li +.incat {
     position: absolute;
     display: block;
     opacity: 1;
+    top: 77px;
     right: 0;
     left: 100%;
+    height: 100vh;
     transform: translate(0);
     background-color: #ffffff;
     width: auto;
     border-left: 1px solid #0000006b;
+    padding: 0;
   }
-  .gnb ul > li.on ol {
-    top: 0;
+  .gnb ul > li.on +.incat {
+    top: 77px;
     left: 0;
+    height: 100vh;
     display: block;
+    padding: 0;
   }
-  .mognb {
-    position: absolute;
-    top: 76px;
-    width: 300px;
-    right: 0;
-    height: 0;
-    z-index: 999;
-    background-color: #000000;
-  }
-  .mognb ol li {
-    display: flex;
 
-    padding: 32px;
+  .gnb ol li {
+    display: flex;
+    padding: 41.2px;
     border-bottom: 1px solid #0000006b;
-    width: 100%;
+    width: 100vw;
   }
-  .mognb ol li img {
+  .incat li img {
     padding-right: 30px;
   }
+  
 }
 
 @media (max-width: 700px) {
