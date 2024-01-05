@@ -2,7 +2,7 @@ import { Logo } from "../modules/Logo";
 
 import { CatMenu } from "../modules/Cat";
 
-import React from "react";
+import React, { useRef, useState } from "react";
 import { faSearch, faCircleUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -12,17 +12,22 @@ import { Link } from "react-router-dom";
 import { catData } from "../data/catData";
 
 export function TopArea({ chgPageFn }) {
+
+  
   // 검색 관련 함수들 ///////////////////////////
 
+  
   // 1. 검색창 보이기 함수
   const showSearch = (e) => {
     // 0. a요소 기능 막기
     e.preventDefault();
 
     // 1. 검색창 보이기
-    $(".searchingGnb").show();
-    // 2. 입력창에 포커스 보내기
+    // $(".searchingGnb").show();
+    $(".searchingGnb").toggleClass("show");
+    // // 2. 입력창에 포커스 보내기
     $("#schinGnb").focus();
+    
   }; ////////////// showSearch /////////////////
 
   // 2. 입력창에 엔터키를 누르면 검색함수 호출!
@@ -32,12 +37,12 @@ export function TopArea({ chgPageFn }) {
       // 모바일에서 열린 메뉴창 닫기
       $(".top-area").removeClass("on");
       // 입력창의 입력값 읽어오기 : val() 사용!
-      let txt = $(e.target).val().trim();
+      let txt = $(e.target).val().replace(/(\s*)/g, "");
       console.log(txt);
       // 빈값이 아니면 검색함수 호출(검색어전달!)
       if (txt != "") {
         // 입력창 비우기 + 부모박스 닫기
-        $(e.target).val("").parent().hide();
+        $(e.target).val("").parent().removeClass("show");
 
         // 검색 보내기
         goSearch(txt);
@@ -53,6 +58,47 @@ export function TopArea({ chgPageFn }) {
     chgPageFn("/schpage", { state: { keyword: txt } });
   }; //////////// goSearch ////////////
 
+   // 4. 태그 랜덤생성
+   const tag = ["바베큐장", "욕조", "복층", "마당", "발코니","해변 바로 앞","멋진 수영장","한옥","료칸","통나무집","캠핑장","섬","키클라데스 주택"];
+
+   const getrd = (arr) => arr[Math.floor(Math.random() * arr.length)];
+
+
+const filterVal = (val) => {
+  let res = false;
+  // console.log("필터에서 val:", val);
+  // console.log("필터에서 arr:", arr);
+
+  tag.forEach((v) => {
+    if (v === val) res = true;
+  });
+
+  // console.log("검사결과:", res);
+  return res;
+};
+
+/// for문으로 10개를 만들어 arr배열에 넣기 /////
+const makeArr = () => {
+  for (let x = 0; x < 4; x++) {
+    let nowRdm = getrd();
+    // console.log(Array.isArray(arr));
+    while (filterVal(nowRdm)) {
+      nowRdm = getrd();
+      // console.log("다시만들어!");
+    } ////// while //////////
+
+    // 통과후 반영하기
+    tag.push(nowRdm);
+  } ////////// for ////////////
+}; ////////// makeArr /////////
+
+// makeArr();
+console.log('배열만들기:',makeArr())
+
+  
+ 
+
+
   const showSub = (e) => {
     const tg1 = $(".cat-icon");
     const tg2 = $(".incat");
@@ -63,16 +109,9 @@ export function TopArea({ chgPageFn }) {
     setTimeout(() => {
       tg2.css({ transition: "none" });
     }, 1000);
-
-    e.stopPropagation();
+  
   };
 
-  const noclick = (e) => {
-    e.stopPropagation();
-  };
-  // useEffect(()=>{
-  //   $('.cat-icon ol').click(e=>e.stopPropagation())
-  // })
   return (
     <>
       {/* 상단영역 */}
@@ -91,7 +130,8 @@ export function TopArea({ chgPageFn }) {
               onClick={showSub}
               style={{ marginLeft: "auto" }}
             ></li>
-            <ol className="incat" onClick={noclick}>
+
+            <ol className="incat">
               <CatMenu />
             </ol>
             {/* 3. 검색, 회원가입, 로그인 링크 */}
@@ -105,6 +145,12 @@ export function TopArea({ chgPageFn }) {
                   placeholder="검색어를 입력해주세요"
                   onKeyUp={enterKey}
                 />
+                {/* 태그 */}
+                {<div className="tags">
+                  <div className="tag">#마당</div>
+                  <div className="tag">#욕조</div>
+                  <div className="tag">#바베큐장</div>
+                </div>}
               </div>
               {/* 검색기능링크 - 클릭시 검색창보이기 */}
               <a href="#" onClick={showSearch}>

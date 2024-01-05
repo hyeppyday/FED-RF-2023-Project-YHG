@@ -384,7 +384,7 @@ export const catData = [
         "category":'키클라데스 주택',
         "score":'5.0',
         "price":'177,669',
-        "scat":['키클라데스 주택,발코니'],
+        "scat":['키클라데스주택,발코니'],
         "icat":1
     },
     {
@@ -393,7 +393,7 @@ export const catData = [
         "category":'키클라데스 주택',
         "score":'4.98',
         "price":'634,350',
-        "scat":['키클라데스 주택,욕조'],
+        "scat":['키클라데스주택,욕조'],
         "icat":2
     },
     {
@@ -402,7 +402,7 @@ export const catData = [
         "category":'키클라데스 주택',
         "score":'5.0',
         "price":'127,922',
-        "scat":['키클라데스 주택,복층'],
+        "scat":['키클라데스주택,복층'],
         "icat":3
     },
     {
@@ -411,7 +411,7 @@ export const catData = [
         "category":'키클라데스 주택',
         "score":'4.78',
         "price":'604,075',
-        "scat":['키클라데스 주택,마당'],
+        "scat":['키클라데스주택,마당'],
         "icat":4
     },
     {
@@ -420,7 +420,7 @@ export const catData = [
         "category":'키클라데스 주택',
         "score":'4.97',
         "price":'710,677',
-        "scat":['키클라데스 주택,복층'],
+        "scat":['키클라데스주택,복층'],
         "icat":5
     },
     {
@@ -429,7 +429,7 @@ export const catData = [
         "category":'키클라데스 주택',
         "score":'5.0',
         "price":'142,135 ',
-        "scat":['키클라데스 주택'],
+        "scat":['키클라데스주택'],
         "icat":6
     },
 ]
