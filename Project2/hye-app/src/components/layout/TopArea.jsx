@@ -102,8 +102,10 @@ export function TopArea({ chgPageFn }) {
   makeArr();
   console.log(arr);
 
-  const clickTag = () => {
-    $('.tag')
+  const clickTag = (e) => {
+    let selTxt = $(e.currentTarget).text().replace('#','');
+    console.log(selTxt);
+    $('#schinGnb').val(selTxt).focus();
   }
 
   
@@ -156,9 +158,9 @@ export function TopArea({ chgPageFn }) {
                 {/* 태그 */}
                 {
                   <div className="tags">
-                    <div className="tag">#{arr[0]}</div>
-                    <div className="tag">#{arr[1]}</div>
-                    <div className="tag">#{arr[2]}</div>
+                    <div className="tag" style={{cursor:'pointer'}} onClick={clickTag}>#{arr[0]}</div>
+                    <div className="tag" style={{cursor:'pointer'}} onClick={clickTag}>#{arr[1]}</div>
+                    <div className="tag" style={{cursor:'pointer'}} onClick={clickTag}>#{arr[2]}</div>
                   </div>
                 }
               </div>
