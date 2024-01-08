@@ -9,18 +9,7 @@ import { Fragment, useEffect } from "react";
 import $ from "jquery";
 
 export function View() {
-  const arr = [
-    // "https://cdn.pixabay.com/photo/2016/05/02/09/45/japan-1366872_1280.jpg",
-    // "https://cdn.pixabay.com/photo/2015/07/15/11/51/resort-846075_640.jpg",
-    // "https://cdn.pixabay.com/photo/2016/08/16/17/25/victorian-inn-1598444_640.jpg",
-    // "https://cdn.pixabay.com/photo/2020/01/06/21/24/evening-4746326_640.jpg",
-    // "https://cdn.pixabay.com/photo/2016/07/05/18/08/slave-quarters-1499121_640.jpg",
-    // "https://cdn.pixabay.com/photo/2022/02/14/10/50/resort-7012893_640.jpg",
-    // "https://cdn.pixabay.com/photo/2016/04/22/13/37/holiday-1345780_640.jpg",
-    // "https://cdn.pixabay.com/photo/2019/11/20/02/11/hotel-4638955_640.jpg",
-    // "https://cdn.pixabay.com/photo/2022/03/24/01/13/cabin-7088140_640.jpg",
-    // "https://cdn.pixabay.com/photo/2021/07/21/06/25/outdoor-furniture-6482346_640.jpg",
-  ];
+  const arr = [];
 
   const catTxt = [
     "해변 바로 앞",

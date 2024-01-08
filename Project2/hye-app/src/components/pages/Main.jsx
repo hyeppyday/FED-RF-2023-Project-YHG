@@ -90,9 +90,11 @@ export function Main() {
     // 화면 리사이즈 시 모바일 검사함수 호출
     $(window).resize(chkMob);
 
+
     return () => {
       window.removeEventListener("scroll", showEle);
       chkMob();
+   
     };
   }, []);
 
