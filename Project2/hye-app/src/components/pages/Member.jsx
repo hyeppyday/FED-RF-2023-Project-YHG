@@ -2,12 +2,15 @@
 
 import { Link } from "react-router-dom";
 import "../../css/member.css";
-import { useId, useState } from "react";
+import { useContext, useId, useState } from "react";
 
 // 로컬스토리지 생성 JS
 import { clearData, initData } from "../func/mem_fn";
+import { bnbCon } from "../modules/bnbContext";
 
 export function Member() {
+
+  const myCon = useContext(bnbCon);
   // 회원가입 페이지 요구사항
   // -> 각 입력항목별로 유효성검사를 실행함
   // -> 특이사항 : 글자를 입력할때마다 검사 + submit버튼 작동시 검사
@@ -241,8 +244,7 @@ export function Member() {
       localStorage.setItem("mem-data",JSON.stringify(memData))
 
       // 6. 로그인페이지로 이동 (라우터이동) -보류
-    document.querySelector('.sbtn').innerText =
-    "회원가입을 축하드립니다"
+      myCon.chgPage("/login", {});
 
     } /////////// if /////////////
     // 3. 불통과시

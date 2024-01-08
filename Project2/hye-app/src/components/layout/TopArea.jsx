@@ -2,8 +2,8 @@ import { Logo } from "../modules/Logo";
 
 import { CatMenu } from "../modules/Cat";
 
-import React, { useRef, useState } from "react";
-import { faSearch, faCircleUser } from "@fortawesome/free-solid-svg-icons";
+import React, { memo, useRef, useState } from "react";
+import { faSearch, faCircleUser, faUserPlus, faArrowRightFromBracket } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import $, { get } from "jquery";
@@ -11,7 +11,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { catData } from "../data/catData";
 
-export function TopArea({ chgPageFn }) {
+export const TopArea = memo(({ chgPageFn, logSts, logMsg, logOut }) => {
   // 검색 관련 함수들 ///////////////////////////
 
   // 1. 검색창 보이기 함수
@@ -103,12 +103,10 @@ export function TopArea({ chgPageFn }) {
   console.log(arr);
 
   const clickTag = (e) => {
-    let selTxt = $(e.currentTarget).text().replace('#','');
+    let selTxt = $(e.currentTarget).text().replace("#", "");
     console.log(selTxt);
-    $('#schinGnb').val(selTxt).focus();
-  }
-
-  
+    $("#schinGnb").val(selTxt).focus();
+  };
 
   const showSub = (e) => {
     const tg1 = $(".cat-icon");
@@ -126,6 +124,8 @@ export function TopArea({ chgPageFn }) {
     <>
       {/* 상단영역 */}
       <header className="top-area">
+        {/* 로그인 환영 메시지 박스 */}
+        <div className="logmsg">{logMsg}</div>
         {/* 네비게이션 GNB파트 */}
         <nav className="gnb">
           <ul>
@@ -158,28 +158,60 @@ export function TopArea({ chgPageFn }) {
                 {/* 태그 */}
                 {
                   <div className="tags">
-                    <div className="tag" style={{cursor:'pointer'}} onClick={clickTag}>#{arr[0]}</div>
-                    <div className="tag" style={{cursor:'pointer'}} onClick={clickTag}>#{arr[1]}</div>
-                    <div className="tag" style={{cursor:'pointer'}} onClick={clickTag}>#{arr[2]}</div>
+                    <div
+                      className="tag"
+                      style={{ cursor: "pointer" }}
+                      onClick={clickTag}
+                    >
+                      #{arr[0]}
+                    </div>
+                    <div
+                      className="tag"
+                      style={{ cursor: "pointer" }}
+                      onClick={clickTag}
+                    >
+                      #{arr[1]}
+                    </div>
+                    <div
+                      className="tag"
+                      style={{ cursor: "pointer" }}
+                      onClick={clickTag}
+                    >
+                      #{arr[2]}
+                    </div>
                   </div>
                 }
               </div>
               {/* 검색기능링크 - 클릭시 검색창보이기 */}
               <a href="#" onClick={showSearch}>
-                <FontAwesomeIcon icon={faSearch} size="2xl" />
+                <FontAwesomeIcon icon={faSearch} size="2xl" color="#454545"/>
               </a>
             </li>
 
             {/* 회원가입, 로그인은 로그인 아닌 상태일때 나옴 */}
             {/* 유저아이콘 클릭시 회원가입, 로그인 박스 오른쪽에서 나옴 */}
-            <li>
-              <Link to="/member">
-                <FontAwesomeIcon icon={faCircleUser} size="2xl" />
-              </Link>
-            </li>
+            {logSts === null && (
+              <>
+                <li>
+                  <Link to="/login" title="로그인">
+                    <FontAwesomeIcon icon={faCircleUser} size="2xl" color="#454545"/>
+                  </Link>
+                </li>
+              </>
+            )}
+            {
+              /* 회원가입, 로그인은 로그인 아닌 상태일때 나옴 */
+              logSts !== null && (
+                <>
+                  <li>
+                    <a href="#" onClick={logOut} title="로그아웃"><FontAwesomeIcon icon={faArrowRightFromBracket} size="2xl" color="#454545"/></a>
+                  </li>
+                </>
+              )
+            }
           </ul>
         </nav>
       </header>
     </>
   );
-} //////////////////// TopArea ///////////////////////
+}); //////////////////// TopArea ///////////////////////

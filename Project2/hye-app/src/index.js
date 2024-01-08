@@ -14,6 +14,7 @@ import { Detail } from "./components/modules/Detail";
 
 import { Member } from "./components/pages/Member";
 import { SchPage } from "./components/pages/SchPage";
+import { Login } from "./components/pages/Login";
 
 export default function App() {
   return (
@@ -25,6 +26,8 @@ export default function App() {
           <Route path="/detail" element={<Detail />} />
           <Route path="member" element={<Member />} />
           <Route path="schpage" element={<SchPage />} />
+          <Route path="login" element={<Login />} />
+
         </Route>
       </Routes>
     </HashRouter>
