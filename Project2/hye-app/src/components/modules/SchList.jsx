@@ -1,7 +1,7 @@
 // 숙소 검색 결과 리스트 컴포넌트
 
 import { catData } from "../data/catData.js";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 // 카테고리 검색 리스트 CSS 가져오기
 import "../../css/list.css";
@@ -18,10 +18,15 @@ const selData = catData.filter((v) => {
 // 부모쪽 카운트 변수 업데이트 함수를 호출!
 props.dataCnt(selData.length);
 
+const navigate = useNavigate();
+
   return (
     <>
+    <button onClick={() => navigate(-1)} title="이전 페이지로">〈</button>
       {
+        
           <ul className="cat-list" style={{marginTop:'280px'}}>
+            
             {selData.map((v, i) => (
               <Link
                 to="/detail"
