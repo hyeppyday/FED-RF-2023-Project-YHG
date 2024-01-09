@@ -13,11 +13,6 @@ export function Searching(props){
 // props.kword - 검색어전달
 console.log("전달검색어:", props.kword);
 
-// const sum = seldata.length;
-
-const selData = $('.cat-list a').length;
-console.log(selData);
-
 // 자식 컴포넌트 SchList에서 카운트된 검색결과 data의 개수를 부모
 // 컴포넌트의 상태변수와 업데이트 함수를 통해 실시간 변경함!
 const [selDataCnt,setSelDataCnt] = useState(0);
