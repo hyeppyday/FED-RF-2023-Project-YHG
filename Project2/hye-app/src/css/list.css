@@ -55,6 +55,11 @@
     .cat-list{
         grid-template-columns: repeat(2, 300px);
     }
+    .restit{
+        font-size: min(32px,4vw);
+        width: 62%;
+    }
+
 }
 @media (max-width:700px) {
     .cat-list{
@@ -63,13 +68,11 @@
     }
 }
 .listbx button {
-    position: absolute;
-    top: 218px;
-    left: 574px;
-    border: none;
     background: #fff;
-    font-weight: bold;
+    border: none;
     font-size: 24px;
+    font-weight: bold;
+    margin-right: 19px;
     cursor: pointer;
 }
 

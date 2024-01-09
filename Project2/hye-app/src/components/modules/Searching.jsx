@@ -19,7 +19,7 @@ console.log("전달검색어:", props.kword);
 // 컴포넌트의 상태변수와 업데이트 함수를 통해 실시간 변경함!
 const [selDataCnt,setSelDataCnt] = useState(0);
 const updateCnt = (x) => setSelDataCnt(x);
-
+const navigate = useNavigate();
 
 
     // 리턴 코드 ////////////////////////
@@ -29,7 +29,7 @@ const updateCnt = (x) => setSelDataCnt(x);
         {/* 2. 결과리스트박스 */}
         <div className="listbx">
           {/* 2-1. 결과 타이틀 */}
-          <h2 className="restit">'{props.kword}'의 검색 결과 ({selDataCnt})</h2>
+          <h2 className="restit"><button onClick={() => navigate(-1)} title="이전 페이지로">〈</button>'{props.kword}'의 검색 결과 ({selDataCnt})</h2>
           {/* 2-2. 이전페이지로 돌아가기 */}
           
           {/* 2-3. 숙소 리스트 컴포넌트 */}

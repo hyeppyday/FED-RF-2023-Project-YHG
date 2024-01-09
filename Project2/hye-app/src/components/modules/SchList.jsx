@@ -18,11 +18,11 @@ const selData = catData.filter((v) => {
 // 부모쪽 카운트 변수 업데이트 함수를 호출!
 props.dataCnt(selData.length);
 
-const navigate = useNavigate();
+
 
   return (
     <>
-    <button onClick={() => navigate(-1)} title="이전 페이지로">〈</button>
+    
       {
         
           <ul className="cat-list" style={{marginTop:'280px'}}>
