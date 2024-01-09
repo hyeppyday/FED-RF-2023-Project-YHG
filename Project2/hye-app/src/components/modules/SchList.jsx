@@ -14,8 +14,6 @@ const selData = catData.filter((v) => {
   if (v.scat.join('').indexOf(props.kword)!==-1) return true;
 });
 
-console.log(selData);
-
   return (
     <>
       {
