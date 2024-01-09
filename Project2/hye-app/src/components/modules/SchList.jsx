@@ -8,11 +8,15 @@ import "../../css/list.css";
 import { SwiperApp } from "../plugin/SwiperApp";
 
 export function SchList(props) {
+  
 // props.cat은 전달된 카테고리 정보(데이터 선별용)
 const selData = catData.filter((v) => {
   console.log();
   if (v.scat.join('').indexOf(props.kword)!==-1) return true;
 });
+
+// 부모쪽 카운트 변수 업데이트 함수를 호출!
+props.dataCnt(selData.length);
 
   return (
     <>

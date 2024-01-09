@@ -18,6 +18,12 @@ console.log("전달검색어:", props.kword);
 const selData = $('.cat-list a').length;
 console.log(selData);
 
+// 자식 컴포넌트 SchList에서 카운트된 검색결과 data의 개수를 부모
+// 컴포넌트의 상태변수와 업데이트 함수를 통해 실시간 변경함!
+const [selDataCnt,setSelDataCnt] = useState(0);
+
+const updateCnt = (x) => setSelDataCnt(x);
+
     // 리턴 코드 ////////////////////////
   return (
     <>
@@ -25,9 +31,11 @@ console.log(selData);
         {/* 2. 결과리스트박스 */}
         <div className="listbx">
           {/* 2-1. 결과 타이틀 */}
-          <h2 className="restit">'{props.kword}'의 검색 결과 ({selData})</h2>
+          <h2 className="restit">'{props.kword}'의 검색 결과 ({selDataCnt})</h2>
           {/* 2-3. 숙소 리스트 컴포넌트 */}
-          <SchList kword={props.kword}/>
+          <SchList kword={props.kword}
+          // 부모함수를 프롭스다운!
+          dataCnt={updateCnt}/>
         </div>
 
     </>
