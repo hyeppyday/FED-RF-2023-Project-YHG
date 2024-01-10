@@ -122,13 +122,13 @@ console.log('대상:',mvbtn,vpj,cbtn);
 // 2-1. 뷰프로젝트 버튼 클릭시
 mvbtn.forEach((ele,idx)=>{
   window.onload=function(){
-    dFn.addEvt(ele,'click',()=>{
+    dFn.addEvt(ele,'click',(e)=>{
+      e.preventDefault();
     /* 영상보이기 */
     vpj.classList.add('on');
     /* 가림막보이기 */
     document.body.classList.add('on');
   
-
     // 아이프레임 넣기
     mvBox.innerHTML = `
     <iframe src="https://www.youtube.com/embed/${mvId[idx]}?autoplay=1" frameborder="0" allow="autoplay"></iframe>
