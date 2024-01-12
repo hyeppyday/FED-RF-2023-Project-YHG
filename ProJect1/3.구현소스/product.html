@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product | BreadBarbershop</title>
+    <link
+      rel="shortcut icon"
+      href="https://static.wixstatic.com/media/e319cf_2587dec5a24c465894d063405d52ea88~mv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/e319cf_2587dec5a24c465894d063405d52ea88~mv2.png"
+      type="image/x-icon"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- 공통 CSS 불러오기 -->
+    <link rel="stylesheet" href="./css/common.css" />
+    <!-- 외부 CSS 불러오기 -->
+    <link rel="stylesheet" href="./css/product.css" />
+     <!-- 서브 JS -->
+     <script type="module" src="./js/product.js"></script>
+    <!-- 제이쿼리 라이브러리 + UI -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <!-- 모바일용 드래그/드롭 이벤트 전환 플러그인 -->
+    <script src="./js/jquery-touch-punch.min.js"></script>
+
+    <!-- 서브 JS -->
+    <script type="module" src="./js/sub.js"></script>
+  </head>
+  <body>
+    <!-- 상단영역 -->
+    <header id="top" class="header">
+      <!-- 메인로고 -->
+      <div class="main-logo">
+        <a href="./index.html"><img src="./img/en_02.png" alt="메인로고" /></a>
+      </div>
+      <!-- 상단메뉴 -->
+      <div class="main-menu">
+        <nav class="gnb">
+          <li>
+            <a href="./company.html">COMPANY</a>
+          </li>
+          <li class="li-sub">
+            <a href="project.html" class="noclick">BUSINESS ∨</a>
+            <div class="sub-menu">
+              <ol>
+                <li>
+                  <a href="project.html">PROJECT</a>
+                </li>
+                <li>
+                  <a href="product.html">PRODUCT</a>
+                </li>
+              </ol>
+            </div>
+          </li>
+          <li>
+            <a href="#">NEWS</a>
+          </li>
+          <li>
+            <a href="./recruit.html">RECRUIT</a>
+          </li>
+          <li>
+            <a href="./contact.html">CONTACT</a>
+          </li>
+        </nav>
+      </div>
+      <button class="ham"></button>
+    </header>
+    <div class="white-box"></div>
+    <button type="button" onclick="window.open('https://smartstore.naver.com/monsterstudio_breadbarbershop/category/ALL?cp=1 ')"
+    >Online Store 바로가기</button>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/banner/banner5.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/banner/banner2.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/banner/banner3.jpg" alt="" />
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./img/banner/banner9.jpg" alt="" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- 제품 영역 -->
+    <h1 class="pro-name">PRODUCT</h1>
+    <div class="product-box">
+        <div class="ele"><img src="./img/product/product1.png" alt=""><h3 class="hide-box">BAGS</h3></div>
+        <div class="ele"><img src="./img/product/product2.png" alt=""><h3 class="hide-box">DAILY NECESSITIES</h3></div>
+        <div class="ele"><img src="./img/product/product3.png" alt=""><h3 class="hide-box">SHOES</h3></div>
+        <div class="ele"><img src="./img/product/product4.png" alt=""><h3 class="hide-box">BOOKS</h3></div>
+        <div class="ele"><img src="./img/product/product5.jpg" alt=""><h3 class="hide-box">KIDS HAIR SHOP</h3></div>
+        <div class="ele"><img src="./img/product/product6.png" alt=""><h3 class="hide-box">FUNITURE</h3></div>
+        <div class="ele"><img src="./img/product/product7.png" alt=""><h3 class="hide-box">DRINK</h3></div>
+        <div class="ele"><img src="./img/product/product8.png" alt=""><h3 class="hide-box">CUSHION</h3></div>
+        <div class="ele"><img src="./img/product/product9.png" alt=""><h3 class="hide-box">FOOD</h3></div>
+        <div class="ele"><img src="./img/product/product10.png" alt=""><h3 class="hide-box">PEN</h3></div>
+        <div class="ele"><img src="./img/product/product11.jpg" alt=""><h3 class="hide-box">BHC</h3></div>
+        <div class="ele"><img src="./img/product/product12.png" alt=""><h3 class="hide-box">CLOTHE</h3></div>
+        <div class="ele"><img src="./img/product/product13.jpg" alt=""><h3 class="hide-box">LOTTE HOTEL</h3></div>
+        <div class="ele"><img src="./img/product/product14.png" alt=""><h3 class="hide-box">PHARMACEUTICAL</h3></div>
+        <div class="ele"><img src="./img/product/product15.jpg" alt=""><h3 class="hide-box">TOY</h3></div>
+    </div>
+    <!-- 무한 롤링 배너 -->
+    <div class="wrap"> <!-- 배너표시영역 -->
+        <div class="rolling-list"> <!-- 원본배너 -->
+            <ul>
+                <li>
+                    <div class="image-wrap">
+                    <img src="./img/logo/cu.jpg" alt="">
+                </li>
+                <li>
+                    <div class="image-wrap">
+                    <img src="./img/logo/lg.jpg" alt="">
+                </li>
+                <li>
+                    <div class="image-wrap">
+                    <img src="./img/logo/lotte.jpg" alt="">
+                </li>
+                <li>
+                    <div class="image-wrap">
+                    <img src="./img/logo/토이.jpg" alt="">
+                </li>
+                <li>
+                    <div class="image-wrap">
+                    <img src="./img/logo/넷플릭스.jpg" alt="">
+                </li>
+                <li>
+                    <div class="image-wrap">
+                    <img src="./img/logo/쿠팡.jpg" alt="">
+                </li>
+                <li>
+                    <div class="image-wrap">
+                    <img src="./img/logo/동서.jpg" alt="">
+                </li>
+                <li>
+                    <div class="image-wrap">
+                    <img src="./img/logo/스파오키즈.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer id="info">
+        <div class="txt">
+          <div class="subject-txt">CONTENTS ANIMATION COMPANY</div>
+          <div>Adress : 서울특별시 영등포구 문래북로 56, 7층</div>
+          <div>©2023 by 브레드이발소</div>
+        </div>
+        <div class="social">
+          <a href="https://www.youtube.com/channel/UCKBt6VowYGmBpXFf3rVhaQA"
+            ><img src="./img/youtube.png" alt=""
+          /></a>
+          <a href="https://www.instagram.com/breadbarbershop/"
+            ><img src="./img/instagram.png" alt=""
+          /></a>
+          <a
+            href="https://www.tiktok.com/tag/%EB%B8%8C%EB%A0%88%EB%93%9C%EC%9D%B4%EB%B0%9C%EC%86%8C"
+            ><img src="./img/tiktok.png" alt=""
+          /></a>
+          <a
+            href="https://www.facebook.com/BreadBarbershop/?ref=aymt_homepage_panel&eid=ARBzvHRZOP4VojpKXX9YTIi1_SaqScIW-6v4C5dSKS5WsgFAmTu-9QhXtb_nVwxE-M0RpY0tfe74HqwW"
+            ><img src="./img/facebook.png" alt=""
+          /></a>
+        </div>
+      </footer>
+
+  </body>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+    //     spaceBetween: 30,
+    //   centeredSlides: true,
+    //   autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    //   },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      });
+    </script>
+</html>
